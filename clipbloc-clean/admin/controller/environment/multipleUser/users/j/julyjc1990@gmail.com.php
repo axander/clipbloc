@@ -1,0 +1,13 @@
+<?php
+$data['user']='julyjc1990';
+$data['pwd']='heju18192472';
+$data['active']=true;
+$data['privAccess']=true;
+$data['privContent']=true;
+$data['type']='1';
+$data['nick']='julyjc1990';
+$data['name']='jula';
+$data['surname']='surname';
+$data['email']='julyjc1990@gmail.com';
+$data['activator']='1499818134650';
+?>

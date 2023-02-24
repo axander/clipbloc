@@ -1,0 +1,295 @@
+<style>
+a:link{
+text-decoration:none;
+}
+.modulo{
+color:#444;
+}
+.aplicandoPB{
+cursor:pointer;
+background:rgba(255,255,255,.8);
+color:#444;
+}
+.aplicandoPB:hover{
+background:rgba(0,0,0,.5);
+color:#fff;
+}
+.sliderContainer{
+        width:200px;
+        height:50px;
+        background:#eee;
+        padding:5px;
+        position:relative;
+        zIndex:200;
+        display:inline-block;
+    }
+    .sliderPB{
+        width:40px;
+        height:40px;
+        background:#444;
+        position:relative;
+        left:0;
+        cursor:pointer;
+    }
+    .sliderContainerVertical{
+        width:50px;
+        height:200px;
+        background:#eee;
+        padding:5px;
+        position:relative;
+        zIndex:200;
+        display:inline-block;
+    }
+    .sliderPBVertical{
+        width:40px;
+        height:40px;
+        background:#444;
+        position:relative;
+        left:0;
+        cursor:pointer;
+    }
+#frame {
+        -ms-zoom: 0.5;
+        -moz-transform: scale(0.5);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.5);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+    }
+</style>
+<div id="htmlContent" style="height:100%;position: relative;">
+
+<div class="basicOuter">
+<div class="basicInner">
+<ul>
+<li><input readonly="" id="focus_text" type="text" style="color: rgb(255, 255, 255); width: auto; display: inline-block; margin: 10px; background: rgb(68, 68, 68);"></li>
+<li id="slider" style="height:70px">
+<div id="s1" class="sliderContainer">
+<div id="s1PB" class="sliderPB">
+</div>
+</div>
+</li>
+<li onclick="clipblocBridge('http://neuronalsite.com::sections::1465150465757')"><div class="genericPB">
+<div>
+<span class="es">Ver Ejemplo compartiendo datos con otro BLOC</span>
+<span class="en">Go example sharing data with other BLOC</span>
+</div>
+</div>
+</li>
+<li>
+<a href="http://neuronalsite.com?view=1465150465757" target="_blank"><div class="genericPB">
+<span class="es">Ir al CLIP de un BLOC de neuronalsite.com que contiene los datos que se cargarán</span>
+<span class="en">Go to neuronalsite.com to see data that will be loaded</span>
+</div>
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+
+
+<script>
+if(typeof allwaysFunc!=="undefined"){
+                allwaysFunc();
+            }
+
+var notLogged=function(){
+document.getElementById("statusSaved").innerHTML="Pensabas hacerlo sin logarte primero ?";
+document.getElementById("statusSaved").style.color="#c33";
+}
+
+var writeMessage=function(){
+      document.getElementById("statusSaved").innerHTML="Contenidos guardados";
+      document.getElementById("statusSaved").style.color="green";
+}
+//------------access to login-----------
+if (typeof accessLogin==="undefined"){
+    var accessLogin=function(){
+        internalNavMenu('1452284554772');
+    }
+    if(document.getElementById("userLogged")){
+        var loginPB=document.getElementById("userLogged");
+        loginPB.onclick=function(){
+            accessLogin();
+        }
+}
+};
+privatOk=function(){
+     coverDiv.style.opacity=0;
+     auxTrans=function(){
+         auxTrans=null;
+         document.body.removeChild(coverDiv);
+     }
+
+}
+var messagePrivateContent="Contenido Privado, logate para acceder. USUARIOX user:1234 | pwd:1234";
+var pcm=false;
+loginPrivate=function(){
+   pcm=true;
+   accessLogin();
+}
+
+
+           
+var messageBridge=null;
+bridgeWhileFunc=function(){
+        messageBridge=document.createElement("div");
+        messageBridge.id="messageBridge";
+        messageBridge.innerHTML="<div style='display:table;width:100vw;height:100vh'><div style='display:table-cell;width:100%;height:100%;text-align:center;vertical-align:middle;'><span class='es'>El siguiente contenido se importa de otro BLOC que se encuentra en neuronal.com</span><span class='en'>Next content owns to a CLIP from a BLOC hosted in neuronalsite.com</span></div></div>";
+        document.body.appendChild(messageBridge);
+        if(typeof allwaysFunc!=="undefined"){
+             allwaysFunc();
+        }
+        setTimeout(function() {
+            messageBridge.style.left="0";
+       }, 10);
+}
+var valorC=0;
+var valorA=0;
+var valorB=0;
+var valorD=0;
+bridgeOkEndFunc=function(){
+bridgeOkEndFunc=null;
+if(document.getElementById("valorA")){
+        valorA=Math.floor(document.getElementById("valorA").value);
+        valorB=Math.floor(document.getElementById("valorB").value);
+        valorC=Math.floor(document.getElementById("valorC").value);
+        setTimeout(function() {
+            messageBridge.style.left="-100%";
+            endTrans=function(){
+                endTrans=null;
+                document.body.removeChild(messageBridge);
+                
+            }
+        }, 1000);
+        internalNavMenu('1428267343637','1465151466909');
+}else{
+       setTimeout(function() {
+            messageBridge=document.getElementById("messageBridge");
+            messageBridge.style.left="-100%";
+            endTrans=function(){
+                endTrans=null;
+                document.body.removeChild(messageBridge);
+            }
+        }, 1000);
+       internalNavMenu("1426287790666");
+}
+}
+
+
+
+
+    afterTransitionFunc = function() {
+        resizeDoc();
+        afterTransitionFunc = null;
+        if (typeof sliderContainer === "undefined") {
+            assignSlider = function(_s1PB, _s1) {
+                var s1PB = _s1PB;
+                var s1 = _s1;
+                var focus_text = document.getElementById(sliders[j].targetInput);
+                var property = sliders[j].property;
+                focus_text.value = "14";
+                valorD=Math.floor(focus_text.value);
+                s1PB.style.left = "14px";
+                var sliderPBOffsetX = null;
+//------------mouse events
+                if (s1PB.addEventListener) {  // all browsers except IE before version 9
+                    s1PB.addEventListener("mousedown", function() {
+                        OnButtonDown(s1PB, s1, focus_text, property)
+                    }, false);
+                } else {
+                    if (s1PB.attachEvent) {   // IE before version 9
+                        s1PB.attachEvent("onmousedown", function() {
+                            OnButtonDown(s1PB, s1focus_example, focus_text, property)
+                        });
+                    }
+                }
+                OnButtonDown = function(s1PB, s1, focus_text, property) {
+                    sliderPBOffsetX = event.clientX - s1PB.offsetLeft - s1.offsetLeft;
+                    document.onmousemove = function(e) {
+                        var cursorPosX = e.clientX - s1.offsetLeft - sliderPBOffsetX;
+                        if (cursorPosX >= 0 && cursorPosX <= s1.offsetWidth - s1PB.offsetWidth - 10) {
+                            s1PB.style.left = cursorPosX + "px";
+                            focus_text.value = cursorPosX;
+                            valorD=Math.floor(focus_text.value);
+                        }
+
+                    }
+                }
+                document.onmouseup = function(e) {
+                    document.onmousemove = function(e) {
+                    };
+                }
+//------------touch events
+                s1PB.addEventListener("touchstart", touchStartHandler, false);
+                s1PB.addEventListener("touchend", touchEndHandler, false);
+                s1PB.addEventListener("touchmove", touchMoveHandler, false);
+                function touchStartHandler(event) {
+                    event.preventDefault();
+                    var touchobj = event.changedTouches[0];
+                    sliderPBOffsetX = touchobj.pageX - s1PB.offsetLeft - s1.offsetLeft;
+                }
+                function touchEndHandler(event) {
+                    event.preventDefault();
+                }
+                function touchMoveHandler(event) {
+                    event.preventDefault();
+                    var touchobj = event.changedTouches[0];
+                    var cursorPosX = touchobj.pageX - s1.offsetLeft - sliderPBOffsetX;
+                    if (cursorPosX >= 0 && cursorPosX <= s1.offsetWidth - s1PB.offsetWidth - 10) {
+                        s1PB.style.left = cursorPosX + "px";
+                        focus_text.value = cursorPosX;
+                        valorD=Math.floor(focus_text.value);
+                    }
+                }
+
+            }
+            var sliders = {
+                "s1": {target: "focus_example", targetInput: "focus_text", property: "fontSize"}
+            }
+            for (var j in sliders) {
+                assignSlider(document.getElementById(j + "PB"), document.getElementById(j));
+            }
+            
+            
+            
+            
+
+
+        }
+        
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

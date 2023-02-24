@@ -1,0 +1,319 @@
+<style>
+    .sliderContainer{
+        width:200px;
+        height:50px;
+        background:#eee;
+        padding:5px;
+        position:relative;
+        zIndex:200;
+        display:inline-block;
+    }
+    .sliderPB{
+        width:40px;
+        height:40px;
+        background:#444;
+        position:relative;
+        left:0;
+        cursor:pointer;
+    }
+    .sliderContainerVertical{
+        width:50px;
+        height:200px;
+        background:#eee;
+        padding:5px;
+        position:relative;
+        zIndex:200;
+        display:inline-block;
+    }
+    .sliderPBVertical{
+        width:40px;
+        height:40px;
+        background:#444;
+        position:relative;
+        left:0;
+        cursor:pointer;
+    }
+
+    .contenido{
+        width:90%;
+        display:inline-block;
+    }
+    .contenido ul li{
+        padding:10px;
+        width:95%;
+    }
+#date{
+     height:auto;
+}
+</style>
+<div id="htmlContent2" style="padding-top: 100px; height: auto; position: relative;">
+<div>
+<img src="http://clipbloc.com/images/favicon2.png" style="opacity: 0.8; position: relative; left: 98px; top: 38px; width: 22px;">
+    <p style="font-size: 30px; letter-spacing: 5px;">CLIPBLOC
+</p>
+<p style="letter-spacing: 2px;font-size: 12px;" class="es">Ecosistemas de Información</p>
+<p style="letter-spacing: 2px; font-size: 12px; display: none;" class="en">Information Ecosystem</p>
+
+<p class="es" style="letter-spacing: 2px; padding-top: 50px;">Por ejemplo este <strong>CLIP</strong> contiene un <strong>script</strong> que crea sliders.</p>
+<p class="en" style="letter-spacing: 2px; padding-top: 50px;">For example this <strong>CLIP</strong> contains an <strong>script</strong> that create sliders.</p>
+
+</div>
+
+
+    <ul style="padding-bottom:50px;">
+        <li style="font-size: 20px; padding-top: 50px;"><span class="es">SLIDERS Independientes Horizontales</span>
+<span class="en">Independent Horizontal SLIDERS</span></li>
+        <li style="">--------------------------------------------------</li>
+    </ul>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="contenido">
+                <ul>
+                    <li>Font Size<input id="focus_text" type="text" style="background:#444;color:#fff;width:auto;display:inline-block;margin:10px">px</li>
+                    <li id="slider" style="height:70px"><div id="s1" class="sliderContainer"><div id="s1PB" class="sliderPB"></div></div></li>
+                    <li><div id="focus_example">Example</div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+
+            <div class="contenido">
+                <ul>
+                    <li>Font Size<input id="focus_text2" type="text" style="background:#444;color:#fff;width:auto;display:inline-block;margin:10px">px</li>
+                    <li id="slider" style="height:70px"><div id="s2" class="sliderContainer"><div id="s2PB" class="sliderPB"></div></div></li>
+                    <li><div id="focus_example2">Example2</div></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+            <div class="contenido">
+                <ul>
+                    <li>Padding<input id="focus_text3" type="text" style="background:#444;color:#fff;width:auto;display:inline-block;margin:10px">px</li>
+                    <li id="slider" style="height:70px"><div id="s3" class="sliderContainer"><div id="s3PB" class="sliderPB"></div></div></li>
+                    <li>Font Size<input id="focus_text4" type="text" style="background:#444;color:#fff;width:auto;display:inline-block;margin:10px">px</li>
+                    <li id="slider" style="height:70px"><div id="s4" class="sliderContainer"><div id="s4PB" class="sliderPB"></div></div></li>
+                    <li><div id="focus_example3" style="background:#444;color:#fff;display:inline-block;padding:14px">Example3</div></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <ul style="padding-bottom:50px;">
+        <li style="font-size: 20px;"><span class="es">SLIDERS Independientes Verticales</span>
+<span class="en">Independent Vertical SLIDERS</span></li>
+        <li style="">--------------------------------------------------</li>
+    </ul>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+
+            <div class="contenido">
+                <ul>
+                    <li>Font Size<input id="focus_text5" type="text" style="background:#444;color:#fff;width:auto;display:inline-block;margin:10px">px</li>
+                    <li id="slider" style="height:auto"><div id="s5" class="sliderContainerVertical"><div id="s5PB" class="sliderPBVertical"></div></div></li>
+                    <li style="height:auto"><div id="focus_example5">Example</div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+
+            <div class="contenido">
+                <ul>
+                    <li>Font Size<input id="focus_text6" type="text" style="background:#444;color:#fff;width:auto;display:inline-block;margin:10px">px</li>
+                    <li id="slider" style="height:auto"><div id="s6" class="sliderContainerVertical"><div id="s6PB" class="sliderPBVertical"></div></div></li>
+                    <li style="height:auto"><div id="focus_example6">Example2</div></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+            <div class="contenido">
+                <ul>
+                    <li>Padding<input id="focus_text7" type="text" style="background:#444;color:#fff;width:auto;display:inline-block;margin:10px">px</li>
+                    <li>Font Size<input id="focus_text8" type="text" style="background:#444;color:#fff;width:auto;display:inline-block;margin:10px">px</li>
+                </ul>
+                <ul>
+                    <li id="slider" style="height:auto;display:inline"><div id="s7" class="sliderContainerVertical"><div id="s7PB" class="sliderPBVertical"></div></div></li>
+                    <li id="slider" style="height:auto;display:inline"><div id="s8" class="sliderContainerVertical"><div id="s8PB" class="sliderPBVertical"></div></div></li>
+                    <li style="height:auto"><div id="focus_example7" style="background:#444;color:#fff;display:inline-block;padding:14px">Example3</div></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+<script>
+afterTransitionFunc = function() {
+        afterTransitionFunc = null;
+        if (typeof sliderContainer === "undefined") {
+            assignSlider = function(_s1PB, _s1) {
+                var s1PB = _s1PB;
+                var s1 = _s1;
+                var focus_example = document.getElementById(sliders[j].target);
+                var focus_text = document.getElementById(sliders[j].targetInput);
+                var property = sliders[j].property;
+                focus_text.value = "14";
+                s1PB.style.left = "14px";
+                var sliderPBOffsetX = null;
+//------------mouse events
+                if (s1PB.addEventListener) {  // all browsers except IE before version 9
+                    s1PB.addEventListener("mousedown", function() {
+                        OnButtonDown(s1PB, s1, focus_example, focus_text, property)
+                    }, false);
+                } else {
+                    if (s1PB.attachEvent) {   // IE before version 9
+                        s1PB.attachEvent("onmousedown", function() {
+                            OnButtonDown(s1PB, s1focus_example, focus_text, property)
+                        });
+                    }
+                }
+                OnButtonDown = function(s1PB, s1, focus_example, focus_text, property) {
+                    sliderPBOffsetX = event.clientX - s1PB.offsetLeft - s1.offsetLeft;
+                    document.onmousemove = function(e) {
+                        var cursorPosX = e.clientX - s1.offsetLeft - sliderPBOffsetX;
+                        if (cursorPosX >= 0 && cursorPosX <= s1.offsetWidth - s1PB.offsetWidth - 10) {
+                            s1PB.style.left = cursorPosX + "px";
+                            focus_text.value = cursorPosX;
+                            focus_example.style[property] = focus_text.value + "px";
+                        }
+
+                    }
+                }
+                document.onmouseup = function(e) {
+                    document.onmousemove = function(e) {
+                    };
+                }
+//------------touch events
+                s1PB.addEventListener("touchstart", touchStartHandler, false);
+                s1PB.addEventListener("touchend", touchEndHandler, false);
+                s1PB.addEventListener("touchmove", touchMoveHandler, false);
+                function touchStartHandler(event) {
+                    event.preventDefault();
+                    var touchobj = event.changedTouches[0];
+                    sliderPBOffsetX = touchobj.pageX - s1PB.offsetLeft - s1.offsetLeft;
+                }
+                function touchEndHandler(event) {
+                    event.preventDefault();
+                }
+                function touchMoveHandler(event) {
+                    event.preventDefault();
+                    var touchobj = event.changedTouches[0];
+                    var cursorPosX = touchobj.pageX - s1.offsetLeft - sliderPBOffsetX;
+                    if (cursorPosX >= 0 && cursorPosX <= s1.offsetWidth - s1PB.offsetWidth - 10) {
+                        s1PB.style.left = cursorPosX + "px";
+                        focus_text.value = cursorPosX;
+                        focus_example.style[property] = focus_text.value + "px";
+                    }
+                }
+
+            }
+            var sliders = {
+                "s1": {target: "focus_example", targetInput: "focus_text", property: "fontSize"},
+                "s2": {target: "focus_example2", targetInput: "focus_text2", property: "fontSize"},
+                "s3": {target: "focus_example3", targetInput: "focus_text3", property: "padding"},
+                "s4": {target: "focus_example3", targetInput: "focus_text4", property: "fontSize"}
+            }
+            for (var j in sliders) {
+                assignSlider(document.getElementById(j + "PB"), document.getElementById(j));
+            }
+            
+            
+            
+            assignSliderVertical = function(_s1PB, _s1) {
+                var s1PB = _s1PB;
+                var s1 = _s1;
+                var focus_example = document.getElementById(slidersVertical[j].target);
+                var focus_text = document.getElementById(slidersVertical[j].targetInput);
+                var property = slidersVertical[j].property;
+                focus_text.value = "14";
+                s1PB.style.top = "14px";
+                var sliderPBOffsetY = null;
+//------------mouse events
+                if (s1PB.addEventListener) {  // all browsers except IE before version 9
+                    s1PB.addEventListener("mousedown", function() {
+                        OnButtonDownVertical(s1PB, s1, focus_example, focus_text, property)
+                    }, false);
+                } else {
+                    if (s1PB.attachEvent) {   // IE before version 9
+                        s1PB.attachEvent("onmousedown", function() {
+                            OnButtonDownVertical(s1PB, s1focus_example, focus_text, property)
+                        });
+                    }
+                }
+                OnButtonDownVertical = function(s1PB, s1, focus_example, focus_text, property) {
+                    sliderPBOffsetY = event.clientY - s1PB.offsetTop - s1.offsetTop;
+                    document.onmousemove = function(e) {
+                        var cursorPosY = e.clientY - s1.offsetTop - sliderPBOffsetY;
+                        if (cursorPosY >= 0 && cursorPosY <= s1.offsetHeight - s1PB.offsetHeight - 10) {
+                            s1PB.style.top = cursorPosY + "px";
+                            focus_text.value = cursorPosY;
+                            focus_example.style[property] = focus_text.value + "px";
+                        }
+
+                    }
+                }
+                document.onmouseup = function(e) {
+                    document.onmousemove = function(e) {
+                    };
+                }
+//------------touch events
+                s1PB.addEventListener("touchstart", touchStartHandlerVertical, false);
+                s1PB.addEventListener("touchend", touchEndHandlerVertical, false);
+                s1PB.addEventListener("touchmove", touchMoveHandlerVertical, false);
+                function touchStartHandlerVertical(event) {
+                    event.preventDefault();
+                    var touchobj = event.changedTouches[0];
+                    sliderPBOffsetY = touchobj.pageY - s1PB.offsetTop - s1.offsetTop;
+                }
+                function touchEndHandlerVertical(event) {
+                    event.preventDefault();
+                }
+                function touchMoveHandlerVertical(event) {
+                    event.preventDefault();
+                    var touchobj = event.changedTouches[0];
+                    var cursorPosY = touchobj.pageY - s1.offsetTop - sliderPBOffsetY;
+                    if (cursorPosY >= 0 && cursorPosY <= s1.offsetHeight - s1PB.offsetHeight - 10) {
+                        s1PB.style.top = cursorPosY + "px";
+                        focus_text.value = cursorPosY;
+                        focus_example.style[property] = focus_text.value + "px";
+                    }
+                }
+
+            }
+             var slidersVertical = {
+                "s5": {target: "focus_example5", targetInput: "focus_text5", property: "fontSize"},
+                "s6": {target: "focus_example6", targetInput: "focus_text6", property: "fontSize"},
+                "s7": {target: "focus_example7", targetInput: "focus_text7", property: "padding"},
+                "s8": {target: "focus_example7", targetInput: "focus_text8", property: "fontSize"}
+            }
+            for (var j in slidersVertical) {
+                assignSliderVertical(document.getElementById(j + "PB"), document.getElementById(j));
+            }
+}
+}
+</script>
+<script cbtype="allways">
+/*------------------------
+------------------------
+------------------------
+always collection to execute
+------------------------
+------------------------
+--------------------------*/
+if(typeof allwaysFunc!=="undefined"){
+allwaysFunc();
+}
+</script>
+
+
+
+
+
+
+
+
+
+

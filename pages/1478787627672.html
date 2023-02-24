@@ -1,0 +1,128 @@
+<style>
+#extraPanelPB {
+    display: none;
+}
+
+#messageDiv {
+    cursor: pointer;
+    z-index: 4000;
+    width: 100vw;
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    color: #fff;
+    position: absolute;
+    background: rgba(255, 255, 255, .9);
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+    color: #444;
+    font-size: 40px;
+}
+
+.resalt {
+    color: orangered;
+}
+
+.closePB {
+    display: inline-block;
+    color: #fff;
+    background: orangered;
+    padding: 10px;
+    margin: 20px;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.closePB:hover {
+    opacity: .5;
+}
+
+.iframeContainer {
+    display: inline-block;
+    //padding:100px;
+    width: 80vw;
+    height: 95vh;
+    border: 20px solid rgba(68, 68, 68, 0.75);
+    overflow: auto;
+}
+
+.iframeContainer {
+    -webkit-overflow-scrolling: touch;
+}
+
+iframe {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 0px 0px 37px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 37px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 37px 0px rgba(0, 0, 0, 0.75);
+    overflow: hidden !important;
+}
+
+.bg {
+    background-position: center center;
+    background-size: cover;
+    background: url(http://clipbloc.com/images/3044834_opt.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+</style>
+<div id="htmlContent" style="height:100%;position:relative;background:#444">
+    <div class="basicOuter">
+        <div class="basicInner">
+            <div class="iframeContainer">
+                <iframe id="iFrame1" scrolling="yes" frameborder="no" src="http://clipbloc.com/admin" autosize="yes"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="messageDiv">
+    <div class="basicOuter">
+        <div class="basicInner">
+            <ul>
+                <li>
+                    <span class="es">Usuario</span><span class="en">User</span><span class="resalt"> test</span>
+                </li>
+                <li>
+                    <span class="es">Contraseña</span><span class="en">Password</span><span class="resalt"> test</span>
+                </li>
+                <li>
+                    <div class="closePB">
+                        <span class="es">Cerrar</span><span class="en">Close</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+var messageDiv = null;
+beforeTransitionFunc = function(_end) {
+
+    if (typeof changeLanguage !== "undefined") {
+        changeLanguage();
+    }
+    beforeTransitionFunc 
+    = null;
+
+
+    scrollToTop(300, _end);
+}
+afterTransitionFunc = function() {
+    afterTransitionFunc = null;
+    messageDiv = document.getElementById("messageDiv");
+    messageDiv.style.left = "0";
+    messageDiv.onclick = function() {
+        messageDiv.style.left = "-100vw";
+        endTrans = function() {
+            endTrans = null;
+        }
+    }
+
+}
+</script>

@@ -1,0 +1,573 @@
+<!--<div id="htmlContent" class="cover" style="height:auto;background: url(http://clipbloc.com/editor/rmt/themes/img/trama_white.png),url(http://neuronalsite.com/resources/pages/1426287790666/images/skyNight.png),rgba(255,255,255,.9);background-size: 100px 100px,cover;background-repeat: repeat,norepeat;background-position: center,center;padding-top:160px;color:#fff">-->
+<!--<div id="htmlContent" style="padding-top:100px;padding-bottom:300px;height:100%;background: url(http://clipbloc.com/editor/rmt/themes/img/trama1.png),url(http://neuronalsite.com/resources/pages/1426287790666/images/skyNight.png),rgba(255,255,255,.9);background-size:100px 100px,cover;background-repeat:repeat,norepeat;background-position:center,center;padding-top:250px;color:#fff">-->
+<div id="htmlContent" style="padding-top: 160px; height: auto;">
+    <p style="font-size: 40px; letter-spacing: 16px; padding-bottom: 100px;">NEURONAL·SITES</p>
+
+<div style="border-radius: 10px; padding: 10px; bottom: 10px; right: 26px; display: inline-block;">
+<!--<img src="http://clipbloc.com/images/favico2.png" style="opacity: 0.8; position: relative; left: 98px; top: 38px; width: 22px;">-->
+    <p onclick="transformNav()" style="cursor: pointer; font-size: 30px; letter-spacing: 5px;">CLIPBLOC
+</p>
+<p style="letter-spacing: 2px;font-size: 12px;" class="es">Ecosistemas de Información</p>
+<p style="letter-spacing: 2px; font-size: 12px; display: none;" class="en">Information Ecosystem</p>
+<div class="genericPB" onclick="transformNav()" style="font-size: 12px;">transform·The·Navigation</div>
+
+<!--<div style="padding-bottom:100px">
+<div class="genericPB" onclick=" checkLogged(savePage,notLogged,null,writeMessage)"><span class="es">Guardar contenido</span>
+<span class="en" style="display: none;">Save Content</span></div>
+<div id="statusSaved" style="color: rgb(204, 51, 51);">Pensabas hacerlo sin logarte primero ?</div>
+</div>-->
+</div>
+
+
+<script>
+var savePage=function(){
+ 
+}
+var notLogged=function(){
+document.getElementById("statusSaved").innerHTML="Pensabas hacerlo sin logarte primero ?";
+document.getElementById("statusSaved").style.color="#c33";
+}
+
+var writeMessage=function(){
+      document.getElementById("statusSaved").innerHTML="Contenidos guardados";
+      document.getElementById("statusSaved").style.color="green";
+}
+//------------access to login-----------
+if (typeof accessLogin==="undefined"){
+    var accessLogin=function(){
+        internalNavMenu('1452284554772'); 1463877653024
+    }
+    if(document.getElementById("userLogged")){
+        var loginPB=document.getElementById("userLogged");
+        loginPB.onclick=function(){
+            accessLogin();
+        }
+}
+};
+privatOk=function(){
+     coverDiv.style.opacity=0;
+     auxTrans=function(){
+         auxTrans=null;
+         document.body.removeChild(coverDiv);
+     }
+
+}
+var messagePrivateContent="<span class='es'>Contenido Privado. Deberás logarte para poder acceder.</span><span class='en'>Private Content. You must login before accessing</span>";
+var pcm=false;
+loginPrivate=function(){
+   pcm=true;
+   accessLogin();
+}
+//----------------------------------------
+beforeTransitionFunc = function(_end) {
+beforeTransitionFunc=null;
+                resizeFunc(_end);
+                if(navTransformed){
+                    if(document.getElementById("showHideSubMenu")){
+                        showHideSubMenu=document.getElementById("showHideSubMenu");
+                        showHideSubMenu.id="showHideSubMenuBottom";
+                    }
+                }
+                 scrollToTop(300, _end);
+}
+            resizeFunc = function(_end) {
+
+                /*if (navTransformed) {
+                    scrollToTop(300, _end);
+                } else {
+                    scrollToTop(300, _end);
+                }*/
+
+            }
+            afterTransitionFunc = function() {
+                resizeDoc();
+            }
+
+</script>
+<script cbtype="navTransform">
+/*------------------------
+------------------------
+------------------------
+transform the navigation to bloc style
+------------------------
+------------------------
+--------------------------*/
+if (typeof transformNav === "undefined" ) {
+                
+                var newFooterPB = null;
+                var lateralMenuContainer = null;
+                var navTransformed = false;
+                var transformNavFooter = function() {
+                    
+                    if (document.getElementById("menuHorizontal")) {
+                        if (navTransformed) {
+                           
+                            document.body.removeChild(lateralFooterContainer);
+                            document.body.removeChild(newFooterPB);
+                            newFooterPB = null;
+                            lateralFooterContainer = null;
+                            resizeDoc();
+                        } else {
+                            
+                            resizeDoc();
+
+                            if (!newFooterPB) {
+                                newFooterPB = document.createElement('div');
+                                newFooterPB.innerHTML = "FOOTER";
+                                newFooterPB.id = "newFooterPB";
+                                newFooterPB.onclick = function(event) {
+                                    event.cancelBuble=true;
+                                    event.stopPropagation();
+                                    lateralFooterContainer.style.right = "-15px";
+                                    newFooterPB.style.right = -window.innerWidth + "px";
+                                    newMenuPB.style.right = -window.innerWidth + "px";
+                                    //document.body.appendChild(lateralMenu);
+                                    document.body.onclick=function(event){
+                                             lateralFooterContainer.style.right =  "-100%";
+                                             lateralMenuContainer.style.right =  "-100%";
+                                             document.body.onclick="";
+                                            newFooterPB.style.right = "10px";
+                                            newMenuPB.style.right = "0";
+                                     }
+                                }
+                                var tabsList = document.getElementsByClassName('innerFoot');
+                                lateralFooterContainer = document.createElement('div');
+                                lateralFooterContainer.id = "lateralFooterContainer";
+                                lateralFooterContainer.onclick = function(event) {
+                                    lateralFooterContainer.style.right = -window.innerWidth + "px";
+                                    newFooterPB.style.right = "10px";
+                                    newMenuPB.style.right = "0";
+                                    
+                                }
+                                document.body.appendChild(lateralFooterContainer);
+                                var lateralMenu = document.createElement('div');
+                                var lateralLength = tabsList.length;
+                                if (lateralLength <= 0) {
+                                    tabsList = document.getElementsByClassName('innerMenuCollapsed');
+                                    lateralLength = tabsList.length;
+                                }
+                                lateralMenu.id = 'lateralFooter';
+                                lateralFooterContainer.appendChild(lateralMenu);
+                                lateralFooterContainer.style.right = -window.innerWidth + "px";
+                                for (var k = 0; k <= lateralLength - 1; k++) {
+                                    if(tabsList[k].style.display != "none"){
+                                        var newTab = document.createElement("div");
+                                    newTab.id = "new_" + tabsList[k].id.replace("foot_", "footer_");
+                                    if(transformLast==tabsList[k].id.split("_")[1]){
+                                            newTab.className="newInnerFooterSelected";
+                                        }else{
+                                            newTab.className = "newInnerFooter";
+                                        }
+                                    newTab.innerHTML = tabsList[k].innerHTML;
+                                    newTab.onclick = function(event) {
+                                        if(document.getElementById("showHideSubMenuBottom")){
+                                            showHideSubMenu=document.getElementById("showHideSubMenuBottom");
+                                            showHideSubMenu.id="showHideSubMenu";
+                                        }
+                                        document.body.onclick=function(event){
+                                             lateralFooterContainer.style.right =  "-100%";
+                                             lateralMenuContainer.style.right =  "-100%";
+                                             document.body.onclick="";
+                                            newFooterPB.style.right = "10px";
+                                            newMenuPB.style.right = "0";
+                                     }
+                                        var code = this.id.replace("new_footer_", "");
+                                        if(document.getElementById("new_footer_"+transformLast)){
+                                            document.getElementById("new_footer_"+transformLast).className = "newInnerFooter";
+                                        }else{
+                                            document.getElementById("new_menu_"+transformLast).className = "newInnerMenu";
+                                        }
+                                        this.className="newInnerFooterSelected";
+                                        transformLast=code;
+                                        internalNavFoot(code);
+                                        lateralFooterContainer.style.right = -window.innerWidth + "px";
+                                        newFooterPB.style.right = "10px";
+                                        newMenuPB.style.right = "0";
+                                    }
+                                    
+                                    };
+                                    lateralMenu.appendChild(newTab);
+                                }
+                                ;
+                                document.body.appendChild(newFooterPB);
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            if (typeof transformNav === "undefined") {
+                function scrollToTop(scrollDuration, _end) {
+                        var scrollHeight = window.scrollY,
+                                scrollStep = Math.PI / (scrollDuration / 15),
+                                cosParameter = scrollHeight / 2;
+                        var scrollCount = 0,
+                                scrollMargin,
+                                scrollInterval = setInterval(function() {
+                            if (window.scrollY != 0) {
+                                scrollCount = scrollCount + 1;
+                                scrollMargin = cosParameter - cosParameter * Math.cos(scrollCount * scrollStep);
+                                window.scrollTo(0, (scrollHeight - scrollMargin));
+                            } else {
+                                clearInterval(scrollInterval);
+                                if (_end) {
+                                    _end();
+                                }
+                            }
+                        }, 15);
+                    }
+                var newMenuPB = null;
+                var lateralMenuContainer = null;
+                var navTransformed = false;
+                var transformLast=null;
+                var showHideSubMenu=null;
+                var new_userLogged=null;
+                
+                 var new_privatePB=null;
+                var new_lanPB
+                var transformNav = function() {
+                    if(document.getElementById("showHideSubMenu")){
+                        showHideSubMenu=document.getElementById("showHideSubMenu");
+                        showHideSubMenu.id="showHideSubMenuBottom";
+                    }
+                    transformLast=antSection.split("_")[1];
+                    transformNavFooter();
+                    if (document.getElementById("menuHorizontal")) {
+                        if (navTransformed) {
+                            navTransformed = false;
+                            document.body.removeChild(lateralMenuContainer);
+                            document.body.removeChild(newMenuPB);
+                            newMenuPB = null;
+                            lateralMenuContainer = null;
+                             document.getElementById("innerUser").appendChild(new_userLogged);
+                             new_userLogged.className="";
+                             document.getElementById("innerLan").appendChild(new_lanPB);
+                             new_lanPB.className="";
+                             document.getElementById("innerPrivate").appendChild(new_privatePB);
+                             new_privatePB.className="";
+                            document.getElementById("footerContainer").style.display="block";
+                            document.getElementById("header").style.display="initial";
+                            document.getElementById("menuHorizontal").style.display = "initial";
+                            document.getElementById("fixPB").style.display = "initial";
+                            if(document.getElementById("showHideSubMenu")){
+                                showHideSubMenu.className="";
+                            }
+                            resizeDoc();
+                        } else {
+                            navTransformed = true;
+                            document.getElementById("footerContainer").style.display="none";
+                            document.getElementById("header").style.display="none";
+                            document.getElementById("menuHorizontal").style.display = "none";
+                            document.getElementById("fixPB").style.display = "none";
+                            resizeDoc();
+
+                            if (!newMenuPB) {
+                                newMenuPB = document.createElement('div');
+                                newMenuPB.innerHTML = "<img src='./images/collapse-menu.png' ></classes>";
+                                newMenuPB.id = "newMenuPB";
+                                newMenuPB.onclick = function(event) {
+                                    event.cancelBuble=true;
+                                    event.stopPropagation();
+                                    lateralMenuContainer.style.right = "-15px";
+                                    lateralMenuContainer.style.marginLeft = "-15px";
+                                    newFooterPB.style.right = -window.innerWidth + "px";
+                                    newMenuPB.style.right = -window.innerWidth + "px";
+                                    document.body.onclick=function(event){
+                                             lateralFooterContainer.style.right =  "-100%";
+                                             lateralMenuContainer.style.right =  "-100%";
+                                             document.body.onclick="";
+                                            newFooterPB.style.right = "10px";
+                                            newMenuPB.style.right = "0";
+                                     }
+                                }
+                                var tabsList = document.getElementsByClassName('innerMenu');
+                                lateralMenuContainer = document.createElement('div');
+                                lateralMenuContainer.id = "lateralMenuContainer";
+                                lateralMenuContainer.onclick = function(event) {
+                                    lateralFooterContainer.style.right =  "-100%";
+                                    lateralMenuContainer.style.right =  "-100%";
+                                     newFooterPB.style.right = "10px";
+                                    newMenuPB.style.right = "0";
+                                }
+                                document.body.appendChild(lateralMenuContainer);
+                                var lateralMenu = document.createElement('div');
+                                var lateralLength = tabsList.length;
+                                if (lateralLength <= 0) {
+                                    tabsList = document.getElementsByClassName('innerMenuCollapsed');
+                                    lateralLength = tabsList.length;
+                                }
+                                lateralMenu.id = 'lateralMenu';
+                                lateralMenuContainer.appendChild(lateralMenu);
+                                lateralMenuContainer.style.right = -window.innerWidth + "px";
+                                for (var k = 0; k <= lateralLength - 1; k++) {
+                                    if(tabsList[k].style.display != "none"){
+                                        var newTab = document.createElement("div");
+                                        newTab.id = "new_" + tabsList[k].id;
+                                        if(transformLast==tabsList[k].id.split("_")[1]){
+                                            newTab.className="newInnerMenuSelected";
+                                        }else{
+                                            newTab.className = "newInnerMenu";
+                                        }
+                                        newTab.innerHTML = tabsList[k].innerHTML;
+                                        
+                                        newTab.onclick = function(event) {
+                                            if(document.getElementById("showHideSubMenuBottom")){
+                                                showHideSubMenu=document.getElementById("showHideSubMenuBottom");
+                                                showHideSubMenu.id="showHideSubMenu";
+                                            }
+                                            var code = this.id.replace("new_menu_", "");
+                                            if(document.getElementById("new_menu_"+transformLast)){
+                                                if("new_menu_"+transformLast!== "new_menu_1461270094281" ){
+                                                    document.getElementById("new_menu_"+transformLast).className = "newInnerMenu";
+                                                }else{
+                                                    document.getElementById("new_menu_"+transformLast).className = "specialMenu";
+                                                }
+                                                
+                                            }else{
+                                                document.getElementById("new_footer_"+transformLast).className = "newInnerFooter";
+                                            }
+                                            if(this.id !== "new_menu_1461270094281" ){
+                                                this.className="newInnerMenuSelected";
+                                            }else{
+                                              this.className="specialMenuSelected";  
+                                            }
+                                            transformLast=code;
+                                            transformLast=code;
+                                            internalNavMenu(code);
+                                            lateralMenuContainer.style.right = -window.innerWidth + "px";
+                                             newFooterPB.style.right = "10px";
+                                            newMenuPB.style.right = "0";
+                                        };
+                                       
+                                    }
+                                    
+                                    lateralMenu.appendChild(newTab);
+                                    
+                                }
+                                 
+                                 new_userLogged=document.getElementById("userLogged");
+                                 new_userLogged.className="new_userLogged";
+                                 lateralMenu.appendChild(new_userLogged);
+                                 new_lanPB=document.getElementById("lanPB");
+                                 new_lanPB.className="new_lanPB";
+                                 lateralMenu.appendChild(new_lanPB);
+                                 new_privatePB=document.getElementById("privatePB");
+                                 new_privatePB.className="new_privatePB";
+                                 lateralMenu.appendChild(new_privatePB);
+                                ;
+                                document.body.appendChild(newMenuPB);
+                            }
+
+                        }
+                    }
+                }
+                transformNav();
+            }
+</script>
+<script cbtype="scrollToTop">
+/*------------------------
+------------------------
+------------------------
+before transition to other clip return the focus clip scroll to 0
+------------------------
+------------------------
+--------------------------*/
+ if (typeof scrollToTop === "undefined") {
+                function scrollToTop(scrollDuration, _end) {
+                        var scrollHeight = window.scrollY,
+                                scrollStep = Math.PI / (scrollDuration / 15),
+                                cosParameter = scrollHeight / 2;
+                        var scrollCount = 0,
+                                scrollMargin,
+                                scrollInterval = setInterval(function() {
+                            if (window.scrollY != 0) {
+                                scrollCount = scrollCount + 1;
+                                scrollMargin = cosParameter - cosParameter * Math.cos(scrollCount * scrollStep);
+                                window.scrollTo(0, (scrollHeight - scrollMargin));
+                            } else {
+                                clearInterval(scrollInterval);
+                                if (_end) {
+                                    _end();
+                                }
+                            }
+                        }, 15);
+                    }
+
+}
+</script>
+<script cbtype="lanSelection">
+/*------------------------
+------------------------
+------------------------
+language change control
+------------------------
+------------------------
+--------------------------*/
+if(typeof language==="undefined"){
+    var language=lan;
+}
+if(typeof languageDiv==="undefined"){
+    var languages = ["es","en"];
+    var languagesRots = {"es":{"es":"Castellano","en":"Inglés"},"en":{"es":"Spanish","en":"English"}};
+    var showLanDiv=false;
+    var languageDiv=document.createElement("div");
+    languageDiv.id="languageDiv";
+    var languageDivInner=document.createElement("div");
+    languageDivInner.id="languageDivInner";
+    languageDiv.onclick=function(){
+        languageDiv.style.left="-350px";
+        showLanDiv=false;
+    }
+    var oriDispLan=null;
+    for( var j in languagesRots){
+        for( var k in languagesRots[j]){
+            var newLanPB=document.createElement("div");
+            newLanPB.className="newLanPB "+j;
+            newLanPB.setAttribute("selLan",k);
+            newLanPB.innerHTML=languagesRots[j][k];
+            newLanPB.onclick=function(event){
+                language=event.target.getAttribute("selLan");
+                changeLanguage();
+            }
+            oriDispLan=newLanPB.style.display;
+            languageDivInner.appendChild(newLanPB);
+        }
+    }
+    languageDiv.appendChild(languageDivInner);
+    document.body.appendChild(languageDiv);
+    var showLanguageDiv=function(event){
+        if(showLanDiv){
+            languageDiv.style.left="-350px";
+        }else{
+            languageDiv.style.left="0"
+        }
+        showLanDiv=!showLanDiv;
+    }
+    var lastFlag=null;
+    var changeLanguage=function(_language,_flag){
+        if(_flag){
+            if(lastFlag){
+                lastFlag.style.opacity="1";
+            }
+            lastFlag=_flag;
+            lastFlag.style.opacity=".5";
+        }
+        if(_language){
+            language=_language;
+        }
+        for( var j in languages){
+            if(languages[j]!==language){
+                var rotsLan=document.getElementsByClassName(languages[j]);
+                for( k=0;k<=rotsLan.length-1;k++){
+                    rotsLan[k].style.display="none";
+                }
+            }else{
+                rotsLan=document.getElementsByClassName(languages[j]);
+                for( k=0;k<=rotsLan.length-1;k++){
+                    rotsLan[k].style.display=oriDispLan;
+                }
+            }
+        }
+        resizeFunc();
+    }
+if(typeof lanPB!=="undefined"){
+lanPB.innerHTML="<span class='es'>Idioma</span><span class='en'>Language</span>";
+}
+if(typeof privatePB!=="undefined"){
+privatePB.innerHTML="<span class='es'>Admin</span><span class='en'>Admin</span>";
+}
+selLan=function(){
+showLanguageDiv();
+}
+}
+</script>
+<script cbtype="allways">
+/*------------------------
+------------------------
+------------------------
+always collection to execute
+------------------------
+------------------------
+--------------------------*/
+if(typeof allwaysFunc==="undefined"){
+allwaysFunc=function(){
+     changeLanguage();
+}
+}
+if(typeof allwaysFunc!=="undefined"){
+allwaysFunc();
+}
+</script>
+<script cbtype="edit div show">
+/*------------------------
+------------------------
+------------------------
+change edit div show
+------------------------
+------------------------
+--------------------------*/
+goEdit=function(){
+      internalNavMenu('1463877653024');
+}
+var errorEditorLogin=function(){
+     message="<span class='es'>Datos de acceso incorrectos</span><span class='en'>Access Data Not Ok</span>";
+    document.getElementById("message").innerHTML=message;
+    changeLanguage();
+}
+var editorLoginOk=function(){
+message="<span class='es'>Acceso correcto</span><span class='en'>Access Data Ok</span>";
+    document.getElementById("message").innerHTML=message;
+    changeLanguage();
+}
+editorLogin=function(){
+    var obj={};
+        obj.user=document.getElementById("userEditor").value;
+        obj.pwd=document.getElementById("passwordEditor").value;
+        obj.from=true;
+        $.ajax({
+            url: CONFIG["adminFolder"]+'/controller/enter.php',
+            type: 'POST',
+            data: obj,
+            //mientras enviamos el archivo
+            beforeSend: function () {
+            },
+            //una vez finalizado correctamente
+            success: function (data) {
+                    if(data=="OK"){
+                        editorLogged={};
+                        editorLogged.user=obj.user;
+                        editorLogged.pwd=obj.pwd;
+                         window.open("admin/indexAdmin.php","_blank");
+                         if(editorLoginOk){
+                            editorLoginOk();
+                        }
+                    }else{
+                        if(errorEditorLogin){
+                            errorEditorLogin();
+                        }
+                        editorLogged=null;
+                        
+                    }
+                    
+            },
+            //si ha ocurrido un error
+            error: function () {
+            }
+        });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

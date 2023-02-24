@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<configuration>
+<config>
+<Title >Compositions I</Title>
+<Description >Advanced Web Design Studio</Description>
+<Extend >No Extend Comments</Extend>
+<booksAllow >1</booksAllow>
+<temp >10000</temp>
+<Public >undefined</Public>
+</config>
+<fonts>
+<google></google>
+<typekit></typekit>
+<ascender></ascender>
+<monotype>Rockwell</monotype>
+<fontdeck></fontdeck>
+</fonts>
+<book>
+<item>
+<id type="" x="" y="">portada</id>
+<associate></associate>
+<data/>
+</item>
+</book>
+<list>
+<item>
+<id type="" x="" y="">Bloc1</id>
+<type></type>
+<x></x>
+<y></y>
+<associate>rmt/themes/Bloc1</associate>
+<data></data>
+<Title></Title>
+<Description></Description>
+<Extend></Extend>
+<booksAllow></booksAllow>
+<Public></Public>
+<image></image>
+</item>
+</list>
+</configuration>

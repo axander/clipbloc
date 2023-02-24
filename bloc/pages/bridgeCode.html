@@ -1,0 +1,56 @@
+
+<style>
+    .loginInput{
+        margin-top: 10px;
+        margin-bottom: 40px;
+        width: 200px;
+        font-size: 16px !important;
+        border: 2px solid rgb(204, 204, 204) !important;
+        padding: 17px !important;
+        opacity: initial;
+        display: inline-block;
+        color: #333;
+        border-radius:0;
+    }
+    #loginOutPB{
+        display:none;
+
+    }
+</style>
+<ul>
+
+    <li id="logoBridgeDiv"></li>
+    <li id="rotBridgeDiv"></li>
+    <li><input id="codeBridge" type="text" placeholder="code" class="loginInput"></li>
+    <li><div id="bridgePB" onclick="openBridge()" class="genericPB" style="width:200px;margin-bottom: 40px"></div></li>
+    <li><div id="bridgePBClose" onclick="closeBridge()" class="genericPB" style="width:200px;margin-bottom: 40px"></div></li>
+    <li><div id="messageEditor"></div></li>
+</ul>
+<script>
+
+    var openBridge=function(){
+        bridgeOpen(document.getElementById("codeBridge").value);
+    }
+    var closeBridge=function(){
+        if(bridgeDiv){
+            bridgeDiv.click();
+        }
+    }
+    var bridgeOkFunc=function(){
+        if(bridgeDiv){
+            bridgeDiv.click();
+        }
+        
+    }
+    var bridgeNOkFunc=function(){
+        if(bridgeDiv){
+            bridgeDiv.click();
+        }
+        document.getElementById("date").innerHTML=bridgeRots["defaultNotPermitted"][lanTemp];
+    }
+    var bridgeWhileFunc=function(){
+        
+    }
+
+    
+</script>

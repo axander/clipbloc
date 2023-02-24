@@ -1,0 +1,968 @@
+<style>
+#landscaper-container{
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100vw;
+	height: 100vh;
+}
+#landscaper{
+	overflow:hidden;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+}
+#landscape-container{
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#ddd;
+	-ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+#landscape-container::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
+}
+#landscape{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ccc;
+}
+#landscape:hover{
+	border:1px dotted #444;
+}
+.item{
+	position:absolute;
+	cursor:pointer;
+	top:10px;
+	left:10px;
+	width:auto;
+	height:auto;
+}
+.item:hover{
+	opacity:.5;
+}
+.text{
+	position:absolute;
+	top:100px;
+	left:200px;
+	font-size:20px;
+	color:#444;
+}
+.ball{
+	position:absolute;
+	top:300px;
+	left:200px;
+	width:50px;
+	height:50px;
+	border-radius:50px;
+	background:#ec0000;
+	border:4px solid #444;
+}
+.bigBall{
+	position:absolute;
+	top:300px;
+	left:300px;
+	width:200px;
+	height:200px;
+	border-radius:200px;
+	background:green;
+	border:4px solid #444;
+}
+.medBall{
+	position:absolute;
+	top:250px;
+	left:250px;
+	width:250px;
+	height:250px;
+	border-radius:250px;
+	background:orangered;
+	border:4px solid #444;
+}
+.panel_PB{
+	position:absolute;
+	top:150px;
+	padding:20px;
+	background:#444;
+	color:#fff;
+}
+.lastFocus{
+	opacity:.5;
+}
+.no-pointers{
+	pointer-events:none;
+}
+.edit_PB{
+	cursor:pointer;
+	position: absolute;
+    top: 0;
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.edit_PB_active{
+	background:#ec0000;
+}
+.edit_PB:hover{
+	opacity:.5;
+}
+
+/*code editor*/
+#htmlModCodesDiv {
+    z-index: 40000;
+    background: #fff;
+    padding: 30px;
+    z-index: 10002;
+    width: auto;
+    height: 100%;
+    right: -100%;
+    top: 0;
+    position: fixed;
+    list-style: none;
+    overflow-x: hidden;
+    background: #eee;
+    margin-right: -15px;
+    border-left: 21px solid rgba(255, 69, 0, 0.1);
+}
+
+.genericPB_vertical {
+    cursor: pointer;
+    padding: 10px;
+    background: orangered;
+    color: #fff;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+    text-transform: uppercase;
+}
+
+.genericPB_vertical:hover {
+    opacity: .5;
+}
+
+.genericRot_vertical {
+    color: orangered;
+    padding: 5px;
+    text-align: left;
+}
+
+
+
+
+
+</style>
+
+<div id="htmlContent" style="height:100%;position:relative">
+	<div class="basicOuter">
+		<div class="basicInner">
+			<!--<div id="landscaper-container">
+				<div id="landscaper">-->
+					<div id="landscape-container">
+						<!--<div id='landscape' >
+						</div>-->
+						
+						
+						
+						
+						<div item="" class="panel_PB item" except="true" style="left: 136px; top: 342px;">
+							<div except="true" onclick="duplicateItem()">Duplicate</div>
+							<div except="true" onclick="deleteItem()">Delete</div>
+							<div except="true" onclick="saveCol()">Save</div> 
+							<div except="true" id="statusSaved"></div>
+							
+						</div>
+					<div item="" id="medBall-0" itemtype="medBall" level="0" comp="a,b" class="medBall item" style="left: 120px; top: 20px;">
+						<div item="" id="bigBall-0" itemtype="bigBall" level="0" comp="a,b" class="bigBall item" group="true" container="medBall-0" containerx="120" containery="20" style="left: 21px; top: 40px;">
+						<div item="" id="ball-1500148681302" itemtype="ball" level="1" comp="a" class="ball item" style="left: 11px; top: 143px;" group="true" container="medBall-0.bigBall-0" containerx="120/21" containery="20/40">
+						</div><div item="" id="ball-1500148681054" itemtype="ball" level="1" comp="a" class="ball item" style="left: 88px; top: 173px;" group="true" container="medBall-0.bigBall-0" containerx="120/21" containery="20/40">
+						<div item="" id="ball-1500148680774" itemtype="ball" level="1" comp="a" class="ball item" style="left: 17px; top: 29px;" group="true" container="bigBall-0.ball-1500148681054" containerx="120/21/88" containery="20/40/173">
+						</div></div><div item="" id="text-0" itemtype="text" level="2" comp="b" class="text item" group="true" container="medBall-0.bigBall-0" containerx="120/21" containery="20/40" style="left: 148px; top: 23px;">
+							Hey
+						</div></div><div item="" id="ball-1500148680437" itemtype="ball" level="1" comp="a" class="ball item" style="left: -22px; top: 113px;" group="true" container="medBall-0" containerx="120" containery="20">
+						</div><div item="" id="text-1500148714182" itemtype="text" level="2" comp="b" class="text item" style="left: 79px; top: 12px; z-index: 40000;" group="true" container="medBall-0" containerx="120" containery="20">
+							Hey
+						</div><div item="" id="ball-1500148680126" itemtype="ball" level="1" comp="a" class="ball item" style="left: 194px; top: 5px; z-index: 40000;" group="true" container="medBall-0" containerx="120" containery="20">
+						<div item="" id="text-1500148713678" itemtype="text" level="2" comp="b" class="text item" style="left: 10px; top: -5px; z-index: 40000;" group="true" container="medBall-0.ball-1500148680126" containerx="120/314" containery="20/25">
+							Hey
+						</div></div></div><div item="" id="medBall-1500148677024" itemtype="medBall" level="0" comp="a,b" class="medBall item" style="left: 375px; top: 101px;">
+						<div item="" id="ball-1500148680599" itemtype="ball" level="1" comp="a" class="ball item" style="left: 174px; top: 203px; z-index: 40000;" group="true" container="medBall-1500148677024" containerx="375" containery="101">
+						</div><div item="" id="text-1500148713982" itemtype="text" level="2" comp="b" class="text item" style="left: 98px; top: 48px; z-index: 40000;" group="true" container="medBall-1500148677024" containerx="375" containery="101">
+							Hey
+						</div><div item="" id="ball-1500148680286" itemtype="ball" level="1" comp="a" class="ball item" style="left: 223px; top: 116px;" group="true" container="medBall-1500148677024" containerx="375" containery="101">
+						<div item="" id="text-1500148713478" itemtype="text" level="2" comp="b" class="text item" style="left: 8px; top: 12px; z-index: 40000;" group="true" container="medBall-1500148677024.ball-1500148680286" containerx="375/223" containery="101/116">
+							Hey
+						</div></div><div item="" id="ball-1500148679942" itemtype="ball" level="1" comp="a" class="ball item" style="left: 12px; top: 20px;" group="true" container="medBall-1500148677024" containerx="375" containery="101">
+						</div><div item="" id="ball-1500148679790" itemtype="ball" level="1" comp="a" class="ball item" style="left: 195px; top: 21px;" group="true" container="medBall-1500148677024" containerx="375" containery="101">
+						</div><div item="" id="ball-1500148679638" itemtype="ball" level="1" comp="a" class="ball item" style="left: 45px; top: 111px;" group="true" container="medBall-1500148677024" containerx="375" containery="101">
+						</div><div item="" id="ball-0" itemtype="ball" level="1" comp="a" class="ball item" style="left: 123px; top: 105px;" group="true" container="medBall-1500148677024" containerx="375" containery="101">
+						<div item="" id="ball-1500148679454" itemtype="ball" level="1" comp="a" class="ball item" style="left: 8px; top: 23px;" group="true" container="medBall-1500148677024.ball-0" containerx="375/123" containery="101/105">
+						</div></div><div item="" id="bigBall-1500148698294" itemtype="bigBall" level="0" comp="a,b" class="bigBall item" style="left: 1px; top: 210px; z-index: 40000;" group="true" container="medBall-1500148677024" containerx="375" containery="101">
+						<div item="" id="ball-15001486982950" itemtype="ball" level="1" comp="a" class="ball item" style="left: 11px; top: 143px;" group="true" container="medBall-1500148677024.bigBall-1500148698294" containerx="375/1" containery="101/210">
+						</div><div item="" id="ball-15001486982961" itemtype="ball" level="1" comp="a" class="ball item" style="left: 88px; top: 173px;" group="true" container="medBall-1500148677024.bigBall-1500148698294" containerx="375/1" containery="101/210">
+						<div item="" id="ball-15001486982960" itemtype="ball" level="1" comp="a" class="ball item" style="left: 17px; top: 29px;" group="true" container="bigBall-1500148698294.ball-15001486982961" containerx="375/1/88" containery="101/210/173">
+						</div></div><div item="" id="text-1500148713086" itemtype="text" level="2" comp="b" class="text item" style="left: 71px; top: 80px; z-index: 40000;" group="true" container="medBall-1500148677024.bigBall-1500148698294" containerx="375/1" containery="101/210">
+							Hey
+						</div></div></div></div>
+				<!--</div>
+			</div>-->
+			<div class="edit_PB" onclick="modPartialCodeStatus(this)">Editar</div>
+		</div>
+	</div>
+	
+</div>
+<script cbtype="submenuhide">
+/*------------------------
+------------------------
+------------------------
+auto hide sumbenu if clip contains it
+------------------------
+------------------------
+--------------------------*/
+beforeTransitionFunc=function(_end){
+if(typeof changeLanguage!=="undefined"){
+changeLanguage();
+}
+beforeTransitionFunc=null;
+hideSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.left = -submenuContainer.offsetWidth + "px";
+        var mainContent = document.getElementById("date");
+        mainContent.style.left = "0";
+        mainContent.style.width = "100%";
+};
+showSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.opacity = 1;
+        submenuContainer.style.left = "0";
+};
+if (typeof CONFIG !== "undefined" && typeof CONFIG["closeSubMenuOnSelect"] !== "undefined" && CONFIG["closeSubMenuOnSelect"] === "true" && !document.getElementById("submenuContainer").getAttribute("solid")) {
+   hideSubmenuApp();
+    var submenuPBTemp=subMenuPB.cloneNode(true);
+    submenuPBTemp.onclick = function() {
+           submenuApphideShow();
+    };
+    document.getElementById("submenuContainer").appendChild(submenuPBTemp);
+    //document.getElementById("submenuContainer").appendChild(subMenuPB);
+    //document.body.appendChild(document.getElementById("submenuContainer"));
+    submenuAppHide = true;
+    document.getElementById("submenuContainer").setAttribute("solid","1");
+}
+setSubMenuScroll();
+scrollToTop(300, _end);
+}
+</script>
+<script cbtype="landscape">
+/*------------------------
+------------------------
+------------------------
+funcionallities for dev
+------------------------
+------------------------
+--------------------------*/
+var landscapeContainer=document.getElementById('landscape-container');
+var duplicateItem = function(){
+	if(lastDuplicateItem){
+		var newItem = lastDuplicateItem.cloneNode(true);
+		newItem.style.left = lastDuplicateItem.offsetLeft+20+'px';
+		newItem.style.top = lastDuplicateItem.offsetTop +20+'px';
+		newItem.className = newItem.className.replace(' lastFocus','');
+		newItem.addEventListener("touchstart", touchStartHandler, false);
+		if (newItem.addEventListener) {  // all browsers except IE before version 9
+            newItem.addEventListener("mousedown", function(event) {
+            	OnButtonDownItem(event);
+            }, false);
+        } else {
+            if (newItem.attachEvent) {   // IE before version 9
+                itemsColl[j].attachEvent("onmousedown", function(event) {
+                    OnButtonDownItem(event);
+                });
+            }
+        }
+        landscapeContainer.appendChild(newItem);
+        itemsColl=document.querySelectorAll('[item]');
+        //attributes
+        var newId = newItem.getAttribute('id').split('-')[0]+'-'+new Date().getTime();
+
+        replaceAll(newItem.querySelectorAll('[item]'),newItem.id, newId);
+        subElementsDuplicate(newItem.querySelectorAll('[item][container='+newId+']'), newId, newItem.offsetLeft, newItem.offsetTop, newItem.id);
+        newItem.setAttribute('id', newId);
+        
+	}
+}
+var subElementsDuplicate = function(_subElements, _container, _x, _y, _iniContainer){
+
+	for(var j in _subElements){
+		if(typeof _subElements[j] === 'object'){
+			//prev container
+			var newId = _subElements[j].id.split('-')[0] + '-' + ( new Date().getTime() + j );
+			replaceAll(_subElements[j].querySelectorAll('[item]'),_subElements[j].id, newId);
+
+			_subElements[j].setAttribute('container', _container);
+			_subElements[j].setAttribute('group', true);
+			_subElements[j].setAttribute('containerx', _x);
+			_subElements[j].setAttribute('containery', _y);
+
+			subElementsDuplicate(_subElements[j].querySelectorAll('[item][container="'+_container+'.'+newId+'"]'), _container+'.'+newId, _x+'/'+_subElements[j].offsetLeft,  _y+'/'+_subElements[j].offsetTop);
+			_subElements[j].id = newId;
+		} 
+	}
+}
+var replaceAll = function(_subElements, _oldContainer, _newContainer){
+	for( var j in _subElements){
+		typeof _subElements[j] === 'object'
+		? _subElements[j].setAttribute('container', _subElements[j].getAttribute('container').replace(_oldContainer,_newContainer) )
+		:null;
+	}
+}
+var subElements = function(_subElements, _container, _x, _y){
+	for(var j in _subElements){
+		if(typeof _subElements[j] === 'object'){
+			//var newId = _subElements[j].id.split('-')[0] + '-' + ( new Date().getTime() + j );
+			_subElements[j].setAttribute('container', _container);
+			_subElements[j].setAttribute('group', true);
+			_subElements[j].setAttribute('containerx', _x);
+			_subElements[j].setAttribute('containery', _y);
+
+
+
+			subElements(_subElements[j].querySelectorAll('[item][container="'+_subElements[j].id+'"]'), _container+'.'+_subElements[j].id, _x+'/'+_subElements[j].offsetLeft,  _y+'/'+_subElements[j].offsetTop);
+			//_subElements[j].id = newId;
+		} 
+	}
+}
+var downLevel = function(_subElements, _iniContainer){
+	for( var j in _subElements){
+		typeof _subElements[j] === 'object'
+		? _subElements[j].setAttribute('container', _subElements[j].getAttribute('container').replace(_iniContainer+'.','') )
+		:null;
+	}
+}
+var deleteItem = function(){
+	if(lastFocusItem && !lastFocusItem.getAttribute('except')){
+		lastFocusItem.parentNode.removeChild(lastFocusItem);
+	}
+}
+</script>
+<script cbtype="assignItemsMove">
+/*------------------------
+------------------------
+------------------------
+assign move to items
+------------------------
+------------------------
+--------------------------*/
+	var lastFocusItem = null;
+	var itemException = null;
+	var lastDuplicateItem = null;
+	var itemsColl = null;
+ 	var asignItemsMove=function(){
+  		itemsColl=document.querySelectorAll('[item]')
+      	for( j=0;j<=itemsColl.length-1;j++){      		
+      		itemsColl[j].left = itemsColl[j].offsetLeft;
+        	itemsColl[j].top =  itemsColl[j].offsetTop;
+	        if (itemsColl[j].addEventListener) {  // all browsers except IE before version 9
+	            itemsColl[j].addEventListener("mousedown", function(event) {
+                	OnButtonDownItem(event);
+	            }, false);
+	        } else {
+	            if (itemsColl[j].attachEvent) {   // IE before version 9
+	                itemsColl[j].attachEvent("onmousedown", function(event) {
+	                    OnButtonDownItem(event);
+	                });
+	            }
+	        }
+      	}
+        //--touch events
+        for( j=0;j<=itemsColl.length-1;j++){
+            itemsColl[j].addEventListener("touchstart", touchStartHandler, false);
+        }
+    }
+    var onMouseUp = function(e) {
+        elementHover =overItem;
+		if(lastFocusItem && elementHover){
+	        	elementHover.appendChild(lastFocusItem);
+	        	lastFocusItem.setAttribute('group',true);
+	        	lastFocusItem.setAttribute('container',elementHover.id);
+	        	lastFocusItem.setAttribute('containerx',elementHover.offsetLeft);
+	        	lastFocusItem.setAttribute('containery',elementHover.offsetTop);
+	        	item.container=elementHover;
+	        	//var newId = elementHover.getAttribute('id').split('-')[0]+'-'+new Date().getTime();
+			    subElements(elementHover.querySelectorAll('[item][container='+elementHover.id+']'), elementHover.id, elementHover.offsetLeft, elementHover.offsetTop);
+			    //elementHover.setAttribute('id', newId);
+				lastFocusItem.style.left = lastFocusItem.offsetLeft - elementHover.offsetLeft + 'px';
+				lastFocusItem.style.top = lastFocusItem.offsetTop - elementHover.offsetTop + 'px';
+		}else{
+			lastFocusItem.group = false;
+			landscapeContainer.appendChild(item);
+			lastFocusItem.removeAttribute('group');
+			lastFocusItem.removeAttribute('container');
+			lastFocusItem.removeAttribute('containerx');
+			lastFocusItem.removeAttribute('containery');
+
+		}
+		 lastFocusItem.addEventListener("mousedown", function(event) {
+                	OnButtonDownItem(event);
+	            }, false);
+		overItem = null;
+		elementHover = null;
+        document.removeEventListener("mousemove", onMouseMove, false);
+        document.removeEventListener("mouseup", onMouseUp, false);
+
+    }
+    var overItem = null;
+    var onMouseMove = function(e) {
+        cursorPosX = e.clientX -sliderPBOffsetX ;
+        cursorPosY = e.clientY -sliderPBOffsetY;
+        lastFocusItem.style.left = cursorPosX + "px"; 
+        lastFocusItem.style.top = cursorPosY + "px";   
+        lastFocusItem.left = lastFocusItem.offsetLeft; 
+        lastFocusItem.top = lastFocusItem.offsetTop; 
+        moveSubElements(lastFocusItem.querySelectorAll('[item][container='+lastFocusItem.id+']'), lastFocusItem.id, lastFocusItem.offsetLeft, lastFocusItem.offsetTop);
+        for( var j in itemsColl){
+        	if( itemsColl[j] !== lastFocusItem && overItem !== itemsColl[j] && e.clientX >= itemsColl[j].offsetLeft && e.clientX <= itemsColl[j].offsetLeft+itemsColl[j].offsetWidth && e.clientY >= itemsColl[j].offsetTop && e.clientY <= itemsColl[j].offsetTop+itemsColl[j].offsetHeight ){
+        		overItem=itemsColl[j];
+        		break;
+        	}else{
+        		overItem=null;
+        	}
+        }
+    }
+    var moveSubElements = function(_subElements, _container, _x, _y){
+    	for( var j in _subElements){
+    		if(typeof _subElements[j]==='object'){
+    			_subElements[j].setAttribute('containerx',_x);
+    			_subElements[j].setAttribute('containery',_y);
+    			moveSubElements(_subElements[j].querySelectorAll('[item][container="'+_container +'.'+ _subElements[j].id+'"]'),_subElements[j].id, _x+'/'+_subElements[j].offsetLeft,  _y+'/'+_subElements[j].offsetTop);
+    		}
+    	}
+    }
+    var onMouseMoveException = function(e) {
+        cursorPosX = e.clientX -sliderPBOffsetX ;
+        cursorPosY = e.clientY -sliderPBOffsetY;
+        itemException.style.left = cursorPosX + "px"; 
+        itemException.style.top = cursorPosY + "px";   
+        itemException.left = itemException.offsetLeft; 
+        itemException.top = itemException.offsetTop;            
+    }
+    var onMouseUpException = function(e) {
+        document.removeEventListener("mousemove", onMouseMoveException, false);
+        document.removeEventListener("mouseup", onMouseUpException, false);
+    }
+    var elementHover = null;
+    var OnButtonDownItem = function(event) {
+        item=event.target;
+        statusModCode
+   		?showCode(item)
+   		:null;
+        if(!item.getAttribute('except')){
+        	lastFocusItem = item;
+        	lastDuplicateItem = item;
+        	if(lastFocusItem.getAttribute('group')){
+	        	lastFocusItem.style.zIndex="40000";
+	        	var posXArr= lastFocusItem.getAttribute('containerx').split('/');
+	        	var acumPosX = 0;
+	        	for( var j in posXArr){
+	        		acumPosX+=Number(posXArr[j]);
+	        	}
+	        	var posYArr= lastFocusItem.getAttribute('containery').split('/');
+	        	var acumPosY = 0;
+	        	for( var j in posYArr){
+	        		acumPosY+=Number(posYArr[j]);
+	        	}
+	        	lastFocusItem.style.left = acumPosX + lastFocusItem.offsetLeft + "px"; 
+	            lastFocusItem.style.top =  acumPosY	+ lastFocusItem.offsetTop + "px"; 
+	        }
+	        landscapeContainer.appendChild(item);
+	        var iniContainer = lastFocusItem.getAttribute('container');
+	        downLevel(lastFocusItem.querySelectorAll('[item]'),iniContainer);
+	        lastFocusItem.removeAttribute('group');
+	        lastFocusItem.removeAttribute('container');
+	        lastFocusItem.removeAttribute('containerx');
+    		lastFocusItem.removeAttribute('containery');
+	      	sliderPBOffsetX = event.clientX - lastFocusItem.offsetLeft ;
+	        sliderPBOffsetY = event.clientY- lastFocusItem.offsetTop ;
+			document.addEventListener("mousemove", onMouseMove, false);
+			document.addEventListener("mouseup", onMouseUp, false);
+        }else{
+        	itemException = item;
+        	sliderPBOffsetX = event.clientX - item.offsetLeft ;
+	        sliderPBOffsetY = event.clientY- item.offsetTop ;
+			document.addEventListener("mousemove", onMouseMoveException, false);
+			document.addEventListener("mouseup", onMouseUpException, false);
+        }
+    }
+    
+    var touchobj=null;
+    var touchStartHandler = function(event) {
+        item=event.target;
+        statusModCode
+   		?showCode(item)
+   		:null;
+   		touchobj = event.changedTouches[0];
+        if(!item.getAttribute('except')){
+        	lastFocusItem = item;
+        	lastDuplicateItem = item;
+        	if(lastFocusItem.getAttribute('group')){
+	        	lastFocusItem.style.zIndex="40000";
+	        	var posXArr= lastFocusItem.getAttribute('containerx').split('/');
+	        	var acumPosX = 0;
+	        	for( var j in posXArr){
+	        		acumPosX+=Number(posXArr[j]);
+	        	}
+	        	var posYArr= lastFocusItem.getAttribute('containery').split('/');
+	        	var acumPosY = 0;
+	        	for( var j in posYArr){
+	        		acumPosY+=Number(posYArr[j]);
+	        	}
+	        	lastFocusItem.style.left = acumPosX + lastFocusItem.offsetLeft + "px"; 
+	            lastFocusItem.style.top =  acumPosY	+ lastFocusItem.offsetTop + "px"; 
+	        }
+	        landscapeContainer.appendChild(item);
+	        var iniContainer = lastFocusItem.getAttribute('container');
+	        downLevel(lastFocusItem.querySelectorAll('[item]'),iniContainer);
+	        lastFocusItem.removeAttribute('group');
+	        lastFocusItem.removeAttribute('container');
+	        lastFocusItem.removeAttribute('containerx');
+    		lastFocusItem.removeAttribute('containery');
+	      	sliderPBOffsetX = touchobj.pageX - lastFocusItem.offsetLeft ;
+	        sliderPBOffsetY = touchobj.pageY - lastFocusItem.offsetTop ;
+	        item.addEventListener("touchend", touchEndHandler, false);
+        	item.addEventListener("touchmove", touchMoveHandler, false);
+        }else{
+        	itemException = item;
+        	sliderPBOffsetX = touchobj.pageX - item.offsetLeft ;
+	        sliderPBOffsetY = touchobj.pageY - item.offsetTop ;
+	        item.addEventListener("touchend", touchEndHandlerException, false);
+        	item.addEventListener("touchmove", touchMoveHandlerException, false);
+        }
+    }
+
+    var touchEndHandler = function(e) {
+        elementHover =overItem;
+		if(lastFocusItem && elementHover){
+	        	elementHover.appendChild(lastFocusItem);
+	        	lastFocusItem.setAttribute('group',true);
+	        	lastFocusItem.setAttribute('container',elementHover.id);
+	        	lastFocusItem.setAttribute('containerx',elementHover.offsetLeft);
+	        	lastFocusItem.setAttribute('containery',elementHover.offsetTop);
+	        	item.container=elementHover;
+	        	//var newId = elementHover.getAttribute('id').split('-')[0]+'-'+new Date().getTime();
+			    subElements(elementHover.querySelectorAll('[item][container='+elementHover.id+']'), elementHover.id, elementHover.offsetLeft, elementHover.offsetTop);
+			    //elementHover.setAttribute('id', newId);
+				lastFocusItem.style.left = lastFocusItem.offsetLeft - elementHover.offsetLeft + 'px';
+				lastFocusItem.style.top = lastFocusItem.offsetTop - elementHover.offsetTop + 'px';
+		}else{
+			lastFocusItem.group = false;
+			landscapeContainer.appendChild(item);
+			lastFocusItem.removeAttribute('group');
+			lastFocusItem.removeAttribute('container');
+			lastFocusItem.removeAttribute('containerx');
+			lastFocusItem.removeAttribute('containery');
+
+		}
+		lastFocusItem.addEventListener("touchstart", touchStartHandler, false);
+		overItem = null;
+		elementHover = null;
+		lastFocusItem.removeEventListener("touchend", touchEndHandler, false);
+        lastFocusItem.removeEventListener("touchmove", touchMoveHandler, false);
+    }
+
+
+    var touchMoveHandler = function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        event.cancelBubble=true;
+        item=event.target;
+        touchobj = event.changedTouches[0];
+        cursorPosY = touchobj.pageY - sliderPBOffsetY;
+        cursorPosX = touchobj.pageX - sliderPBOffsetX;
+        item.style.top = cursorPosY + "px";
+        item.style.left = cursorPosX + "px";
+		moveSubElements(item.querySelectorAll('[item][container='+item.id+']'), item.id, item.offsetLeft, item.offsetTop);
+        for( var j in itemsColl){
+        	if( itemsColl[j] !== lastFocusItem && touchobj.pageX >= itemsColl[j].offsetLeft && touchobj.pageX <= itemsColl[j].offsetLeft+itemsColl[j].offsetWidth && touchobj.pageY >= itemsColl[j].offsetTop && touchobj.pageY <= itemsColl[j].offsetTop+itemsColl[j].offsetHeight ){
+        		overItem=itemsColl[j];
+        		break;
+        	}else{
+        		overItem=null;
+        	}
+        }
+    }
+     var touchMoveHandlerException = function(event) {
+     	 event.preventDefault();
+        event.stopPropagation();
+        event.cancelBubble=true;
+        item=event.target;
+        touchobj = event.changedTouches[0];
+        cursorPosY = touchobj.pageY - sliderPBOffsetY;
+        cursorPosX = touchobj.pageX - sliderPBOffsetX;
+        item.style.top = cursorPosY + "px";
+        item.style.left = cursorPosX + "px";          
+    }
+    var touchEndHandlerException = function(e) {
+        lastFocusItem.removeEventListener("touchend", touchEndHandler, false);
+        lastFocusItem.removeEventListener("touchmove", touchMoveHandler, false);
+    }
+    asignItemsMove();
+</script>
+<script cbtype="">
+/*------------------------
+------------------------
+------------------------
+edit html
+------------------------
+------------------------
+--------------------------*/
+var divResalt = document.createElement("div");
+divResalt.id = "divResalt";
+divResalt.style.position = "absolute";
+divResalt.style.background = "rgba(174, 225, 242, .5)";
+divResalt.style.border = "4px dotted #ddd";
+var containerResalt = null;
+var delResalt = null;
+var drawMark = function(elemen) {
+    divResalt.style.width = elemen.offsetWidth + "px";
+    divResalt.style.height = elemen.offsetHeight + "px";
+    divResalt.style.top = elemen.offsetTop + "px";
+    divResalt.style.left = elemen.offsetLeft + "px";
+    divResalt.style.zIndex = elemen.style.zIndex + 1;
+    divResalt.style.pointerEvents = "none";
+    containerResalt = elemen.parentNode;
+    containerResalt.insertBefore(divResalt, containerResalt.firstChild);
+    delResalt = function() {
+        if (document.getElementById("divResalt")) {
+            containerResalt.removeChild(divResalt);
+        }
+    }
+}
+var removeMark = function() {
+    if (delResalt) {
+        delResalt();
+        delResalt = null;
+    }
+}
+var tagsAffected = [
+    "span",
+    "textarea",
+    "input",
+    "p",
+    "div",
+    "ul",
+    "li",
+    "IMG"
+]
+var statusModCode = false;
+var modPartialCodeStatus = function(_elem){
+	statusModCode = !statusModCode;
+	if(statusModCode){
+		_elem.className= _elem.className+' edit_PB_active';
+	}else{
+		_elem.className= _elem.className.replace('edit_PB_active','');
+	}
+}
+var eventsColl = [];
+var modPartialCode = function() {
+    
+     
+}
+var modPartialCodeNull = function() {
+    //var contItems = document.getElementById("unitContainerDiv");
+    if (delResalt) {
+        delResalt();
+        delResalt = null;
+    }
+    var contItems = document.getElementById("landscape-container");
+    for (var j in tagsAffected) {
+        var pTags = contItems.getElementsByTagName(tagsAffected[j]);
+        for (var j = 0; j <= pTags.length - 1; j++) {
+        	eventsColl[j].onmousedown ? pTags[j].onmousedown = eventsColl[j].onmousedown : pTags[j].onmousedown = function(e){};
+            eventsColl[j].onmouseover ? pTags[j].onmouseover = eventsColl[j].onmouseover : pTags[j].onmouseover = function(e){};
+            eventsColl[j].onmouseout ? pTags[j].onmouseout = eventsColl[j].onmouseout : pTags[j].onmouseout = function(e){};
+            eventsColl[j].onclick ? pTags[j].onclick = eventsColl[j].onclick : pTags[j].onclick = function(e){};
+        }
+    }
+}
+var showCode = function(_elem) {
+    modHTMLMode = true;
+    var htmlModCodesDiv = document.createElement("div");
+    htmlModCodesDiv.id = "htmlModCodesDiv";
+    htmlModCodesDiv.className = "generic_trans";
+    htmlModCodesDiv.innerHTML = "Modificar Código";
+    lastHtmlModCodesDiv = htmlModCodesDiv;
+
+    var close = document.createElement("div");
+    close.id = "closePB";
+    close.className = "genericPB_vertical";
+    close.innerHTML = "x";
+    close.onclick = function() {
+        setTimeout(function() {
+            htmlModCodesDiv.style.right = "-100%";
+            endTrans = function() {
+                endTrans = null;
+                htmlModCodesDiv.parentNode.removeChild(htmlModCodesDiv);
+            }
+        }, 10);
+
+    };
+    close.style.position = "absolute";
+    close.style.top = "10px";
+    close.style.right = "10px";
+
+
+    var typeCode = document.createElement("p");
+    typeCode.className = "genericRot_vertical";
+    typeCode.innerHTML = "Type: " + _elem.toString();
+
+    var introCodeInput = document.createElement("textarea");
+    introCodeInput.className = "modifyUnit";
+    introCodeInput.style.height = "200px";
+    introCodeInput.value = _elem.innerHTML;
+    introCodeInput.addEventListener("input", function() {
+        introCodePB.onclick()
+    });
+    /*introCodeInput.onchange=function(){
+        introCodePB.onclick();
+    }*/
+
+
+    var introCodePB = document.createElement("div");
+    introCodePB.className = "genericPB_vertical";
+    introCodePB.innerHTML = "Set Code";
+    htmlModCodesDiv.appendChild(close);
+    htmlModCodesDiv.appendChild(typeCode);
+    htmlModCodesDiv.appendChild(introCodeInput);
+    htmlModCodesDiv.appendChild(introCodePB);
+
+    var collection = {};
+    collection["className"] = _elem.className;
+    collection["id"] = _elem.id;
+    collection["onclick"] = _elem.getAttribute("onclick");
+
+
+    for (var j in collection) {
+        var rot = document.createElement("p");
+        rot.className = "genericRot_vertical";
+        rot.innerHTML = j;
+        switch (j) {
+            case "onclick":
+                var recom = document.createElement("p");
+                recom.className = "genericRot_vertical";
+                recom.style.color = "#aaa";
+                recom.innerHTML = "Use ' Inside onclick ";
+                htmlModCodesDiv.appendChild(recom);
+                var inputColl = document.createElement("textarea");
+                inputColl.className = "modifyUnit";
+                inputColl.addEventListener("input", function() {
+                    introCodePB.onclick()
+                });
+                inputColl.style.height = "150px";
+                break;
+            default:
+                var inputColl = document.createElement("input");
+                inputColl.className = "modifyUnit";
+                break;
+        }
+        inputColl.value = collection[j];
+        collection[j] = inputColl;
+        htmlModCodesDiv.appendChild(rot);
+        htmlModCodesDiv.appendChild(inputColl);
+    }
+    switch (_elem.toString()) {
+        case "[object HTMLParagraphElement]":
+
+            break;
+        case "[object HTMLDivElement]":
+
+            break;
+        case "[object HTMLImageElement]":
+            var rot1 = document.createElement("p");
+            rot1.className = "genericRot_vertical";
+            rot1.innerHTML = "url Img";
+            var srcIMG = document.createElement("textarea");
+            srcIMG.className = "modifyUnit";
+            srcIMG.addEventListener("input", function() {
+                introCodePB.onclick()
+            });
+            srcIMG.style.height = "150px";
+            srcIMG.value = _elem.src.toString();
+            htmlModCodesDiv.appendChild(rot1);
+            htmlModCodesDiv.appendChild(srcIMG);
+            collection["src"] = srcIMG;
+            break;
+        default:
+            break;
+
+    }
+
+    var InternalNavRot = document.createElement("p");
+    InternalNavRot.className = "genericRot_vertical";
+    InternalNavRot.innerHTML = "Internal Navigation";
+    htmlModCodesDiv.appendChild(InternalNavRot);
+
+    var internalNavCode = {};
+    var InternalNavRotPage = document.createElement("p");
+    InternalNavRotPage.className = "genericRot_vertical";
+    InternalNavRotPage.innerHTML = "Page";
+    htmlModCodesDiv.appendChild(InternalNavRotPage);
+    var InternalNavRotPageInput = document.createElement("input");
+    InternalNavRotPageInput.className = "modifyUnit";
+    InternalNavRotPageInput.value = _elem.getAttribute("toPage");
+    htmlModCodesDiv.appendChild(InternalNavRotPageInput);
+    internalNavCode["page"] = InternalNavRotPageInput;
+    var InternalNavRotSubPage = document.createElement("p");
+    InternalNavRotSubPage.className = "genericRot_vertical";
+    InternalNavRotSubPage.innerHTML = "SubPage";
+    htmlModCodesDiv.appendChild(InternalNavRotSubPage);
+    var InternalNavRotSubPageInput = document.createElement("input");
+    InternalNavRotSubPageInput.className = "modifyUnit";
+    InternalNavRotSubPageInput.value = _elem.getAttribute("toSubPage");
+    htmlModCodesDiv.appendChild(InternalNavRotSubPageInput);
+    internalNavCode["subpage"] = InternalNavRotSubPageInput;
+
+    var extraCssRot = document.createElement("p");
+    extraCssRot.className = "genericRot_vertical";
+    extraCssRot.innerHTML = "Extra CSS";
+    var extraCss = document.createElement("textarea");
+    extraCss.className = "modifyUnit";
+    extraCss.addEventListener("input", function() {
+        introCodePB.onclick()
+    });
+    extraCss.value = "";
+    htmlModCodesDiv.appendChild(extraCssRot);
+    htmlModCodesDiv.appendChild(extraCss);
+    var cssTextCollection = {};
+    var cssText = _elem.style.cssText.split(";");
+    cssText.pop();
+    for (var j in cssText) {
+        var style = cssText[j].split(":");
+        var rot = document.createElement("p");
+        rot.style.margin = "0";
+        rot.style.textAlign = "left";
+        rot.innerHTML = style[0];
+        var inputCssText = document.createElement("input");
+        inputCssText.className = "modifyUnit";
+        inputCssText.addEventListener("input", function() {
+            introCodePB.onclick()
+        });
+        inputCssText.value = style[1];
+        inputCssText.className = "modifyUnit";
+        cssTextCollection[style[0]] = inputCssText;
+        htmlModCodesDiv.appendChild(rot);
+        htmlModCodesDiv.appendChild(inputCssText);
+    }
+    collection["style"] = _elem.style.cssText;
+
+
+
+    introCodePB.onclick = function() {
+        setCode(introCodeInput, _elem, collection, cssTextCollection, extraCss, internalNavCode);
+    };
+    document.body.appendChild(htmlModCodesDiv);
+    setTimeout(function() {
+        htmlModCodesDiv.style.right = "0";
+        endTrans = function() {
+            endTrans = null;
+        }
+    }, 10);
+
+}
+var setCode = function(introCodeInput, _elem, collection, cssTextCollection, extraCss, internalNavCode) {
+    _elem.innerHTML = introCodeInput.value;
+
+    if (internalNavCode["page"].value != "" && internalNavCode['subpage'].value == "") {
+        _elem.removeAttribute("toSubPage");
+        _elem.setAttribute("toPage", internalNavCode['page'].value);
+        collection["onclick"].value = "internalNavMenu('" + internalNavCode["page"].value + "')";
+        _elem.setAttribute("onclick", "internalNavMenu('" + internalNavCode["page"].value + "')");
+    } else if (internalNavCode["page"].value != "" && internalNavCode['subpage'].value != "") {
+        _elem.setAttribute("toPage", internalNavCode['page'].value);
+        _elem.setAttribute("toSubPage", internalNavCode['subpage'].value);
+        collection["onclick"].value = "internalNavMenu('" + internalNavCode['page'].value + "','" + internalNavCode['subpage'].value + "')";
+        _elem.setAttribute("onclick", "internalNavMenu('" + internalNavCode['page'].value + "','" + internalNavCode['subpage'].value + "')");
+    } else {
+        _elem.removeAttribute("toPage");
+        _elem.removeAttribute("toSubPage");
+        _elem.removeAttribute("onclick");
+        internalNavCode['subpage'].value = "";
+        if (collection["onclick"].value.indexOf("internalNavMenu") > -1) {
+            collection["onclick"].value = "";
+        }
+    }
+    for (var j in collection) {
+        if (collection[j].value != "") {
+            if (j == "onclick") {
+                _elem.setAttribute("onclick", collection[j].value);
+            } else {
+                _elem[j] = collection[j].value;
+            }
+
+        } else {
+            if (j == "onclick" && internalNavCode["page"].value == "") {
+                _elem.removeAttribute("onclick");
+            } else if (j == "className") {
+                _elem.removeAttribute("class");
+            } else if (j != "onclick" && j != "className") {
+                _elem.removeAttribute(j);
+            }
+
+        }
+    }
+
+    _elem.removeAttribute("style");
+    for (var j in cssTextCollection) {
+        if (cssTextCollection[j].value != "") {
+            if (j.indexOf("opacity") <= -1) {
+                _elem.style.cssText += j + ":" + cssTextCollection[j].value + ";";
+            } else {
+                if (cssTextCollection[j].value.indexOf("initial") <= -1) {
+                    _elem.style.cssText += j + ":" + cssTextCollection[j].value + ";";
+                }
+            }
+        }
+    }
+    _elem.style.cssText += extraCss.value;
+}
+var notLoggedCol=function(){
+	document.getElementById("statusSaved").innerHTML="Pensabas hacerlo sin logarte primero ?";
+	document.getElementById("statusSaved").style.color="#c33";
+}
+var writeMessageCol=function(){
+      document.getElementById("statusSaved").innerHTML="Contenidos guardados";
+      document.getElementById("statusSaved").style.color="green";
+}
+var saveCol = function() {
+        checkLogged(savePage, notLoggedCol, null, writeMessageCol);
+    }
+
+
+    var landscapeContainer=document.getElementById('landscape-container');
+var lastFocusItem = null;
+	var itemException = null;
+	var lastDuplicateItem = null;
+	var itemsColl = null;
+afterTransitionFunc = function() {
+    afterTransitionFunc = null;
+    lastFocusItem = null;
+	itemException = null;
+	lastDuplicateItem = null;
+	itemsColl = null;
+    landscapeContainer=document.getElementById('landscape-container');
+    console.log(landscapeContainer);
+        asignItemsMove();
+}
+
+</script>
+
+
+

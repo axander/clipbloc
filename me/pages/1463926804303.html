@@ -1,0 +1,187 @@
+
+<style>
+.loginInput{
+    margin: 20px;
+    width: 200px;
+    font-size: 16px !important;
+    border: 2px solid rgb(204, 204, 204) !important;
+    padding: 17px !important;
+    opacity: initial;
+    display: inline-block;
+    color: #333;
+    border-radius:0;
+}
+#loginOutPB{
+  display:none;
+
+}
+</style>
+<div id="htmlContent" style="padding-top: 100px; height: 1500px; position: relative;">
+
+<div class="row">
+<div class="col-xs-12 col-md-offset-3 col-md-6">
+<div>
+   <div>
+<div style="font-size: 20px; padding-bottom: 20px;"><span class="es">RECUPERACIÓN DE CONTRASEÑA</span>
+<span class="en">PASSWORD RECOVERING</span></div>   
+<div style="font-size: 20px; padding-bottom: 20px;"><span class="es">Introduce el email registrado y su código y te reenviaremos la contraseña.</span>
+<span class="en">Intro Email registered and its code and you will received the password.</span></div>
+      <div style=""><span class="es">Email</span>
+<span class="en">Email</span></div>
+      <div><input id="user" type="text" placeholder="usuario" class="loginInput"></div>
+<div style=""><span class="es">Código</span>
+<span class="en">Code</span></div>
+      <div><input id="code" type="text" placeholder="intro code" class="loginInput"></div>
+      <div><div class="genericPB" onclick="regRecoverPwd()" style="width: 200px; margin: 20px;"><span class="es">RECUPERAR CONTRASEÑA</span>
+<span class="en">RECOVER PASSWORD</span></div></div>
+ <!---------------<div><div id="status"></div></div>------------------------------------------->
+<div style="padding-bottom:40px"><div id="message"></div></div>  
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<!---------------messages div------------------------------------------->
+<div id="statusContainer" onclick="closeStatus()"><div class="basicouter"><div class="basicInner"><div id="status">AQUÍ VIENE EL MENSAJE CORRESPONDIENTE</div><div id="volverStatus" onclick="closeStatus()"><span class="es">Cerrar</span>
+<span class="en" style="display: none;">Close</span></div></div></div></div>
+<!---------------------------------------------------------->
+<script cbtype="registerdonfirmCore">
+/*------------------------
+------------------------
+------------------------
+substitues default  scripts for registration
+------------------------
+-----------recoverPwd(recoverOkFunc,recoverWhileFunc,recoverNokFunc,regErrorFunc)--------------------------*/
+_recoverNokFunc=function(data){
+if(data==="REGNOEMPTY"){
+message=messagesEmail["REGNOEMPTY"];
+}else if(data==="REGEMAILNOK"){
+message=messagesEmail["REGEMAILNOK"];
+}
+document.getElementById("status").innerHTML=message;
+if(typeof changeLanguage!=="undefined"){
+    changeLanguage();
+}
+document.getElementById("statusContainer").style.left="0";
+}
+_recoverPwdWhileFunc=function(data){
+var message=messagesEmail["WAITING"];
+document.getElementById("status").innerHTML=message;
+if(typeof changeLanguage!=="undefined"){
+    changeLanguage();
+}
+document.getElementById("statusContainer").style.left="0";
+}
+_recoverOkFunc=function(data){
+if(data==="NOPWDEXIST"){
+var message=messagesEmail["NOPWDEXIST"];
+}else if(data==="PWDWASASK"){
+message=messagesEmail["PWDWASASK"];
+}else if(data==="PWDWASASKCODEWRONG"){
+message=messagesEmail["PWDWASASKCODEWRONG"];
+}else if(data==="PWDWASASKPENDING"){
+message=messagesEmail["PWDWASASKPENDING"];
+}
+document.getElementById("status").innerHTML=message;
+if(typeof changeLanguage!=="undefined"){
+    changeLanguage();
+}
+document.getElementById("statusContainer").style.left="0";
+}
+var messagesEmail={
+'REGEMAILNOK':'<span class="es">Por favor introduzca un email válido...</span><span class="en">Please, enter a valid email...</span>',
+'WAITING':'<span class="es">Por favor, espere...</span><span class="en">Please, wait...</span>',
+'REGNOEMPTY':'<span class="es">Por favor completa todos los campos.</span><span class="en">Please enter all inputs.</span>',
+'NOPWDEXIST':'<span class="es">El email indicado no está registrado.</span><span class="en">Wrong email. It has not been registered.</span>',
+'PWDWASASKCODEWRONG':'<span class="es">Los datos introducidos no son correctos.</span><span class="en">Wrong data. Please modify them and try again.</span>',
+'PWDWASASK':'<span class="es">Hemos reenvíado la contraseña al email indicado.</span><span class="en">We have resent the password to the email introduce.</span>',
+'PWDWASASKPENDING':'<span class="es">Ya existe un proceso de registro pendiente de confirmar para este email, hemos reenvíado el código de confirmación a dicho email.</span><span class="en">It existe a pending register for this email. We have resent you an email with the confirm code.</span>',
+"PWDWASASKMESSAGE":{"es":"Ésta es tu contraseña:","en":"This is your password:"},
+"MESSAGEPENDING":{"es":"Ya existe un proceso de registro pendiente de confirmar para este email, usa el siguiente código para confirmarlo:","en":"It existe a pending register for this email. Use this code to confirm it:"}
+};
+var regRecoverPwd=function(){
+     var dataPwd={};
+     dataPwd.email=document.getElementById("user").value;
+     dataPwd.CODE=document.getElementById("code").value;
+     dataPwd.logo=CONFIG["logo"];
+     dataPwd.MESSAGE=messagesEmail["PWDWASASKMESSAGE"][language];
+     dataPwd.MESSAGEPENDING=messagesEmail["MESSAGEPENDING"][language];
+     dataPwd.REPLY=CONFIG["email"];
+     recoverPwd(dataPwd,_recoverOkFunc,_recoverPwdWhileFunc,_recoverNokFunc,undefined);
+}
+</script>
+<script cbtype="allways">
+/*------------------------
+------------------------
+------------------------
+always collection to execute
+------------------------
+------------------------
+--------------------------*/
+if(typeof allwaysFunc!=="undefined"){
+allwaysFunc();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

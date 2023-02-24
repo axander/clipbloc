@@ -1,0 +1,293 @@
+<style>
+#extraPanelPB{
+    display:none;
+}
+.es .transformNavPB {
+   font-size:13px;
+}
+.basicOuter1{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.basicInner1{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.structure{
+    cursor:pointer;
+    display: inline-block;
+    font-size: 60px;
+    letter-spacing: 3px;
+    opacity: initial;
+    color: #fff;
+    background: #333;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+.structure:hover{
+   opacity:.5;
+}
+.pink{
+   background:#ff03c3;
+   font-size:20px;
+}
+.blue{
+   background:#337ab7;
+}
+.red{
+   background:orangered;
+   font-size:20px;
+}
+
+.scheme_deco1_col{
+   padding:100px;
+}
+.scheme_deco1_div{
+   font-size:100px;
+   border:1px dotted #444;
+   padding:100px;
+}
+#showHideSubMenu {
+    margin-left: 20px;
+    border-radius: 30px;
+    line-height: 13px;
+    word-break: break-all;
+    z-index: 200;
+    position: relative;
+    top: 30px;
+    width: 30px;
+    left: 100%;
+    padding: 20px;
+    padding-right: 30px;
+    color: #fff;
+    font-size: 26px;
+    background: #337ab7;
+    cursor: pointer;
+    /* height: 10px; */
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#newMenuPB {
+    font-size: 25px;
+    cursor: pointer;
+    display: block;
+    z-index: 2000;
+    color: #fff;
+    background: #337ab7;
+    padding: 10px;
+    right: 0;
+    top: 15px;
+    position: fixed;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+#lateralMenuContainer {
+    background: #337ab7;
+}
+#newFooterPB {
+    background: #337ab7;
+        margin-right: 30px;
+    border-radius: 10px;
+}
+#lateralFooterContainer {
+    background: #337ab7;
+}
+.innerSubmenuSelected{
+   background: #337ab7 !important;
+}
+.innerSubmenuSelected span{
+   color:#fff !important;
+}
+#homeSection {
+    color: #337ab7;
+}
+.innerSubmenu:hover{
+    background:#85acce;
+    color:#fff;
+}
+.innerSubmenu span{
+   color:#337ab7 !important;
+}
+.newInnerMenu:hover{
+    background:#85acce;
+}
+.newInnerMenuSelected {
+    background: #075394;
+}
+.ulStyle{
+   display:inline-block;
+   text-align:left;
+}
+.ulStyle li{
+   padding-top:20px;
+}
+.spanStyle{
+   font-size:20px;
+   font-weight:bold;
+   color:#337ab7;
+}
+@media (max-width:900px) {
+   .ulStyle{
+      padding-left:40px;
+      padding-right:40px;
+      font-size:30px;
+   }
+}
+</style>
+<div id="htmlContent" style="padding-top:100px;padding-bottom:200px;height:100%;position:relative">
+   <ul>
+          <li>
+             <div class="structure pink" onclick="internalNavMenu('1479420219496','1479420392044')" topage="1479420219496" tosubpage="1479420392044">STYLE</div>
+          </li>
+           <li>
+             <div class="structure blue" onclick="submenuApphideShow()">HTML</div>
+          </li>
+          <li>
+             <div class="structure red" onclick="internalNavMenu('1479420219496','1479424164429')" topage="1479420219496" tosubpage="1479424164429" style="margin-bottom: 100px;">SCRIPTS</div>
+          </li>
+   </ul>
+<!-----------------------------------section 1 ------------------------------------>
+    <section>
+       <ul class="ulStyle en">
+          <li>
+             <div style="">Inside a <span class="spanStyle">CLIP</span> add the contents you want to shoe, images, text, video, audio...</div>
+          </li>
+          <li>
+             <div style=""><span class="spanStyle">1 · </span>Write your HTML code inside of the div:</div>
+          </li>
+          <li>
+             <div><xmp>
+<div id="htmlContent">
+...
+</div>
+</xmp>
+
+</div>
+          </li>
+          <li>
+             <div style="">This div contains the specific HTML code of each <span class="spanStyle">CLIP</span></div>
+          </li>
+          <li>
+             <div style="">and</div>
+          </li>
+          <li>
+             <div style=""><span class="spanStyle">2 · </span> Each <span class="spanStyle">CLIP</span> can be as vertical large as you want</div>
+          </li>
+          <li>
+             <div><span class="spanStyle">3 · </span>Write in your <span class="spanStyle">CLIP</span> the specific responsive rules to improve the mobile devices view</div>
+          </li>
+       </ul>
+       <ul class="ulStyle es" style="display: none;">
+          <li>
+             <div>Dentro de un <span class="spanStyle">CLIP</span> puedes añadir los contenidos que quieras, imágenes, texto, video, audio...</div>
+          </li>
+          <li>
+             <div style=""><span class="spanStyle">1 · </span>Pon tu contenido dentro del div:</div>
+          </li>
+          <li>
+             <div><xmp>
+<div id="htmlContent">
+...
+</div>
+</xmp>
+
+</div>
+          </li>
+          <li>
+             <div style="">Este div es el que contiene todo el HTML específico de cada <span class="spanStyle">CLIP</span></div>
+          </li>
+          <li>
+             <div style="">y</div>
+          </li>
+          <li>
+             <div style=""><span class="spanStyle">2 · </span> Cada <span class="spanStyle">CLIP</span> puede ser verticalmente tan extenso como desees.</div>
+          </li>
+          <li>
+             <div><span class="spanStyle">3 · </span>Aplica a tu  <span class="spanStyle">CLIP</span> los css necesarios para que sean responsive y mejorar su visualización en dispositivos móviles.</div>
+          </li>
+       </ul>
+       
+    </section>
+<!-----------------------------------section 1 ------------------------------------>
+</div>
+<script cbtype="view" cbname="submenuhide">
+/*------------------------
+------------------------
+------------------------
+auto hide sumbenu if clip contains it
+------------------------
+------------------------
+--------------------------*/
+beforeTransitionFunc=function(_end){
+
+if(typeof changeLanguage!=="undefined"){
+changeLanguage();
+}
+beforeTransitionFunc=null;
+
+scrollToTop(300, _end);
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

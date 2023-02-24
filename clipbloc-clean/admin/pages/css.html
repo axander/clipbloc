@@ -1,0 +1,23 @@
+<div class="row" id="menu_level_2" >
+    <div class="col-xs-12" >
+         
+        
+        <div class="col-xs-12 basicContainer">
+            <div class="col-xs-6 basicPB" id="message" >
+                Waiting...
+            </div>
+            <div class="col-xs-6 basicPB" id="basicSavePB" data-bind="click: guardar">
+                Save
+            </div>
+        </div>
+        
+        <div class="col-xs-12" >
+            <div data-bind="foreach : tabs ">
+                <div class="row menu_level_2_item_css" >
+                    <div class="col-xs-4 menu_level_2_item_inner"><div><span  data-bind="text:styleRule" /></div></div>
+                    <div class="col-xs-4 menu_level_2_item_inner"><div><textarea  onfocus="focusText()" data-bind="value:content" /></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

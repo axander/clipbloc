@@ -1,0 +1,138 @@
+<style>
+.transitionPB, .transitionPB li{
+    display:inline-block;
+    padding:10px;
+}
+.transitionPB .PB{
+    cursor:pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background: #444;
+    color:#fff;
+   /* -webkit-transition: background .8s ease;
+    -moz-transition: background .8s ease;
+    transition: background .8s ease;*/
+}
+.transitionPB .PB:hover{
+    background: red;
+    color:#fff;
+}
+.generic_trans{
+        -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    transition: all 2s ease;
+}
+</style>
+<div id="htmlContent transitions" style="height:100%;position:relative">
+    <div class="basicOuter">
+        <div class="basicInner">
+            <ul class="transitionPB">
+                <li>
+                    <div class="PB" onclick="back('inPlace')">IN-PLACE</div>
+                </li>
+                <li>
+                    <div class="PB" onclick="back('left-right')">LEFT-RIGHT</div>
+                </li>
+                <li>
+                    <div class="PB" onclick="back('right-left')">RIGHT-LEFT</div>
+                </li>
+                <li>
+                    <div class="PB" onclick="back('top-bottom')">TOP-BOTTOM</div>
+                </li>
+                <li>
+                    <div class="PB" onclick="back('bottom-top')">BOTTOM-TOP</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+beforeTransitionFunc = function(_end) {
+    if (typeof changeLanguage !== "undefined") {
+        changeLanguage();
+    }
+    beforeTransitionFunc = null;
+    scrollToTop(300, _end);
+};
+if (typeof setTransitionType === 'undefined') {
+	var back = function(_transitionType){
+		internalNavMenu('1469873571543');
+		 if (typeof fromSubPageInterface === "undefined" || !fromSubPageInterface) {
+	    		setTransitionType(_transitionType, '1469873571543' );
+	    } else {
+	        fromSubPageInterface = false;
+	    }
+	}
+    var setTransitionType = function(_tt, _ref) {
+        var ref = _ref;
+    	var stf = function(){
+        	newTransitionFunc = null;
+            page = document.getElementById("page_" + tabHome);
+            page.style.overflow = "hidden";
+            lastPage.style.overflow = "hidden";
+        };
+        var nt = 0;
+        var sptf = function(_e, _t, _l, _o){
+        	_t ? _e.style.top = _t : null ;
+        	_l ? _e.style.left = _l : null ;
+        	_o ? _e.style.opacity = _o : null;
+        };
+        var sptfc = function(_p, _l){
+            endTrans = function(){
+                nt >=2 ? re(): nt++;
+            }
+            var page = document.getElementById("page_" + tabHome);
+            page.className = "page";
+            page.style.height = "100vh";
+            newTransitionFunc = function(){
+                stf();
+                sptf( page, _p.t[1], _p.l[1], _p.o[1]);
+                sptf(lastPage, _l.t, _l.l, _l.o);
+                this.focus = page.id;
+            }
+            sptf(page, _p.t[0], _p.l[0], _p.o[0]);
+            setTimeout(function() {
+                page.className = "page generic_trans";
+            }, 10);
+        };
+        var re = function(){
+            page.style.overflow = "visible";
+            page.style.height = "auto";
+            endTrans = null;
+            /*if(document.getElementById("new_menu_"+transformLast)){
+                document.getElementById("new_menu_"+transformLast).className = "newInnerMenu";            
+            }else if(document.getElementById("new_footer_"+transformLast)){
+                document.getElementById("new_footer_"+transformLast).className = "newInnerFooter";
+            }
+            if(document.getElementById("new_menu_"+ref)){
+                document.getElementById("new_menu_"+ref).className = "newInnerMenuSelected";            
+            }else if( document.getElementById("new_footer_"+ref)){
+                document.getElementById("new_footer_"+ref).className = "newInnerFooterSelected";
+            }*/
+        };
+        var tm = {//top left opacity
+        	'inPlace': {
+                'p' : { 't': [null, null], 'l':['0',null], 'o':['0','1'] },
+                'l' : { 't': null, 'l':null, 'o':'0' }
+        	},
+        	'left-right': {
+                'p' : { 't': [null, null], 'l':['-100%', '0'], 'o':[null, null] },
+                'l' : { 't': null, 'l':'100%', 'o':null }
+        	},
+        	'right-left': {
+                'p' : { 't': [null, null], 'l':['100%', '0'], 'o':[null, null] },
+                'l' : { 't': null, 'l':'-100%', 'o':null }
+        	},
+        	'bottom-top': {
+                'p' : { 't': ['100%','0'], 'l':['0','0'], 'o':[null,null] },
+                'l' : { 't': '-100%', 'l':null, 'o':null }
+        	},
+        	'top-bottom': {
+                'p' : { 't': ['-100%','0'], 'l':['0','0'], 'o':[null,null] },
+                'l' : { 't': '100%', 'l':null, 'o':null }
+        	}
+        };
+        (lastPage.style.left === '0px' && !endTrans) ? sptfc(tm[_tt].p, tm[_tt].l) : null;
+    };
+}
+</script>

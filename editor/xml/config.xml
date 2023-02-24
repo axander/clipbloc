@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+<config>
+<Title >Compositions I</Title>
+<Description >Advanced Web Design Studio</Description>
+<Extend >No Extend Comments</Extend>
+<booksAllow >1</booksAllow>
+<temp >0</temp>
+<Public >undefined</Public>
+</config>
+<fonts>
+<google>Cantarell,Great Vibes,Lobster,Marcellus SC,Oswald,Quicksand,Raleway Dots,Rye,Six Caps,Tangerine,Sacramento</google>
+<typekit></typekit>
+<ascender></ascender>
+<monotype>Rockwell</monotype>
+<fontdeck></fontdeck>
+</fonts>
+<book>
+<item>
+<id type="" x="" y="">portada</id>
+<associate></associate>
+<data/>
+</item>
+</book>
+<list>
+
+</list>
+</configuration>

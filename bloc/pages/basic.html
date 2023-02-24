@@ -1,0 +1,26 @@
+
+<div class="row" id="mainContainer"  >
+    <div id="clipblocCount">
+        <img src="./images/view.png" />&nbsp<span id="counter">Visto</span>
+    </div>
+    <div id="socialfb" class="social">
+        <div class="socialItem" onclick="share(0)">
+            <a id="targetFB" target='blank' title='Share in facebook' href='http://www.facebook.com/sharer.php?u=http://moneyhare.com/rmt/"+dataFocus["rc"]+"/"+dataFocus["id"]+"/facebook.html?v="+date+"'><img title="Share in facebook" width="20" src="./images/facebook-icon.png" /></a>
+        </div>
+    </div>
+    <div class="nopadding" id="date">
+        
+    </div>
+</div>
+ <div id="submenuContainer">
+        <div id="homeSection" onclick="homeSection();">
+            
+        </div>
+        <div id="menu_level_2" data-bind="foreach : tabs ">
+            <div class="innerSubmenu" data-bind="visible:active,attr: {'id':'page_'+date},html:rot,click:$parent.SelSection">
+                
+            </div>
+        </div>
+    </div>
+
+   

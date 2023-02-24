@@ -1,0 +1,132 @@
+<style>
+.learning{
+   text-align:left;
+}
+.learning p{
+   padding-bottom:20px;
+}
+.learning-Rot{
+   font-weight:bold;
+   font-size:20px;
+}
+.learning-Rot-Single{
+   font-weight:bold;
+   font-size:20px;
+   padding-bottom:40px;
+   padding-top:40px;
+}
+
+</style>
+
+<div id="htmlContent" style="padding-top:100px;height:100%;position:relative">
+
+<ul>
+      <li>
+          <div class="clipbloc">CLIPBLOC</div>
+                 <ul style="position:absolute; bottom:20px; letter-spacing: 6px; color: rgb(255, 255, 255);width:100%">
+                           <!--<li class="es rot1" style="display: none;">Ecosistema de Información</li>
+                           <li class="en rot1" style="">Information Ecosystem</li>-->
+               </ul>
+      </li>
+      <li class="en" style=""><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px; font-size: 16px; background: orangered;">Transform·The·Navigation</div></li>
+       <li class="es" style="display: none;"><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px;font-size:13px;background:orangered">Transformando·La·Navegación</div></li>
+    </ul>
+
+<div class="row learning" style="padding-top: 100px;">
+
+<!-- CLIPBLOC CONCEPT -->           
+<div class="col-xs-offset-1 col-xs-11 col-md-offset-1 col-md-11">
+<div class="en">
+<p class="learning-Rot">CLIPBLOC CONCEPT</p>
+<p>Imagine you have a notebook ( <strong>BLOC</strong> )...</p>
+<p>Each page ( <strong>CLIP</strong> ) of your notebook can content text, images, functionalities...</p>
+<p>But in this case you can cut, transfer, import... ( <strong>MOVE</strong> ) each page ( <strong>CLIP</strong> ) to the place you need...</p>
+<p>And you can associate a page ( <strong>CLIP</strong> ) with a group of pages ( <strong>CLIPS</strong> )...</p>
+<p>But the most important... you can create as many <strong>BLOCS</strong> you wants, and every <strong>BLOC</strong> would able to read contents from other <strong>BLOCS</strong> your or from others.</p>
+</div>
+
+
+<div class="es" style="display: none;">
+<p class="learning-Rot">CONCEPTO DE CLIPBLOC</p>
+<p>Imagina un cuaderno de notas ( <strong>BLOC</strong> )...</p>
+<p>Cada página ( <strong>CLIP</strong> ) de tu cuaderno puede contener textos, imágenes, funcionalidades...</p>
+<p>Pero en este caso podrás cortar esas hojas, importarlas, transferirlas...( <strong>MOVERLAS</strong> ), cada hoja ( <strong>CLIP</strong> ) donde la quieras colocar o necesites...</p>
+<p>Puedes asociar una hoja ( <strong>CLIP</strong> ) con grupos de hojas ( <strong>CLIPS</strong> )...</p>
+<p>Pero lo más importante podrás crear tantos <strong>BLOCS</strong> como necesites, y en cada <strong>BLOC</strong>podrás leer contenidos de otros <strong>BLOCS</strong> tuyos o de otras personas.</p>
+</div>
+
+</div>
+<!-- CLIPBLOC CONCEPT --> 
+
+<!-- FROM HERE -->           
+<div class="col-xs-offset-1 col-xs-11 col-md-offset-1 col-md-11">
+<div class="en learning-Rot-Single">
+<p>FROM HERE IT DEPENDS ON YOUR DETERMINATION, ABILITY AND EXPERIENCE</p>
+</div>
+
+
+<div class="es learning-Rot-Single" style="display: none;">
+<p>A PARTIR DE AQUÍ TODO DEPENDERÁ DE TU EMPEÑO, INGENIO Y EXPERIENCIA</p>
+</div>
+
+</div>
+<!-- CLIPBLOC CONCEPT --> 
+
+<!-- WHAT IS CLIPBLOC -->           
+<div class="col-xs-offset-1 col-xs-11 col-md-offset-1 col-md-11">
+<div class="en">
+<p class="learning-Rot">WHAT IS CLIPBLOC</p>
+<p>CLIPBLOC is an enginee to create web contents and web apps.</p>
+<p>Based in HTML and Javascript is a simplex environment. As simple as it turns usefull.</p>
+<p>Depending on your experience...you will be able to create from a simple web to a complex web app or a multiuser environment.</p>
+</div>
+
+
+<div class="es" style="display: none;">
+<p class="learning-Rot">QUÉ ES CLIPBLOC</p>
+<p>CLIPBLOC es un entorno para crear contenido web y aplicaciones web.</p>
+<p>Está creado con HTML y Javascript. Tan simple como para resultar útil.</p>
+<p>Dependiendo de tu experiencia...te será posible crear desde un sencillo website a una compleja aplicación web multiusuario.</p>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+<script>
+beforeTransitionFunc=function(_end){
+if(typeof changeLanguage!=="undefined"){
+changeLanguage();
+}
+if(typeof fromSubPageInterface==="undefined" || !fromSubPageInterface){
+newTransitionFunc=function(){
+        newTransitionFunc=null;
+        page=document.getElementById("page_"+tabHome);
+        lastPage.style.overflow = "hidden";
+        lastPage.style.opacity = "0";
+        page.style.opacity = "1";
+}
+
+var page=document.getElementById("page_"+tabHome);
+       page.className = "page";
+          page.style.left = "0";
+          page.style.opacity = "0";
+       setTimeout(function() {
+             page.className = "page generic_trans";
+          }, 10);
+}else{
+fromSubPageInterface=false;
+}
+
+beforeTransitionFunc=null;
+
+
+scrollToTop(300, _end);
+
+}
+</script>
+

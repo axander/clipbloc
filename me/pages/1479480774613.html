@@ -1,0 +1,1715 @@
+<style>
+/* modify units*/
+
+#showHideEditUnit {
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+    text-transform: uppercase;
+    position: relative;
+    left: -70px;
+    background: #333;
+    /* z-index: 40000; */
+    width: 70px;
+}
+
+#showHideEditUnit:hover {
+    background: orangered;
+}
+
+#htmlModCodesDiv {
+    z-index: 40000;
+    background: #fff;
+    padding: 30px;
+    z-index: 10002;
+    width: auto;
+    height: 100%;
+    right: -100%;
+    top: 0;
+    position: fixed;
+    list-style: none;
+    overflow-x: hidden;
+    background: #eee;
+    margin-right: -15px;
+    border-left: 21px solid rgba(255, 69, 0, 0.1);
+}
+
+.genericPB_vertical {
+    cursor: pointer;
+    padding: 10px;
+    background: orangered;
+    color: #fff;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+    text-transform: uppercase;
+}
+
+.genericPB_vertical:hover {
+    opacity: .5;
+}
+
+.genericRot_vertical {
+    color: orangered;
+    padding: 5px;
+    text-align: left;
+}
+
+input.modifyUnit {
+    color: #444;
+    cursor: pointer;
+    text-align: left;
+    border: 0px solid #ccc;
+    width: 300px;
+    display: table-cell;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input:focus.modifyUnit {
+    color: #333;
+    background: #ffddd0;
+    border: 0px outset #fff;
+}
+
+textarea.modifyUnit {
+    color: #444;
+    cursor: pointer;
+    text-align: left;
+    border: 0px soli d #ccc;
+    width: 300px;
+    height: 300px;
+    display: table-cell;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+textarea:focus.modifyUnit {
+    color: #333;
+    background: #ffddd0;
+    border: 0px outset #fff;
+}
+
+
+/* modify units*/
+
+.unitMove {
+    z-Index: 40000;
+    position: absolute;
+}
+
+.basicOuterCol {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.basicInnerCol {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.unitContainer {
+    text-align: left;
+}
+
+.alignCol {
+    vertical-align: top;
+    display: inline-block;
+    float: none;
+}
+
+.defineUnitClip {
+    padding: 50px;
+    color: orangered;
+    text-align: left;
+    font-weight: bold;
+}
+
+.defineClip {
+    padding: 50px;
+    color: orangered;
+    text-align: left;
+    font-weight: bold;
+    //background: #eee;
+}
+
+.defineClip ul li {
+    padding: 5px;
+}
+
+.defineClipRot {
+    color: #444;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.defineClipDescription {
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+    font-style: italic;
+    text-indent: 50px;
+}
+
+#unitContainerDiv {
+    padding: 50px;
+    opacity: 0;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.unitFilterPB {
+    cursor: pointer;
+    font-size: 9px;
+    display: inline-block;
+    margin-top: 20px;
+    background: orangered;
+    padding: 4px;
+    color: #fff;
+    border-radius: 5px;
+    display:none;
+}
+
+.unitFilterPB:hover {
+    opacity: .5;
+}
+
+.unitFilterPBActive {
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    background: orangered;
+    padding: 4px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.unitFilterNoPB {
+    font-size: 9px;
+    display: inline-block;
+    margin-top: 20px;
+    background: #ccc;
+    padding: 4px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.unitDiv {
+    font-size: 20px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: border .2s ease;
+    -moz-transition: border .2s ease;
+    transition: border .2s ease;
+}
+
+.unitPrice {
+    font-size: 40px;
+}
+
+.unitDescription {
+    font-size: 9px;
+}
+
+
+/*---------editUnitMenu-------*/
+
+#editUnitDiv {
+    position: fixed;
+    z-index: 1999;
+    top: 90px;
+    right: -162px;
+    background: #333;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#editUnitControl {}
+
+#editUnitDiv ul li {
+    //display:inline-block;
+    padding: 10px;
+}
+
+#editUnitDiv ul li .addPB {
+    cursor: pointer;
+    padding: 10px;
+    background: orangered;
+    color: #fff;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#editUnitDiv ul li .addPB:hover {
+    opacity: .5;
+}
+
+#editUnitDiv ul li .definePB {
+    cursor: pointer;
+    padding: 10px;
+    background: orangered;
+    color: #fff;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#editUnitDiv ul li .definePB:hover {
+    opacity: .5;
+}
+
+.PB {
+    cursor: pointer;
+    padding: 10px;
+    background: orangered;
+    color: #fff;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.PB:hover {
+    opacity: .5;
+}
+
+.active {
+    cursor: pointer;
+    padding: 10px;
+    background: green;
+    color: #fff;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+
+/*---------defineUnitDiv------*/
+
+.deleteUnit {
+    cursor: pointer;
+    background: orangered;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.deleteUnit:hover {
+    opacity: .5;
+}
+
+.moveUnit {
+    cursor: pointer;
+    background: rgba(255, 69, 0, 0.27);
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.moveUnit:hover {
+    opacity: .5;
+}
+
+#defineUnitDiv {
+    padding: 100px;
+    position: fixed;
+    z-index: 1999;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #eee;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#defineUnitControl {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 12px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    z-index: 10000;
+}
+
+#defineUnitDiv #defineUnitControl li {
+    display: inline-block;
+    padding: 10px;
+}
+
+#defineUnitDiv #defineUnitControl li .cancelPB {
+    padding: 10px;
+    background: orangered;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#defineUnitDiv #defineUnitControl li .cancelPB:hover {
+    opacity: .5;
+}
+
+#modifyUnitControl {
+    display: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 12px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    z-index: 10000;
+}
+
+#defineUnitDiv #modifyUnitControl li {
+    display: inline-block;
+    padding: 10px;
+}
+
+#defineUnitDiv #modifyUnitControl li #modPB {
+    padding: 10px;
+    background: orangered;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#defineUnitDiv #modifyUnitControl li #modPB:hover {
+    opacity: .5;
+}
+
+#defineUnitDiv #modifyUnitControl li .cancelPB {
+    padding: 10px;
+    background: orangered;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#defineUnitDiv #modifyUnitControl li .cancelPB:hover {
+    opacity: .5;
+}
+
+.defineUnitRot {
+    text-align: left;
+    color: orangered;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#defineDataList {
+    text-align: left;
+}
+
+.newDefineLi {
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#inputDefineDiv {
+    border-left: 1px dotted #444;
+}
+
+#inputDefineDiv ul li {
+    text-align: left;
+    padding: 10px;
+}
+
+#inputDefine {
+    color: #fff;
+    background: #333;
+    width: 200px;
+    text-align: left;
+    padding: 10px;
+}
+
+.inputDefine {
+    color: #fff;
+    background: #333;
+    width: 200px;
+    text-align: left;
+    padding: 10px;
+}
+
+#inputDefineMsg {
+    display: block !important;
+    font-size: 12px;
+    color: orangered;
+}
+
+#inputModifyMsg {
+    display: block !important;
+    font-size: 12px;
+    color: orangered;
+}
+
+#inputDefineDiv ul li .addPB {
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    background: orangered;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#inputDefineDiv ul li .addPB:hover {
+    opacity: .5;
+}
+</style>
+<div id="htmlContent" style="height:100%;position:relative">
+        <div id="unitContainerDiv" class="row " style="opacity: 1;"><div data-unit="" class="col-xs-6 col-md-3 unitDiv alignCol">
+            <div class="basicOuterCol">
+                <div class="basicInnerCol">
+                    <div class="unitContainer">
+                        <div data-filter="position" data-type="number" class="unitFilterPB" onclick="order(event,this)"><span class="es" style="display: none;">Posición</span><span class="en">Position</span></div>
+                        <div data-position="">0</div>
+                        <div data-filter="price" data-type="number" class="unitFilterPB" onclick="order(event,this)"><span class="es" style="display: none;">Precio</span><span class="en">Price</span></div>
+                        <div class="unitPrice" data-price=""><img src="http://blog.careerfoundry.com/hubfs/difference-between-UX-UI.jpg?t=1479745883024" style="width: 100%;"></div>
+                        <div data-filter="name" data-type="string" class="unitFilterPB" onclick="order(event,this)"><span class="es" style="display: none;">Nombre</span><span class="en">Name</span></div>
+                        <div data-name="">The difference between a UX Designer and UI Developer</div>
+                        <div data-filter="description" data-type="string" class="unitFilterNoPB" onclick="order(event,this)"><span class="es" style="display: none;">Descripción</span><span class="en">Description</span></div>
+                        <div class="unitDescription" data-description="" style="">No Description</div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        <div class="unitFilterPB" data-filter="url" data-type="string" onclick="order(event,this)"><span class="es" style="display: none;">url</span><span class="en">url</span></div><div data-url=""><a href="http://blog.careerfoundry.com/ui-design/the-difference-between-ux-and-ui-design-a-laymans-guide" target="_blank" style="font-size: 12px;">http://blog.careerfoundry.com/ui-design/the-difference-between-ux-and-ui-design-a-laymans-guide</a></div></div><div data-unit="" class="col-xs-6 col-md-3 unitDiv alignCol">
+            <div class="basicOuterCol">
+                <div class="basicInnerCol">
+                    <div class="unitContainer">
+                        <div data-filter="position" data-type="number" class="unitFilterPB" onclick="order(event,this)"><span class="es" style="display: none;">Posición</span><span class="en">Position</span></div>
+                        <div data-position="">1</div>
+                        <div data-filter="price" data-type="number" class="unitFilterPB" onclick="order(event,this)"><span class="es" style="display: none;">Precio</span><span class="en">Price</span></div>
+                        <div class="unitPrice" data-price=""><img src="https://benmelbourne.files.wordpress.com/2011/11/ux-vs-ui-dev-skills-expanded.png" style="width: 100%;"></div>
+                        <div data-filter="name" data-type="string" class="unitFilterPB" onclick="order(event,this)"><span class="es" style="display: none;">Nombre</span><span class="en">Name</span></div>
+                        <div data-name="" style="">What's the difference between a Frontend vs UI Developer?</div>
+                        <div data-filter="description" data-type="string" class="unitFilterNoPB" onclick="order(event,this)"><span class="es" style="display: none;">Descripción</span><span class="en">Description</span></div>
+                        <div class="unitDescription" data-description="" style="">No Description</div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        <div class="unitFilterPB" data-filter="url" data-type="string" onclick="order(event,this)"><span class="es" style="display: none;">url</span><span class="en">url</span></div><div data-url=""><a href="http://stackoverflow.com/questions/9700286/whats-the-difference-between-a-frontend-vs-ui-developer" target="_blank" style="font-size: 12px;">http://stackoverflow.com/questions/9700286/whats-the-difference-between-a-frontend-vs-ui-developer</a></div></div></div>
+</div>
+<div id="editUnitDiv">
+	<div id="showHideEditUnit" onclick="showHideEditUnit()"><span class="es" style="display: none;">Editor</span><span class="en">Editor</span></div>
+    <ul id="editUnitControl">
+        <li>
+            <div id="addPB" onclick="modeChange('add')" class="PB">
+                <span class="es" style="display: none;">Añadir</span><span class="en">Add</span>
+            </div>
+        </li>
+        <li>
+            <div id="editPB" onclick="modeChange('edit')" class="PB">
+                <span class="es" style="display: none;">Editar</span><span class="en">Edit</span>
+            </div>
+        </li>
+        <li>
+            <div id="movePB" onclick="modeChange('move')" class="PB">
+                <span class="es" style="display: none;">Definir</span><span class="en">Move</span>
+            </div>
+        </li>
+        <li>
+            <div id="deletePB" onclick="modeChange('delete')" class="PB">
+                <span class="es" style="display: none;">Eliminar</span><span class="en">Delete</span>
+            </div>
+        </li>
+        <li>
+            <div onclick="defineUnit()" class="definePB">
+                <span class="es" style="display: none;">Definir</span><span class="en">Define</span>
+            </div>
+        </li>
+        <li>
+            <div onclick="refreshClip()" class="definePB">
+                <span class="es" style="display: none;">Recargar</span><span class="en">Refresh</span>
+            </div>
+        </li>
+        <li>
+            <div style="padding-bottom:100px">
+                <div onclick="saveCol()" class="genericPB"><span class="es" style="display: none;">guardar</span><span class="en">save</span><br>CLIP</div>
+                <div id="statusSaved" style="color:green">Contenidos guardados</div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="row" id="defineUnitDiv" style="left: 100%;">
+    <div class="col-xs-12 col-md-6" id="defineDataList"></div>
+    <div class="col-xs-12 col-md-6" id="inputDefineDiv">
+        <ul>
+            <li>
+                <ul>
+                    <li>
+                        <label>Filter</label>
+                        <input id="inputDefine" class="inputDefine" onclick="resetMsg('inputDefineMsg')">
+                    </li>
+                    <li>
+                        <ul id="inputsRots"><li><label>Rot es</label><input class="inputDefine" id="rot_es"></li><li><label>Rot en</label><input class="inputDefine" id="rot_en"></li></ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <label>type</label>
+                <select id="inputTypeDefine">
+                    <option value="number">Number</option>
+                    <option value="string">String</option>
+                </select>
+            </li>
+        </ul>
+        <ul id="defineUnitControl" style="display: initial;">
+            <li style="display:block">
+                <div class="defineUnitRot"><span class="es" style="display: none;">Añadir propiedad a los item</span><span class="en">Add property to items</span></div>
+            </li>
+            <li id="inputDefineMsg"></li>
+            <li style="float:left">
+                <div onclick="addProperty()" class="addPB">
+                    <span class="es" style="display: none;">+</span><span class="en">+</span>
+                </div>
+            </li>
+            <li style="float:right">
+                <div onclick="cancelDefineUnit()" class="cancelPB">
+                    <span class="es" style="display: none;">Cerrar</span><span class="en">Close</span>
+                </div>
+            </li>
+        </ul>
+        <ul id="modifyUnitControl" style="display: none;">
+            <li style="display:block">
+                <div class="defineUnitRot"><span class="es" style="display: none;">Modificar propiedad del item</span><span class="en">Modify property item</span></div>
+            </li>
+            <li id="inputModifyMsg"></li>
+            <li style="float:left">
+                <div onclick="modifyDefineUnit()" id="modPB">
+                    <span class="es" style="display: none;">Modificar</span><span class="en">Modify</span>
+                </div>
+            </li>
+            <li style="float:left">
+                <div onclick="deleteDefineUnit()" class="cancelPB">
+                    <span class="es" style="display: none;">Eliminar</span><span class="en">Delete</span>
+                </div>
+            </li>
+            <li style="float:left">
+                <div onclick="cancelModifyUnit()" class="cancelPB">
+                    <span class="es" style="display: none;">Cancelar</span><span class="en">Cancel</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+beforeTransitionFunc = function(_end) {
+    beforeTransitionFunc = null;
+    hideSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.left = -submenuContainer.offsetWidth + "px";
+        var mainContent = document.getElementById("date");
+        mainContent.style.left = "0";
+        mainContent.style.width = "100%";
+    };
+    showSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.opacity = 1;
+        submenuContainer.style.left = "0";
+    };
+    if (typeof CONFIG !== "undefined" && typeof CONFIG["closeSubMenuOnSelect"] !== "undefined" && CONFIG["closeSubMenuOnSelect"] === "true" && !document.getElementById("submenuContainer").getAttribute("solid")) {
+        hideSubmenuApp();
+        if (subMenuPB) {
+            var submenuPBTemp = subMenuPB.cloneNode(true);
+            submenuPBTemp.onclick = function() {
+                submenuApphideShow();
+            };
+            document.getElementById("submenuContainer").appendChild(submenuPBTemp);
+            //document.getElementById("submenuContainer").appendChild(subMenuPB);
+            //document.body.appendChild(document.getElementById("submenuContainer"));
+            submenuAppHide = true;
+            document.getElementById("submenuContainer").setAttribute("solid", "1");
+        }
+
+    }
+
+
+    if (typeof changeLanguage !== "undefined") {
+        changeLanguage();
+    }
+    scrollToTop(300, _end);
+}
+afterTransitionFunc = function() {
+    afterTransitionFunc = null;
+    showHideEditUnit();
+    collectionControl();
+}
+</script>
+<script cbname="list collection">
+var unitContainerDiv = document.getElementById("unitContainerDiv");
+var units = null;
+var unitsObj = null;
+var unitModel = {};
+var unitItem = function(_item, _data) {
+    this.item = _item;
+    for (var j in _data) {
+        this[j] = _data[j];
+    }
+}
+var collectionControl = function() {
+    unitContainerDiv = document.getElementById("unitContainerDiv");
+    unitContainerDiv.style.opacity = "1";
+    units = null;
+    unitsObj = null;
+    unitModel = {};
+    //recover data model
+    unitsObj = new Array();
+    var unitRots = document.querySelectorAll('[data-unit]')[0];
+    var unitRotsData = unitRots.querySelectorAll('[data-filter]');
+    for (var l in unitRotsData) {
+        if (typeof unitRotsData[l] === "object") {
+            unitModel[unitRotsData[l].dataset.filter] = {};
+            unitModel[unitRotsData[l].dataset.filter].type = unitRotsData[l].dataset.type;
+            unitModel[unitRotsData[l].dataset.filter].order = true;
+            var unitFilter = unitRotsData[l];
+            for (var m in languages) {
+                unitModel[unitRotsData[l].dataset.filter][languages[m]] = unitFilter.querySelectorAll('[class=' + languages[m] + ']')[0].innerHTML;
+                console.log(unitFilter.querySelectorAll('[class=' + languages[m] + ']')[0].innerHTML);
+            }
+        }
+    }
+    //get items
+    units = document.querySelectorAll('[data-unit]');
+    for (var j in units) {
+        if (typeof units[j] === "object") {
+            var data = {};
+            for (var k in unitModel) {
+                if (document.querySelectorAll('[data-' + k + ']')[j]) {
+                    data[k] = document.querySelectorAll('[data-' + k + ']')[j].innerHTML;
+                }
+            }
+            var unit = new unitItem(
+                units[j],
+                data
+            );
+            unitsObj.push(unit);
+        }
+    }
+    unitContainerDiv.innerHTML = "";
+    for (var l in unitsObj) {
+        unitContainerDiv.appendChild(unitsObj[l].item);
+    }
+}
+dynamicSort = function(property) {
+    console.log(property)
+    unitModel[property].order = !unitModel[property].order;
+    var sortOrder = 1;
+    if (!unitModel[property].order) {
+        sortOrder = -1;
+    }
+    if (unitModel[property].type == "number") {
+        return function(a, b) {
+            var result = (Number(a[property]) < Number(b[property])) ? -1 : (Number(a[property]) > Number(b[property])) ? 1 : 0;
+            return result * sortOrder;
+        }
+    } else {
+        return function(a, b) {
+            var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+            return result * sortOrder;
+        }
+    }
+}
+dynamicSortMultiple = function() {
+    /*
+     * save the arguments object as it will be overwritten
+     * note that arguments object is an array-like object
+     * consisting of the names of the properties to sort by
+     */
+    var props = arguments;
+    return function(obj1, obj2) {
+        var i = 0,
+            result = 0,
+            numberOfProperties = props.length;
+        /* try getting a different result from 0 (equal)
+         * as long as we have extra properties to compare
+         */
+        while (result === 0 && i < numberOfProperties) {
+            result = dynamicSort(props[i])(obj1, obj2);
+            i++;
+        }
+        return result;
+    }
+}
+order = function(event, _this) {
+        /*event.stopPropagation();
+        event.cancelBubble = true;*/
+        var name = _this.getAttribute("data-filter");
+        console.log(unitsObj);
+        unitsObj.sort(dynamicSort(name));
+        unitContainerDiv.innerHTML = "";
+        for (var l in unitsObj) {
+            unitContainerDiv.appendChild(unitsObj[l].item);
+        }
+
+    }
+    // common functions
+resetMsg = function(_target) {
+    document.getElementById(_target).innerHTML = "";
+}
+writeMsg = function(_target, _msg) {
+    document.getElementById(_target).innerHTML = _msg;
+}
+closeDiv = function(_div, _prop, _pos) {
+    _div.style[_prop] = _pos;
+}
+validate = function(_string) {
+        var pat = /^[a-z]+$/;
+        var t = _string;
+        if (pat.test(t) == false) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    //display menu editor
+var editUnitDiv = null;
+editUnit = function() {
+    editUnitDiv = document.getElementById("editUnitDiv");
+}
+var showHideEditor = false;
+showHideEditUnit = function() {
+    editUnitDiv = document.getElementById("editUnitDiv");
+    showHideEditor = !showHideEditor
+    if (!showHideEditor) {
+        editUnitDiv.style.right = -editUnitDiv.offsetWidth + "px";
+    } else {
+        editUnitDiv.style.right = "0";
+    }
+}
+editUnit();
+// creation of define unit Div
+var defineUnitDiv = null;
+var defineDataList = null;
+var inputDefineDiv = null;
+var inputDefineDiv = null;
+var inputDefineMsg = null;
+var defineUnitControl = null;
+var modifyUnitControl = null;
+var unitBase = null;
+var inputsRots = null;
+var refreshClip = function() {
+    if (!endTrans) {
+        var saveLast = lastPage.id.split("_")[2];
+        lastPage.id = "??";
+        if (lastSubPage) {
+            internalNavMenu(saveLast, lastSubPage.id.split("_")[1]);
+        } else {
+            internalNavMenu(saveLast);
+        }
+    }
+}
+var notLoggedCol=function(){
+	document.getElementById("statusSaved").innerHTML="Pensabas hacerlo sin logarte primero ?";
+	document.getElementById("statusSaved").style.color="#c33";
+	document.getElementById("editUnitDiv").style.right="0";
+}
+var writeMessageCol=function(){
+      document.getElementById("statusSaved").innerHTML="Contenidos guardados";
+      document.getElementById("statusSaved").style.color="green";
+      editUnitDiv.style.right="0";
+}
+saveCol = function() {
+		document.getElementById("unitContainerDiv").style.opacity="0";
+		document.getElementById("editUnitDiv").style.right="";
+        modeChange(null);
+        clearEditMode();
+        checkLogged(savePage, notLoggedCol, null, writeMessageCol);
+        
+    }
+    //---------------------actions
+var mode = {
+    "add": {
+        status: false,
+        PB: "addPB",
+        col: []
+    },
+    "edit": {
+        status: false,
+        PB: "editPB",
+        col: []
+    },
+    "delete": {
+        status: false,
+        PB: "deletePB",
+        col: []
+    },
+    "move": {
+        status: false,
+        PB: "movePB",
+        col: []
+    }
+}
+modeChange = function(_mode) {
+    //activate-deactivate modes
+    for (var j in mode) {
+        if (j === _mode && !mode[j].status) {
+            mode[j].status = true;
+            document.getElementById(mode[j].PB).className = "PB active";
+        } else {
+            clearCol(mode[j].col);
+            mode[j].col = [];
+            mode[j].status = false;
+            document.getElementById(mode[j].PB).className = "PB";
+        }
+    }
+    //execute mode actions
+    switch (_mode) {
+        case "add":
+            clearEditMode();
+            unitBase = unitsObj[0].item.cloneNode(true);
+            unitContainerDiv.insertBefore(unitBase, unitsObj[0].item);
+            var posRots = document.querySelectorAll('[data-position]');
+            var counter = 0;
+            for (var j in posRots) {
+                if (typeof posRots[j] === "object") {
+                    posRots[j].innerHTML = counter;
+                    counter++;
+                }
+            }
+            break;
+        case "edit":
+            if (mode[_mode].status) {
+                modPartialCode();
+            } else {
+                clearEditMode();
+            }
+            break;
+        case "delete":
+            clearEditMode();
+            if (mode[_mode]["status"]) {
+                unitsRecursive(_mode);
+            }
+            break;
+        case "move":
+            clearEditMode();
+            if (mode[_mode]["status"]) {
+                unitsRecursive(_mode);
+                overUnits();
+            }
+            break;
+        default:
+
+            break;
+    }
+}
+clearCol = function(_col) {
+    for (var j in _col) {
+        _col[j].parentNode.removeChild(_col[j]);
+    }
+}
+clearEditMode = function() {
+    collectionControl();
+    modPartialCodeNull();
+    removeMark();
+    reassignFilter();
+}
+reassignFilter = function() {
+    var filters = document.querySelectorAll('[data-filter]');
+    for (var j in filters) {
+        if (typeof filters[j] === "object") {
+            filters[j].setAttribute("onclick", "order(event,this)");
+        }
+    }
+}
+recursivePB = function(_content, _class, _target, _onclick, _mode) {
+    var _recursivePB = document.createElement("div");
+    _recursivePB.className = _class;
+    _recursivePB.innerHTML = _content;
+    if (_onclick) {
+        _recursivePB.setAttribute("onclick", _onclick);
+    }
+    _target.appendChild(_recursivePB);
+    mode[_mode].col.push(_recursivePB);
+}
+unitsRecursive = function(_mode) {
+    var units = document.querySelectorAll('[data-unit]');
+    for (var j in units) {
+        if (typeof units[j] === "object") {
+            switch (_mode) {
+                case "delete":
+                    recursivePB("X", "deleteUnit", units[j], "deleteParent(this)", _mode);
+                    break;
+                case "move":
+                    recursivePB("move", "moveUnit", units[j], null, _mode);
+                    break;
+                default:
+
+                    break;
+            }
+        }
+    }
+}
+
+var sliderPBOffsetX = null;
+var sliderPBOffsetX = null;
+var touchFocus = null;
+var unitFocus = null;
+var unitMoved = null;
+var cursorPosX = null;
+var cursorPosY = null;
+var sliderPBOffsetX = null;
+var sliderPBOffsetY = null;
+var detected = null;
+var detectedBefore = null;
+var sideFocus = null;
+var overUnits = function() {
+
+	//not mobile devices
+    for (var j in mode["move"].col) {
+        console.log("posicion:" + mode["move"].col[j].parentNode.offsetLeft);
+        if (mode["move"].col[j].addEventListener) { // all browsers except IE before version 9
+            mode["move"].col[j].addEventListener("mousedown", function(event) {
+                OnButtonDownItem(event);
+            }, false);
+        } else {
+            alert(j);
+            if (mode["move"].col[j].attachEvent) { // IE before version 9
+                mode["move"].col[j].attachEvent("onmousedown", function(event) {
+                    OnButtonDownItem(event);
+                });
+            }
+        }
+    }
+    //mobile devices
+
+    
+
+    var touchobj = null;
+    document.addEventListener("touchstart", touchStartHandler, false);
+    document.addEventListener("touchend", touchEndHandler, false);
+    document.addEventListener("touchmove", touchMoveHandler, false);
+    function touchStartHandler(event) {
+        //event.preventDefault();
+        touchobj = event.changedTouches[0];
+        for (var j in mode["move"].col) {
+            var item = mode["move"].col[j].parentNode;
+            if (touchobj.pageX > item.offsetLeft && touchobj.pageX < item.offsetLeft + item.offsetWidth && touchobj.pageY + window.pageYOffset > item.offsetTop && touchobj.pageY + window.pageYOffset < item.offsetTop + item.offsetHeight) {
+                unitFocus = item;
+                detectedBefore = unitFocus;
+                unitFocus.style.opacity = ".5";
+                unitMoved = event.target.parentNode.cloneNode(true);
+                unitMoved.className = "unitMove col-xs-6 col-md-3  alignCol";
+                unitMoved.style.width = unitFocus.offsetWidth + "px";
+                unitMoved.style.height = unitFocus.offsetHeight + "px";
+                unitMoved.style.top = unitFocus.offsetTop + "px";
+                unitMoved.style.left = unitFocus.offsetLeft + "px";
+                document.body.appendChild(unitMoved);
+                break;
+            }
+        }
+        touchobj = event.changedTouches[0];
+        sliderPBOffsetX = touchobj.pageX - item.offsetLeft;
+        sliderPBOffsetY = touchobj.pageY - item.offsetTop;
+    }
+
+    function touchEndHandler(event) {
+        event.preventDefault();
+        unitContainerDiv = document.getElementById("unitContainerDiv");
+        document.body.removeChild(unitMoved);
+        switch (sideFocus) {
+            case "left":
+                unitContainerDiv.insertBefore(unitFocus, detected);
+                break;
+            case "right":
+                unitContainerDiv.insertBefore(unitFocus, detected.nextSibling);
+                break;
+        }
+        
+        detectedBefore.style.opacity = "1";
+        detectedBefore.style.border = "";
+        detectedBefore.style.opacity = "1";
+        detectedBefore.style.border = "";
+        detected = null;
+        detectedBefore = null;
+        sideFocus = null;
+        /*document.removeEventListener("touchstart", touchStartHandler, false);
+	    document.removeEventListener("touchend", touchEndHandler, false);
+	    document.removeEventListener("touchmove", touchMoveHandler, false);*/
+    }
+
+    function touchMoveHandler(event) {
+        event.preventDefault();
+        touchobj = event.changedTouches[0];
+        cursorPosY = touchobj.pageY - sliderPBOffsetY;
+        cursorPosX = touchobj.pageX - sliderPBOffsetX;
+        unitMoved.style.top = cursorPosY + "px";
+        unitMoved.style.left = cursorPosX + "px";
+
+        for (var j in mode["move"].col) {
+            var item = mode["move"].col[j].parentNode;
+            if (touchobj.pageX > item.offsetLeft && touchobj.pageX < item.offsetLeft + item.offsetWidth && touchobj.pageY + window.pageYOffset > item.offsetTop && touchobj.pageY + window.pageYOffset < item.offsetTop + item.offsetHeight) {
+                detected = item;
+                detectedBefore.style.opacity = "1";
+                detectedBefore.style.border = "";
+                detectedBefore = detected;
+                detected.style.opacity = ".5";
+                //difference middle
+                if (touchobj.pageX < item.offsetLeft + item.offsetWidth / 2) {
+                    detected.style.borderLeft = "20px dotted orangered";
+                    sideFocus = "left";
+                } else {
+                    detected.style.borderRight = "20px dotted orangered";
+                    sideFocus = "right";
+                }
+                break;
+            }
+        }
+
+    }
+
+
+}
+OnButtonDownItem = function(event) {
+
+
+
+    unitFocus = event.target.parentNode;
+    detectedBefore = unitFocus;
+    unitFocus.style.opacity = ".5";
+    unitMoved = event.target.parentNode.cloneNode(true);
+    unitMoved.className = "unitMove col-xs-6 col-md-3  alignCol";
+    unitMoved.style.width = unitFocus.offsetWidth + "px";
+    unitMoved.style.height = unitFocus.offsetHeight + "px";
+    unitMoved.style.top = unitFocus.offsetTop + "px";
+    unitMoved.style.left = unitFocus.offsetLeft + "px";
+    document.body.appendChild(unitMoved);
+    sliderPBOffsetX = event.clientX - event.target.parentNode.offsetLeft;
+    sliderPBOffsetY = event.clientY - event.target.parentNode.offsetTop;
+
+
+
+
+    document.onmousemove = function(e) {
+        cursorPosX = e.clientX - sliderPBOffsetX;
+        cursorPosY = e.clientY - sliderPBOffsetY;
+        unitMoved.style.left = cursorPosX + "px";
+        unitMoved.style.top = cursorPosY + "px";
+        for (var j in mode["move"].col) {
+            var item = mode["move"].col[j].parentNode;
+            if (e.clientX > item.offsetLeft && e.clientX < item.offsetLeft + item.offsetWidth && e.clientY + window.pageYOffset > item.offsetTop && e.clientY + window.pageYOffset < item.offsetTop + item.offsetHeight) {
+                detected = item;
+                detectedBefore.style.opacity = "1";
+                detectedBefore.style.border = "";
+                detectedBefore = detected;
+                detected.style.opacity = ".5";
+                //difference middle
+                if (e.clientX < item.offsetLeft + item.offsetWidth / 2) {
+                    detected.style.borderLeft = "20px dotted orangered";
+                    sideFocus = "left";
+                } else {
+                    detected.style.borderRight = "20px dotted orangered";
+                    sideFocus = "right";
+                }
+                break;
+            }
+        }
+    }
+    document.onmouseup = function(e) {
+        unitContainerDiv = document.getElementById("unitContainerDiv");
+        document.body.removeChild(unitMoved);
+        switch (sideFocus) {
+            case "left":
+                unitContainerDiv.insertBefore(unitFocus, detected);
+                break;
+            case "right":
+                unitContainerDiv.insertBefore(unitFocus, detected.nextSibling);
+                break;
+        }
+        e.stopPropagation();
+        e.cancleBubble = true;
+        detectedBefore.style.opacity = "1";
+        detectedBefore.style.border = "";
+        detected = null;
+        detectedBefore = null;
+        sideFocus = null;
+        document.onmousemove = function(e) {};
+        document.onmouseup = function(e) {};
+    }
+
+}
+deleteParent = function(_target) {
+    _target.parentNode.parentNode.removeChild(_target.parentNode);
+    var posRots = document.querySelectorAll('[data-position]');
+    var counter = 0;
+    for (var j in posRots) {
+        if (typeof posRots[j] === "object") {
+            posRots[j].innerHTML = counter;
+            counter++;
+        }
+    }
+    collectionControl();
+}
+defineUnit = function() {
+    defineUnitDiv = document.getElementById("defineUnitDiv");
+    defineDataList = document.getElementById("defineDataList");
+    inputDefineDiv = document.getElementById("inputDefineDiv");
+    inputDefineMsg = document.getElementById("inputDefineMsg");
+    inputsRots = document.getElementById("inputsRots");
+    defineUnitControl = document.getElementById("defineUnitControl");
+    modifyUnitControl = document.getElementById("modifyUnitControl");
+    defineDataList.innerHTML = "";
+    defineUnitControl.style.display = "initial";
+    modifyUnitControl.style.display = "none";
+
+    unitBase = unitsObj[0].item.cloneNode(true);
+    var unitBaseProperties = unitBase.querySelectorAll('[data-filter]');
+
+    for (var l in unitBaseProperties) {
+        if (typeof unitBaseProperties[l] === "object") {
+            unitBaseProperties[l].setAttribute("onclick", "property(event,this)");
+        }
+    }
+    defineDataList.appendChild(unitBase);
+    inputsRots.innerHTML = "";
+    for (var j in languages) {
+        var newLi = document.createElement("li");
+        var itemLabel = document.createElement("Label");
+        itemLabel.innerHTML = "Rot " + languages[j];
+        newLi.appendChild(itemLabel);
+        var newInput = document.createElement("input");
+        newInput.className = "inputDefine";
+        newInput.id = "rot_" + languages[j];
+        newInput.value = languages[j];
+        newLi.appendChild(newInput);
+        inputsRots.appendChild(newLi);
+    }
+
+    setTimeout(function() {
+        defineUnitDiv.style.left = "0";
+
+    }, 10);
+}
+var oldProperty = null;
+var lastProperty = null;
+property = function(event, _this) {
+    if (oldProperty !== _this.dataset.filter) {
+        _this.className = "unitFilterPBActive";
+        if (lastProperty) {
+            lastProperty.className = "unitFilterPB";
+        }
+        lastProperty = _this;
+        defineUnitControl.style.display = "none";
+        modifyUnitControl.style.display = "initial";
+        inputDefine.value = _this.dataset.filter;
+        oldProperty = _this.dataset.filter;
+        for (var n in languages) {
+            document.getElementById("rot_" + languages[n]).value = _this.querySelectorAll('[class=' + languages[n] + ']')[0].innerHTML;
+        }
+        inputTypeDefine.value = _this.dataset.type;
+        writeMsg("inputModifyMsg", "");
+    }
+}
+modifyDefineUnit = function() {
+    if (oldProperty !== "position") {
+        if (inputDefine.value !== "" && validate(inputDefine.value)) {
+            var unitRotsData = document.querySelectorAll('[data-filter=' + oldProperty + ']');
+            console.log(unitRotsData);
+            for (var l in unitRotsData) {
+                if (typeof unitRotsData[l] === "object") {
+                    unitRotsData[l].dataset.filter = inputDefine.value;
+                    unitRotsData[l].dataset.type = inputTypeDefine.value;
+                    for (var n in languages) {
+                        unitRotsData[l].getElementsByClassName(languages[n])[0].innerHTML = document.getElementById("rot_" + languages[n]).value;
+                    }
+                }
+            }
+            var unitRotsData = document.querySelectorAll('[data-' + oldProperty + ']');
+            for (var l in unitRotsData) {
+                if (typeof unitRotsData[l] === "object") {
+                    delete unitRotsData[l].dataset[oldProperty];
+                    unitRotsData[l].setAttribute("data-" + inputDefine.value, "");
+                }
+            }
+            inputDefine.value = "";
+            defineDataList.innerHTML = "";
+            collectionControl();
+            closeDiv(defineUnitDiv, 'left', '100%');
+        } else {
+            inputDefine.value = oldProperty;
+            writeMsg("inputModifyMsg", "No Name Define. You only can use a-z characters");
+        }
+    } else {
+        writeMsg("inputModifyMsg", "Blocked property");
+    }
+}
+deleteDefineUnit = function() {
+    if (oldProperty !== "position") {
+        var unitRotsData = document.querySelectorAll('[data-filter=' + oldProperty + ']');
+        for (var l in unitRotsData) {
+            if (typeof unitRotsData[l] === "object") {
+                unitRotsData[l].parentNode.removeChild(unitRotsData[l]);
+            }
+        }
+        var unitRotsData = document.querySelectorAll('[data-' + oldProperty + ']');
+        for (var l in unitRotsData) {
+            if (typeof unitRotsData[l] === "object") {
+                unitRotsData[l].parentNode.removeChild(unitRotsData[l]);
+            }
+        }
+        defineUnitControl.style.display = "none";
+        modifyUnitControl.style.display = "initial";
+        inputDefine.value = "";
+        defineDataList.innerHTML = "";
+        collectionControl();
+        closeDiv(defineUnitDiv, 'left', '100%');
+    } else {
+        writeMsg("inputModifyMsg", "Blocked property");
+    }
+
+}
+saveDefineUnit = function() {
+
+}
+cancelDefineUnit = function() {
+    unitBase.parentNode.removeChild(unitBase);
+    closeDiv(defineUnitDiv, 'left', '100%');
+}
+cancelModifyUnit = function() {
+    if (lastProperty) {
+        lastProperty.className = "unitFilterPB";
+    }
+    lastProperty = null;
+    defineUnitControl.style.display = "initial";
+    modifyUnitControl.style.display = "none";
+}
+addProperty = function() {
+        var newLi = document.createElement("li");
+        newLi.className = "newDefineLi";
+        if (unitModel[inputDefine.value]) {
+            inputDefineMsg.innerHTML = "Exist Property";
+        } else if (inputDefine.value !== "" && validate(inputDefine.value)) {
+
+            unitModel[inputDefine.value] = {};
+            unitModel[inputDefine.value].type = inputTypeDefine.value;
+            unitModel[inputDefine.value].order = true;
+
+
+            var newFilter = document.createElement("div");
+            newFilter.className = "unitFilterPB";
+            newFilter.onclick = function() {
+                order(event);
+            }
+            unitBase.appendChild(newFilter);
+            newFilter.setAttribute("data-filter", inputDefine.value);
+            newFilter.setAttribute("data-type", inputTypeDefine.value);
+            for (var j in languages) {
+                var span = document.createElement("span");
+                span.className = languages[j];
+                span.innerHTML = document.getElementById("rot_" + languages[j]).value;
+                unitModel[inputDefine.value][languages[j]] = languages[j].value;
+                newFilter.appendChild(span);
+            }
+
+            defineDataList.innerHTML = "";
+            for (var j in unitsObj) {
+                var newFilter = document.createElement("div");
+                newFilter.className = "unitFilterPB";
+                newFilter.onclick = function() {
+                    order(event, this);
+                }
+                unitsObj[j].item.appendChild(newFilter);
+                newFilter.setAttribute("data-filter", inputDefine.value);
+                newFilter.setAttribute("data-type", inputTypeDefine.value);
+                newFilter.setAttribute("onclick", "order(event,this)");
+                for (var l in languages) {
+                    var span = document.createElement("span");
+                    span.className = languages[l];
+                    span.innerHTML = document.getElementById("rot_" + languages[l]).value;
+                    newFilter.appendChild(span);
+                }
+                var newData = document.createElement("div");
+                newData.setAttribute("data-" + inputDefine.value, "");
+                newData.innerHTML = j;
+                unitsObj[j].item.appendChild(newData);
+                unitContainerDiv.innerHTML = "";
+                for (var l in unitsObj) {
+                    unitContainerDiv.appendChild(unitsObj[l].item);
+                }
+            }
+            if (typeof changeLanguage !== "undefined") {
+                changeLanguage();
+            }
+            collectionControl();
+            closeDiv(defineUnitDiv, 'left', '100%');
+
+        } else {
+            inputDefineMsg.innerHTML = "No Name Define. You only can use a-z characters";
+        }
+    }
+    // Modify Unit
+var divResalt = document.createElement("div");
+divResalt.id = "divResalt";
+divResalt.style.position = "absolute";
+divResalt.style.background = "rgba(174, 225, 242, .5)";
+divResalt.style.border = "4px dotted #ddd";
+var containerResalt = null;
+var delResalt = null;
+var drawMark = function(elemen) {
+    divResalt.style.width = elemen.offsetWidth + "px";
+    divResalt.style.height = elemen.offsetHeight + "px";
+    divResalt.style.top = elemen.offsetTop + "px";
+    divResalt.style.left = elemen.offsetLeft + "px";
+    divResalt.style.zIndex = elemen.style.zIndex + 1;
+    divResalt.style.pointerEvents = "none";
+    containerResalt = elemen.parentNode;
+    containerResalt.insertBefore(divResalt, containerResalt.firstChild);
+    delResalt = function() {
+        if (document.getElementById("divResalt")) {
+            containerResalt.removeChild(divResalt);
+        }
+    }
+}
+var removeMark = function() {
+    if (delResalt) {
+        delResalt();
+        delResalt = null;
+    }
+}
+var tagsAffected = [
+    "span",
+    "textarea",
+    "input",
+    "p",
+    "div",
+    "ul",
+    "li",
+    "IMG"
+]
+var modPartialCode = function() {
+    //var contItems = document.getElementById("unitContainerDiv");
+    var contItems = document.getElementById("htmlContent");
+    for (var j in tagsAffected) {
+        var pTags = contItems.getElementsByTagName(tagsAffected[j]);
+        for (var j = 0; j <= pTags.length - 1; j++) {
+            pTags[j].onmouseover = function(e) {
+                e.cancelBubble = true;
+                drawMark(e.target);
+            }
+            pTags[j].onmouseout = function(e) {
+
+            }
+            pTags[j].onclick = function(e) {
+                removeMark();
+                e.cancelBubble = true;
+                showCode(e.target);
+            }
+        }
+    }
+}
+var modPartialCodeNull = function() {
+    //var contItems = document.getElementById("unitContainerDiv");
+    var contItems = document.getElementById("htmlContent");
+    for (var j in tagsAffected) {
+        var pTags = contItems.getElementsByTagName(tagsAffected[j]);
+        for (var j = 0; j <= pTags.length - 1; j++) {
+            pTags[j].onmouseover = function(e) {
+
+            }
+            pTags[j].onmouseout = function(e) {
+
+            }
+            pTags[j].onclick = function(e) {
+
+            }
+        }
+    }
+}
+var showCode = function(_elem) {
+    modHTMLMode = true;
+    var htmlModCodesDiv = document.createElement("div");
+    htmlModCodesDiv.id = "htmlModCodesDiv";
+    htmlModCodesDiv.className = "generic_trans";
+    htmlModCodesDiv.innerHTML = "Modificar Código";
+    lastHtmlModCodesDiv = htmlModCodesDiv;
+
+    var close = document.createElement("div");
+    close.id = "closePB";
+    close.className = "genericPB_vertical";
+    close.innerHTML = "x";
+    close.onclick = function() {
+        setTimeout(function() {
+            htmlModCodesDiv.style.right = "-100%";
+            endTrans = function() {
+                endTrans = null;
+                htmlModCodesDiv.parentNode.removeChild(htmlModCodesDiv);
+            }
+        }, 10);
+
+    };
+    close.style.position = "absolute";
+    close.style.top = "10px";
+    close.style.right = "10px";
+
+
+    var typeCode = document.createElement("p");
+    typeCode.className = "genericRot_vertical";
+    typeCode.innerHTML = "Type: " + _elem.toString();
+
+    var introCodeInput = document.createElement("textarea");
+    introCodeInput.className = "modifyUnit";
+    introCodeInput.style.height = "200px";
+    introCodeInput.value = _elem.innerHTML;
+    introCodeInput.addEventListener("input", function() {
+        introCodePB.onclick()
+    });
+    /*introCodeInput.onchange=function(){
+        introCodePB.onclick();
+    }*/
+
+
+    var introCodePB = document.createElement("div");
+    introCodePB.className = "genericPB_vertical";
+    introCodePB.innerHTML = "Set Code";
+    htmlModCodesDiv.appendChild(close);
+    htmlModCodesDiv.appendChild(typeCode);
+    htmlModCodesDiv.appendChild(introCodeInput);
+    htmlModCodesDiv.appendChild(introCodePB);
+
+    var collection = {};
+    collection["className"] = _elem.className;
+    collection["id"] = _elem.id;
+    collection["onclick"] = _elem.getAttribute("onclick");
+
+
+    for (var j in collection) {
+        var rot = document.createElement("p");
+        rot.className = "genericRot_vertical";
+        rot.innerHTML = j;
+        switch (j) {
+            case "onclick":
+                var recom = document.createElement("p");
+                recom.className = "genericRot_vertical";
+                recom.style.color = "#aaa";
+                recom.innerHTML = "Use ' Inside onclick ";
+                htmlModCodesDiv.appendChild(recom);
+                var inputColl = document.createElement("textarea");
+                inputColl.className = "modifyUnit";
+                inputColl.addEventListener("input", function() {
+                    introCodePB.onclick()
+                });
+                inputColl.style.height = "150px";
+                break;
+            default:
+                var inputColl = document.createElement("input");
+                inputColl.className = "modifyUnit";
+                break;
+        }
+        inputColl.value = collection[j];
+        collection[j] = inputColl;
+        htmlModCodesDiv.appendChild(rot);
+        htmlModCodesDiv.appendChild(inputColl);
+    }
+    switch (_elem.toString()) {
+        case "[object HTMLParagraphElement]":
+
+            break;
+        case "[object HTMLDivElement]":
+
+            break;
+        case "[object HTMLImageElement]":
+            var rot1 = document.createElement("p");
+            rot1.className = "genericRot_vertical";
+            rot1.innerHTML = "url Img";
+            var srcIMG = document.createElement("textarea");
+            srcIMG.className = "modifyUnit";
+            srcIMG.addEventListener("input", function() {
+                introCodePB.onclick()
+            });
+            srcIMG.style.height = "150px";
+            srcIMG.value = _elem.src.toString();
+            htmlModCodesDiv.appendChild(rot1);
+            htmlModCodesDiv.appendChild(srcIMG);
+            collection["src"] = srcIMG;
+            break;
+        default:
+            break;
+
+    }
+
+    var InternalNavRot = document.createElement("p");
+    InternalNavRot.className = "genericRot_vertical";
+    InternalNavRot.innerHTML = "Internal Navigation";
+    htmlModCodesDiv.appendChild(InternalNavRot);
+
+    var internalNavCode = {};
+    var InternalNavRotPage = document.createElement("p");
+    InternalNavRotPage.className = "genericRot_vertical";
+    InternalNavRotPage.innerHTML = "Page";
+    htmlModCodesDiv.appendChild(InternalNavRotPage);
+    var InternalNavRotPageInput = document.createElement("input");
+    InternalNavRotPageInput.className = "modifyUnit";
+    InternalNavRotPageInput.value = _elem.getAttribute("toPage");
+    htmlModCodesDiv.appendChild(InternalNavRotPageInput);
+    internalNavCode["page"] = InternalNavRotPageInput;
+    var InternalNavRotSubPage = document.createElement("p");
+    InternalNavRotSubPage.className = "genericRot_vertical";
+    InternalNavRotSubPage.innerHTML = "SubPage";
+    htmlModCodesDiv.appendChild(InternalNavRotSubPage);
+    var InternalNavRotSubPageInput = document.createElement("input");
+    InternalNavRotSubPageInput.className = "modifyUnit";
+    InternalNavRotSubPageInput.value = _elem.getAttribute("toSubPage");
+    htmlModCodesDiv.appendChild(InternalNavRotSubPageInput);
+    internalNavCode["subpage"] = InternalNavRotSubPageInput;
+
+    var extraCssRot = document.createElement("p");
+    extraCssRot.className = "genericRot_vertical";
+    extraCssRot.innerHTML = "Extra CSS";
+    var extraCss = document.createElement("textarea");
+    extraCss.className = "modifyUnit";
+    extraCss.addEventListener("input", function() {
+        introCodePB.onclick()
+    });
+    extraCss.value = "";
+    htmlModCodesDiv.appendChild(extraCssRot);
+    htmlModCodesDiv.appendChild(extraCss);
+    var cssTextCollection = {};
+    var cssText = _elem.style.cssText.split(";");
+    cssText.pop();
+    for (var j in cssText) {
+        var style = cssText[j].split(":");
+        var rot = document.createElement("p");
+        rot.style.margin = "0";
+        rot.style.textAlign = "left";
+        rot.innerHTML = style[0];
+        var inputCssText = document.createElement("input");
+        inputCssText.className = "modifyUnit";
+        inputCssText.addEventListener("input", function() {
+            introCodePB.onclick()
+        });
+        inputCssText.value = style[1];
+        inputCssText.className = "modifyUnit";
+        cssTextCollection[style[0]] = inputCssText;
+        htmlModCodesDiv.appendChild(rot);
+        htmlModCodesDiv.appendChild(inputCssText);
+    }
+    collection["style"] = _elem.style.cssText;
+
+
+
+    introCodePB.onclick = function() {
+        setCode(introCodeInput, _elem, collection, cssTextCollection, extraCss, internalNavCode);
+    };
+    document.body.appendChild(htmlModCodesDiv);
+    setTimeout(function() {
+        htmlModCodesDiv.style.right = "0";
+        endTrans = function() {
+            endTrans = null;
+        }
+    }, 10);
+
+}
+var setCode = function(introCodeInput, _elem, collection, cssTextCollection, extraCss, internalNavCode) {
+    _elem.innerHTML = introCodeInput.value;
+
+    if (internalNavCode["page"].value != "" && internalNavCode['subpage'].value == "") {
+        _elem.removeAttribute("toSubPage");
+        _elem.setAttribute("toPage", internalNavCode['page'].value);
+        collection["onclick"].value = "internalNavMenu('" + internalNavCode["page"].value + "')";
+        _elem.setAttribute("onclick", "internalNavMenu('" + internalNavCode["page"].value + "')");
+    } else if (internalNavCode["page"].value != "" && internalNavCode['subpage'].value != "") {
+        _elem.setAttribute("toPage", internalNavCode['page'].value);
+        _elem.setAttribute("toSubPage", internalNavCode['subpage'].value);
+        collection["onclick"].value = "internalNavMenu('" + internalNavCode['page'].value + "','" + internalNavCode['subpage'].value + "')";
+        _elem.setAttribute("onclick", "internalNavMenu('" + internalNavCode['page'].value + "','" + internalNavCode['subpage'].value + "')");
+    } else {
+        _elem.removeAttribute("toPage");
+        _elem.removeAttribute("toSubPage");
+        _elem.removeAttribute("onclick");
+        internalNavCode['subpage'].value = "";
+        if (collection["onclick"].value.indexOf("internalNavMenu") > -1) {
+            collection["onclick"].value = "";
+        }
+    }
+    for (var j in collection) {
+        if (collection[j].value != "") {
+            if (j == "onclick") {
+                _elem.setAttribute("onclick", collection[j].value);
+            } else {
+                _elem[j] = collection[j].value;
+            }
+
+        } else {
+            if (j == "onclick" && internalNavCode["page"].value == "") {
+                _elem.removeAttribute("onclick");
+            } else if (j == "className") {
+                _elem.removeAttribute("class");
+            } else if (j != "onclick" && j != "className") {
+                _elem.removeAttribute(j);
+            }
+
+        }
+    }
+
+    _elem.removeAttribute("style");
+    for (var j in cssTextCollection) {
+        if (cssTextCollection[j].value != "") {
+            if (j.indexOf("opacity") <= -1) {
+                _elem.style.cssText += j + ":" + cssTextCollection[j].value + ";";
+            } else {
+                if (cssTextCollection[j].value.indexOf("initial") <= -1) {
+                    _elem.style.cssText += j + ":" + cssTextCollection[j].value + ";";
+                }
+            }
+        }
+    }
+    _elem.style.cssText += extraCss.value;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

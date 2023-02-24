@@ -1,0 +1,267 @@
+
+<style>
+.loginInput{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 200px;
+    font-size: 16px !important;
+    border: 2px solid rgb(204, 204, 204) !important;
+    padding: 17px !important;
+    opacity: initial;
+    display: inline-block;
+    color: #333;
+    border-radius:0;
+}
+#loginOutPB{
+  display:none;
+
+}
+</style>
+<div id="htmlContent" style="padding-top: 100px; height: 1500px; position: relative;">
+
+<div class="row">
+<div class="col-xs-12 col-md-offset-3 col-md-6">
+<div>
+   <div>
+<div style="font-size: 20px; padding-bottom: 20px;"><span class="es">FORMULARIO DE REGISTRO</span>
+<span class="en">REGISTER FORM</span></div>      
+      <div style="padding-bottom:40px"><div id="message"></div></div>
+      <div style=""><span class="es">Nombre</span>
+<span class="en">Name</span></div>
+      <div><input id="name" type="text" placeholder="name" class="loginInput"></div>
+      <div>Nick</div>
+      <div><input id="user" type="text" placeholder="user" class="loginInput"></div>
+      <div style=""><span class="es">Contraseña</span>
+<span class="en">Password</span></div>
+      <div><input id="password" type="text" placeholder="password" class="loginInput"></div>
+      <div><span class="es">Repetir Contraseña</span>
+<span class="en">Password Repit</span></div>
+      <div><input id="passwordRepit" type="text" placeholder="repit password" class="loginInput"></div>
+      <div>Email</div>
+      <div><input id="email" type="text" placeholder="email" class="loginInput"></div>
+      <div><div id="loginPB" class="genericPB" onclick="regUser()" style="width: 200px; margin-bottom: 40px;"><span class="es">REGISTRARME</span>
+<span class="en">REGISTER</span></div></div>  
+      <!-----------------<div><div id="status"></div></div>------------->
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<!---------------messages div------------------------------------------->
+<div id="statusContainer" onclick="closeStatus()"><div class="basicouter"><div class="basicInner"><div id="status">AQUÍ VIENE EL MENSAJE CORRESPONDIENTE</div><div id="volverStatus" onclick="closeStatus()"><span class="es">Cerrar</span>
+<span class="en" style="display: none;">Close</span></div></div></div></div>
+<!---------------------------------------------------------->
+
+<script cbtype="submenuhide">
+/*------------------------
+------------------------
+------------------------
+auto hide sumbenu if clip contains it
+------------------------
+------------------------
+--------------------------*/
+resizeDoc2 = function() {
+    if (resizeFunc) {
+        resizeFunc();
+    }
+    if(typeof menuResize!=="undefined"){
+          menuResize();
+    }
+    var mainContent = document.getElementById("date");
+    if (!fixed) {
+        topPos = document.getElementById("headerContainer").offsetHeight;
+        if (lastPage) {
+            if (window.innerWidth >= 900) {
+                lastPage.className = "page";
+                lastPage.style.top = topPos + "px";
+
+            } else {
+                lastPage.style.top = topPos + "px";
+            }
+            document.getElementById("imgHeader").style.height = topPos + "px";
+            lastPage.className = "page generic_trans";
+        }
+    }
+    if (typeof resizeSubmenuFunc !== "undefined" && resizeSubmenuFunc !== null) {
+        resizeSubmenuFunc();
+    } else {
+        if (subMenuPB && !submenuAppHide) {
+            mainContent.style.width = "100%";
+        }
+    }
+};
+window.addEventListener("resize", resizeDoc2, false);
+beforeTransitionFunc=function(_end){
+if(typeof changeLanguage!=="undefined"){
+changeLanguage();
+}
+beforeTransitionFunc=null;
+
+hideSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.left = -submenuContainer.offsetWidth + "px";
+        var mainContent = document.getElementById("date");
+        mainContent.style.left = "0";
+        mainContent.style.width = "100%";
+};
+showSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.opacity = 1;
+        submenuContainer.style.left = "0";
+};
+if (typeof CONFIG !== "undefined" && typeof CONFIG["closeSubMenuOnSelect"] !== "undefined" && CONFIG["closeSubMenuOnSelect"] === "true" && !document.getElementById("submenuContainer").getAttribute("solid")) {
+                           hideSubmenuApp();
+                            var submenuPBTemp=subMenuPB.cloneNode(true);
+                            submenuPBTemp.onclick = function() {
+                                   submenuApphideShow();
+                            };
+                            document.getElementById("submenuContainer").appendChild(submenuPBTemp);
+                            //document.getElementById("submenuContainer").appendChild(subMenuPB);
+                            //document.body.appendChild(document.getElementById("submenuContainer"));
+                            submenuAppHide = true;
+                            document.getElementById("submenuContainer").setAttribute("solid","1");
+                        }
+
+scrollToTop(300, _end);
+}
+
+</script>
+<script cbtype="registerFuncs">
+/*------------------------
+------------------------
+------------------------
+substitues default  scripts for registration
+------------------------
+------------------------
+--------------------------*/
+var messagesEmail={
+'WAITING':'<span class="es">Por favor, espere...</span><span class="en">Please, wait...</span>',
+'REGNOEMPTY':'<span class="es">Por favor completa todos los campos.</span><span class="en">Please enter all inputs.</span>',
+'REGEMAILNOK':'<span class="es">Por favor introduzca un email válido.</span><span class="en">Please enter a valid email.</span>',
+'REGPWDNOK':'<span class="es">Las contraseñas no coinciden</span><span class="en">Passwords do not match</span>',
+'NOTEXISTS':'<span class="es">El mail indicado no existe</span><span class="en">The mail does not exist.</span>',
+'TEMPREG':'<span class="es">El email indicado está pendiente de ser confirmado</span><span class="en">The email introduce is pending on confirmation.</span>',
+'ACTIVEREG':'<span class="es">Se ha envíado un código de verificación al email indicado, introdúzcalo para finalizar el proceso de registro</span><span class="en">A verification code has been sent to the email indicated, please enter it to end the registration process.</span>',
+'REGEXIST':'<span class="es">El email introducido ya está en uso.</span><span class="en">The email entered has already been registered.</span>'
+};
+_regNokFunc=function(data){
+if(data==="REGNOEMPTY"){
+var message=messagesEmail["REGNOEMPTY"];
+}else if(data==="REGEMAILNOK"){
+message=messagesEmail["REGEMAILNOK"];
+}else if(data==="REGPWDNOK"){
+message=messagesEmail["REGPWDNOK"];
+}
+document.getElementById("status").innerHTML=message;
+if(typeof changeLanguage!=="undefined"){
+    changeLanguage();
+}
+document.getElementById("statusContainer").style.left="0";
+}
+_regOkFunc=function(data){
+if(data==="EXISTSTEMP"){
+var message=messagesEmail["TEMPREG"];
+}else if(data==="ACTIVEREG"){
+message=messagesEmail["ACTIVEREG"];
+}else if(data==="EXISTS"){
+message=messagesEmail["REGEXIST"];
+}else if(data==="OK"){
+message=rots["REGOK"][language];
+}
+
+document.getElementById("status").innerHTML=message;
+if(typeof changeLanguage!=="undefined"){
+    changeLanguage();
+}
+document.getElementById("statusContainer").style.left="0";
+}
+var closeStatus=function(){
+      document.getElementById("statusContainer").style.left="100%"; 
+  }   
+var regUser=function(){
+     var dataRegister={};
+     dataRegister.name=document.getElementById("name").value;
+     dataRegister.user=document.getElementById("user").value;
+     dataRegister.password=document.getElementById("password").value;
+     dataRegister.passwordRepit=document.getElementById("passwordRepit").value;
+     dataRegister.email=document.getElementById("email").value;
+     registerCore(dataRegister,_regOkFunc,undefined,_regNokFunc,undefined);
+}
+</script><script cbtype="allways">
+/*------------------------
+------------------------
+------------------------
+always collection to execute
+------------------------
+------------------------
+--------------------------*/
+if(typeof allwaysFunc!=="undefined"){
+allwaysFunc();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+<div id="htmlContent" style="padding-top: 100px; height: 100%; position: relative;">
+<ul>
+<li>
+Instalación de dependencias
+</li>
+<li>
+<a href=""></a>
+</li>
+</ul>
+</div>
+<script cbtype="submenuhide">
+/*------------------------
+------------------------
+------------------------
+auto hide sumbenu if clip contains it
+------------------------
+------------------------
+--------------------------*/
+resizeDoc2 = function() {
+    if (resizeFunc) {
+        resizeFunc();
+    }
+    menuResize();
+    var mainContent = document.getElementById("date");
+    if (!fixed) {
+        topPos = document.getElementById("headerContainer").offsetHeight;
+        if (lastPage) {
+            if (window.innerWidth >= 900) {
+                lastPage.className = "page";
+                lastPage.style.top = topPos + "px";
+
+            } else {
+                lastPage.style.top = topPos + "px";
+            }
+            document.getElementById("imgHeader").style.height = topPos + "px";
+            lastPage.className = "page generic_trans";
+        }
+    }
+    if (typeof resizeSubmenuFunc !== "undefined" && resizeSubmenuFunc !== null) {
+        resizeSubmenuFunc();
+    } else {
+        if (subMenuPB && !submenuAppHide) {
+            mainContent.style.width = "100%";
+        }
+    }
+};
+window.addEventListener("resize", resizeDoc2, false);
+
+beforeTransitionFunc=function(_end){
+if(typeof changeLanguage!=="undefined"){
+changeLanguage();
+}
+beforeTransitionFunc=null;
+
+hideSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.left = -submenuContainer.offsetWidth + "px";
+        var mainContent = document.getElementById("date");
+        mainContent.style.left = "0";
+        mainContent.style.width = "100%";
+};
+showSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.opacity = 1;
+        submenuContainer.style.left = "0";
+};
+if (typeof CONFIG !== "undefined" && typeof CONFIG["closeSubMenuOnSelect"] !== "undefined" && CONFIG["closeSubMenuOnSelect"] === "true" && !document.getElementById("submenuContainer").getAttribute("solid")) {
+                           hideSubmenuApp();
+                            var submenuPBTemp=subMenuPB.cloneNode(true);
+                            submenuPBTemp.onclick = function() {
+                                   submenuApphideShow();
+                            };
+                            document.getElementById("submenuContainer").appendChild(submenuPBTemp);
+                            //document.getElementById("submenuContainer").appendChild(subMenuPB);
+                            //document.body.appendChild(document.getElementById("submenuContainer"));
+                            submenuAppHide = true;
+                            document.getElementById("submenuContainer").setAttribute("solid","1");
+                        }
+
+scrollToTop(300, _end);
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+

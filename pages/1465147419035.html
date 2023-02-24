@@ -1,0 +1,182 @@
+<style>
+#date{
+height:auto;
+}
+.page{
+height:auto;
+}
+#importLabel,#importLabel_old{
+   padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(0,0,0,.5);
+    cursor: pointer;
+    border-radius: 16px;
+    display: inline-block;
+}
+.bta_bg_head_potencia{
+  letter-spacing:16px;
+   font-size:40px;
+   color:#fff;
+   font-weight:bold;
+   text-transform:uppercase;
+}
+.potencia_h4{
+   font-weight:bold;
+   font-size:25px;
+   text-transform:uppercase;
+   padding-top:20px;
+   color:#666;
+}
+.potencia_h3{
+   font-weight:bold;
+   font-size:18px;
+   padding-top:20px;
+   color:#666;
+}
+.container{
+   display:table;
+   width:50px;
+   height:50px;
+   background: rgba(0, 0, 0, 0.701961);
+   color:#fff;
+   font-size:60px;
+}       
+.contain{
+   width:100%;
+   height:100%;
+   display:table-cell;
+   
+   text-align:center
+}
+</style>
+<div id="htmlContent" style="padding-top: 100px; height: 1500px; position: relative; text-align: left; opacity: initial;">
+
+
+<section>
+<div class="row" style="opacity: initial;">
+<div class="col-xs-12 col-md-offset-2 col-md-8" style="opacity: initial;">
+<ul>
+<li style="font-size: 20px;">MOSTRAR CADENA PARA CREAR LA FUNCIÓN QUE ABRE UN PUENTE HACIA OTRO CLIP</li>
+<li>--------------------------------------------------</li>
+</ul>
+<p>Añade la cadena con la que poder abrir un puente hacía otro CLIP.</p>
+<p>La diferencia entre importar un CLIP y abrir un puente es la siguiente:.</p>
+<p>Al importar un CLIP se hace importándolo dentro de otro CLIP, el CLIP importado y el que lo importa son el mismo, integrado en el BLOC del que lo importa</p>
+<p>Mientras que abrir un puente es una funcionalidad que nos lleva a otro CLIP como parte de la navegación, por ejemplo aplicándolo en un botón</p>
+<p>Especialmente útil para abrir CLIPS de otro BLOC, propio o de terceros sin salir de nuestro BLOC</p>
+<div id="importLabel"></div>
+</div>
+</div>
+</section>
+
+
+
+<section>
+<div class="row" style="opacity: initial;">
+<div class="col-xs-12 col-md-offset-2 col-md-8" style="opacity: initial;">
+
+<xmp style="text-align: left;font-size:10px">
+<style>
+#importLabel,#importLabel_old{
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(0,0,0,.5);
+    cursor: pointer;
+    border-radius: 16px;
+    display: inline-block;
+}
+</style>
+<script>
+var URLBase=window.location.href.split("/?")[0];
+if(typeof setBridgeString==="undefined"){
+  setBridgeString=function(){
+      if(document.getElementById("importLabel_old")){
+          document.getElementById("importLabel_old").style.visibility="hidden";
+      }
+         var getPage=document.getElementsByClassName("page");
+         if(getPage.length>=2){
+           var env = window.location.toString();
+           var importString=getPage[1].id.split("_")[2];
+            document.getElementById("importLabel").innerHTML = 'clipblocBridge("' + URLBase + '::' + tabHome.split("_")[1] + '::' + importString +'")';
+            document.getElementById("importLabel").id="importLabel_old";
+         }
+   };
+}
+if(typeof setBridgeString!="undefined"){
+   setBridgeString();
+}
+</script>
+
+</xmp>
+</div>
+</div>
+</section>
+
+
+
+
+</div>
+<script>
+var keepFromImport=true;
+var URLBase=window.location.href.split("/?")[0];
+if(typeof setBridgeString==="undefined"){
+  setBridgeString=function(){
+      if(document.getElementById("importLabel_old")){
+          document.getElementById("importLabel_old").style.visibility="hidden";
+      }
+         var getPage=document.getElementsByClassName("page");
+         if(getPage.length>=2){
+           var env = window.location.toString();
+           var importString=getPage[1].id.split("_")[2];
+            document.getElementById("importLabel").innerHTML = 'clipblocBridge("' + URLBase + '::' + tabHome.split("_")[1] + '::' + importString +'")';
+            document.getElementById("importLabel").id="importLabel_old";
+         }
+   };
+}
+if(typeof setBridgeString!="undefined"){
+   setBridgeString();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+<div class="row" id="menu_level_2" >
+    <div class="col-xs-12" >
+        <div class="row">
+            
+            <div class="col-xs-12 basicContainer">
+                <div class="col-xs-3 basicPB" id="message" >
+                    Waiting...
+                </div>
+                <div class="col-xs-3 basicPB" data-bind="click: regOnline">
+                    Registered Online
+                </div>
+                <div class="col-xs-3 basicPB" id="basicAddPB" data-bind="click: anadir">
+                    Add ( + )
+                </div>
+                <div class="col-xs-3 basicPB" id="basicSavePB" data-bind="click: guardar">
+                    Save
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-xs-12" >
+                <div data-bind="foreach : tabs ">
+                    <div class="row menu_level_2_item_group">
+                        <ul>
+                            <li>
+                                <div data-bind="text:$index"></div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        User<input onfocus="focusTextReg()" data-bind="value:user" />
+                                    </div><div class="col-xs-6">
+                                        PWD<input onfocus="focusTextReg()" data-bind="value:pwd" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="menu_level_2_item_inner"><div><input onfocus="focusTextReg()" type="checkbox" name="" value="" data-bind="checked: $data.active"  /></div><span class="rots">Active</span></div>
+                                    </div><div class="col-xs-3">
+                                        <div class="menu_level_2_item_inner"><div><input onfocus="focusTextReg()" type="checkbox" name="" value="" data-bind="checked: $data.privAccess"  /></div><span class="rots">Private Access</span></div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="menu_level_2_item_inner"><div><input onfocus="focusTextReg()" type="checkbox" name="" value="" data-bind="checked: $data.privContent"  /></div><span class="rots">Private Content</span></div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        Type 0('administrador); 1('usuario')<input onfocus="focusTextReg()" data-bind="value:type" />                                
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        Nick<input onfocus="focusTextReg()" data-bind="value:nick" />
+                                    </div><div class="col-xs-6">
+                                        Email<input onfocus="focusTextReg()" data-bind="value:email" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        Name<input onfocus="focusTextReg()" data-bind="value:name" />
+                                    </div><div class="col-xs-6">
+                                        Surname<input onfocus="focusTextReg()" data-bind="value:surname" />
+                                    </div>
+                                </div>
+                            </li>
+                          
+                            <li>
+                                <div class="menu_level_2_item_inner generic_pb" data-bind="click: $root.eliminar"><div>Eliminar</div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

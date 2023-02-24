@@ -1,0 +1,56 @@
+
+<style>
+    .loginInput{
+        margin-top: 10px;
+        margin-bottom: 40px;
+        width: 200px;
+        font-size: 16px !important;
+        border: 2px solid rgb(204, 204, 204) !important;
+        padding: 17px !important;
+        opacity: initial;
+        display: inline-block;
+        color: #333;
+        border-radius:0;
+    }
+    #loginOutPB{
+        display:none;
+
+    }
+</style>
+<ul>
+
+    <li id="logoImportDiv"></li>
+    <li id="oriImportDiv"></li>
+    <li id="rotImportDiv"></li>
+    <li><input id="codeBridge" type="text" placeholder="code" class="loginInput"></li>
+    <li><div id="importPB" onclick="importOpen()" class="genericPB" style="width:200px;margin-bottom: 40px"></div></li>
+    <li><div id="importPBClose" onclick="closeImport()" class="genericPB" style="width:200px;margin-bottom: 40px"></div></li>
+    <li><div id="messageEditor"></div></li>
+</ul>
+<script>
+
+    var importOpen=function(){
+        openImport(document.getElementById("codeBridge").value);
+    }
+    var closeImport=function(){
+        if(importDiv){
+            importDiv.click();
+        }
+    }
+    var bridgeOkFunc=function(){
+        
+    }
+    var bridgeNOkFunc=function(){
+        
+        document.getElementById("date").innerHTML=bridgeRots["defaultNotPermitted"][lanTemp];
+        
+    }
+    var bridgeNOTExistsFunc=function(){
+        document.getElementById("date").innerHTML=bridgeRots["defaultNotExists"][lanTemp];
+    }
+    var bridgeWhileFunc=function(){
+        
+    }
+
+    
+</script>

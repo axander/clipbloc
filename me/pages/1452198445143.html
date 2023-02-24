@@ -1,0 +1,139 @@
+<style>
+.optionPB{
+display:inline-block;
+padding:20px;
+cursor:pointer;
+}
+.optionPB:hover{
+background:#444;
+color:#fff;
+}
+.optionSelected{
+background:#444;
+color:#fff;
+}
+.answer{
+color:red;
+}
+</style>
+<div id="htmlContent" style="padding-top:100px;padding-bottom:100px;height:100%;position:relative">
+ <div class="row" style="padding-bottom: 50px; opacity: initial;">
+        <div class="col-xs-12 col-md-12" style="opacity: initial;">
+            <div class="bta_container_imports" style="opacity: initial;">
+                <div class="bta_txt_top_imports bta_txt_left_imports "><span class="es">Usuario</span>
+<span class="en">User</span>
+                    <h4 style="text-align: center" id="userTemp">Not User Selected</h4>
+
+<!---------------------------------------------------------temp content----------------------------------------------------->
+                    <div id="tempContent">
+                    <!-----1 -->
+                        <div class="row" style="padding-top: 100px;">
+                            <div style="color: rgb(101, 154, 36); padding-bottom: 20px; font-weight: bold; font-size: 25px;">Bus 1 arrives at 7:00. Bus 2 arrives at 5:00. Bus 2 arrives <span id="group0Answer" class="answer"> xxxx </span>Bus 1..</div>
+                            <div class="col-xs-12 col-md-12">
+                                <div ref="group0" class="group0 optionPB" onclick="select(this)">before</div>
+                                <div ref="group0" class="group0 optionPB" onclick="select(this)">after</div>
+                                <div ref="group0" class="group0 optionPB" onclick="select(this)">during</div>
+                                <div ref="group0" class="group0 optionPB" onclick="select(this)">for</div>
+                            </div>
+                        </div>
+                    <!-----------1------------->
+                    <!-----1 -->
+                        <div class="row" style="padding-top: 100px;">
+                            <div style="color: rgb(101, 154, 36); padding-bottom: 20px; font-weight: bold; font-size: 25px;">Bus 2 arrives at 14:00. Bus 1 arrives at 5:00. Bus 2 arrives <span id="group1Answer" class="answer"> xxxx </span>Bus 1..</div>
+                            <div class="col-xs-12 col-md-12">
+                                <div ref="group1" class="group1 optionPB" onclick="select(this)">before</div>
+                                <div ref="group1" class="group1 optionPB" onclick="select(this)">after</div>
+                                <div ref="group1" class="group1 optionPB" onclick="select(this)">during</div>
+                                <div ref="group1" class="group1 optionPB" onclick="select(this)">for</div>
+                            </div>
+                        </div>
+                    <!-----------1------------->
+                    </div>
+
+                    <!---------------------------------->
+              </div>
+          </div>
+        </div>
+    </div>
+
+</div>
+<!----------buttons-->
+                    <div style="position:fixed;bottom:0;width:100%;background:#333;">
+                            <div class="genericPB" onclick="checkLoggedAdmin(reloadEvents, errorNotLoggedAdmin)"><span class="es">Ver Todos</span><span class="en" style="display: none;">See All</span></div>
+                            <div class="genericPB" onclick="checkLoggedUserContent(contentCreated, errorNotLogged, whileF(1), noContentYet)" style="display: inline-block;"><span class="es">Ver Mis Respuestas</span><span class="en">Mine</span></div>
+                            <div class="genericPB" onclick="saveLoggedUserContent(contentSaved, errorNotLogged, whileF(0))" style="display: inline-block;"><span class="es">Guardar</span><span class="en">Save</span></div>
+                    </div>
+                    <!---------------------------------->
+<!---------------recover div------------------------------------------->
+<div id="recoverContainer"><div class="basicouter"><div class="basicInner"><div id="recoverMessage">...</div></div></div></div>
+<!---------------------------------------------------------->
+
+<!---------------messages div------------------------------------------->
+<div id="statusContainer" onclick="closeStatus()"><div class="basicouter"><div class="basicInner"><div id="statusMessage">...</div><div id="volverStatus"><span class="es">Cerrar</span>
+<span class="en" style="display: none;">Close</span></div></div></div></div>
+<!---------------------------------------------------------->
+<script cbtype="submenuhide">
+    if(typeof allwaysLocalFunc!=="undefined"){
+              allwaysLocalFunc();
+             }
+
+</script>
+<script cbtype="saveUserContent">
+beforeTransitionFunc=function(_end){
+beforeTransitionFunc=null;
+controlRecovering();
+_end();
+}
+afterTransitionFunc=function(){
+    
+    if(typeof allwaysLocalFunc!=="undefined"){
+              allwaysLocalFunc();
+             }
+    afterTransitionFunc=null;
+    checkLoggedUserContent(contentCreated, errorNotLogged, null, noContentYet);
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

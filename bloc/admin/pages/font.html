@@ -1,0 +1,24 @@
+<div class="row" id="menu_level_2" >
+    <div class="col-xs-12" >
+         <div class="col-xs-6" >
+            <div id="message">Mensajes</div>
+        </div>
+        <div class="col-xs-3" >
+            <div class="generic_pb" data-bind="click: anadirGroup">Añadir</div>
+        </div>
+        <div class="col-xs-3" >
+            <div id="savePB" class="generic_pb" data-bind="click: guardarGroup">Guardar</div>
+        </div>
+        
+        <div class="col-xs-12" >
+            <div data-bind="foreach : tabs ">
+                <div class="row menu_level_2_item_css" >
+                    <div class="col-xs-1 menu_level_2_item_inner"><div data-bind="text:$index"></div></div>
+                    <div class="col-xs-4 menu_level_2_item_inner"><div><input data-bind="value:rot" /></div></div>
+                    <div class="col-xs-4 menu_level_2_item_inner"><div><textarea  data-bind="value:content" /></div></div>
+                    <div><div class="col-xs-2 menu_level_2_item_inner generic_pb" data-bind="click: $root.eliminar">Eliminar</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

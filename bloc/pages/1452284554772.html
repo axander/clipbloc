@@ -1,0 +1,136 @@
+
+<style>
+.loginInput{
+    margin: 20px;
+    width: 200px;
+    font-size: 16px !important;
+    border: 2px solid rgb(204, 204, 204) !important;
+    padding: 17px !important;
+    opacity: initial;
+    display: inline-block;
+    color: #333;
+    border-radius:0;
+}
+#loginOutPB{
+  display:none;
+
+}
+</style>
+<div id="htmlContent" style="padding-top: 100px; height: 1500px; position: relative;">
+
+<div class="row">
+<div class="col-xs-12 col-md-offset-3 col-md-6">
+<div>
+   <div>
+      <div style=""><span class="es">Email</span>
+<span class="en">Email</span></div>
+      <div><input id="user" type="text" placeholder="usuario" class="loginInput"></div>
+<div style=""><span class="es">Contraseña</span>
+<span class="en">Password</span></div>
+      <div><input id="password" type="text" placeholder="password" class="loginInput"></div>
+      <div><div onclick="clipblocLoginPrivate(saludo,error)" class="genericPB" style="width:200px;margin: 20px">LOGIN</div></div>
+      <div><div id="loginOutPB" onclick="logOut(loginOut)" class="genericPB" style="width: 200px; margin-bottom: 40px; display: none;">LOG OUT</div></div>  
+      
+ <div><div id="status"></div></div>
+<div style="padding-bottom:40px"><div id="message"></div></div>  
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<script>
+if(typeof userLogged!=="undefined" && userLogged && userLogged["user"]){
+  document.getElementById("user").value=userLogged["user"];
+  document.getElementById("password").value=userLogged["pwd"];
+  document.getElementById("loginOutPB").style.display="inline-block";
+}else{
+  document.getElementById("loginOutPB").style.display="none";
+}
+var saludo=function(){
+    document.getElementById("message").innerHTML=rots["LOGINOK"][language];
+    document.getElementById("message").style.color="green";
+    document.getElementById("loginOutPB").style.display="inline-block";
+    if(typeof pageBefore !=="undefined" && pageBefore){
+      internalNavMenu(pageBefore);
+      pageBefore=null;
+    }
+};
+var error=function(){
+    document.getElementById("message").innerHTML=rots["LOGINNOK"][language];
+    document.getElementById("message").style.color="red";
+    document.getElementById("loginOutPB").style.display="none";
+    loginPB.innerHTML="Login";
+}
+var loginOut=function(){
+    document.getElementById("message").innerHTML=rots["LOGOUT"][language];
+    document.getElementById("message").style.color="green";
+    document.getElementById("user").value="";
+    document.getElementById("password").value="";
+    userLogged["user"]="";
+    document.getElementById("loginOutPB").style.display="none";
+    loginPB.innerHTML="Login";
+    logged=false;
+
+}
+if(typeof pcm !=="undefined" && pcm){
+pcm=false;
+   document.getElementById("message").innerHTML=messagePrivateContent;
+}
+</script>
+<script cbtype="allways">
+/*------------------------
+------------------------
+------------------------
+always collection to execute
+------------------------
+------------------------
+--------------------------*/
+if(typeof allwaysFunc!=="undefined"){
+allwaysFunc();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

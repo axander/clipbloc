@@ -1,0 +1,108 @@
+<style>
+.optionPB{
+display:inline-block;
+padding:20px;
+cursor:pointer;
+}
+.optionPB:hover{
+background:#444;
+color:#fff;
+}
+.optionSelected{
+background:#444;
+color:#fff;
+}
+.answer{
+color:red;
+}
+</style>
+<div id="htmlContent" style="padding-top:100px;padding-bottom:100px;height:100%;position:relative">
+ <div class="row" style="padding-bottom: 50px; opacity: initial;">
+        <div class="col-xs-12 col-md-12" style="opacity: initial;">
+            <div class="bta_container_imports" style="opacity: initial;">
+                <div class="bta_txt_top_imports bta_txt_left_imports "><span class="es">Usuario</span>
+<span class="en">User</span>
+                    <h4 style="text-align: center" id="userTemp">Not User Selected</h4>
+      <div><div id="loginPB" class="genericPB" onclick="downloadBloc('http://neuronalsite.com/bloc.zip')" style="width: 200px; margin-bottom: 40px;"><span class="es">Descargar este Bloc</span><span class="en">Download this Bloc</span></div></div>
+
+              </div>
+          </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script cbtype="allways">
+    if(typeof allwaysLocalFunc!=="undefined"){
+              allwaysLocalFunc();
+             }
+
+</script>
+<script cbtype="global">
+beforeTransitionFunc=function(_end){
+beforeTransitionFunc=null;
+ document.getElementById("userTemp").innerHTML = userLogged["name"];
+_end();
+}
+if(typeof downloadBloc==="undefined"){
+downloadBloc=function(_zip){
+window.open(_zip);
+}
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+/* 
+    Document   : css1
+    Created on : 14-feb-2015, 19:49:54
+    Author     : alex
+    Description:
+        Purpose of the stylesheet follows.
+*/
+input {
+    font-size:16px;
+    letter-spacing: 2px;
+    color:#666;
+    cursor: pointer;
+    text-align:center;
+    border:0px solid #ccc;
+    width:200px;
+    min-height:40px;
+    display:block;
+    outline: none;
+    border-radius:5px;
+    background:#ddd;
+}
+input:focus{
+    color:#666;
+    background: #ccc;
+    border: 0px outset #fff;
+}
+input[type=submit] {
+    color:#fff;
+    padding:10px;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background: #666;
+    border: 0px outset #d7b9c9
+}
+input[type=submit]:hover {
+    padding:10px;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background: #ccc;
+    color:#666;
+}
+input:focus::-webkit-input-placeholder {
+    color: white;
+}
+input:focus:-moz-placeholder {
+    color: red;
+}
+input:focus::-moz-placeholder {
+    color: white;
+}
+input:focus:-ms-input-placeholder {
+    color: white;
+}

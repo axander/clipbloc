@@ -1,0 +1,117 @@
+<div class="row" id="menu_level_2" >
+    <div class="col-xs-12" >
+        <div class="col-xs-6" >
+            <div id="message">Mensajes</div>
+        </div>
+        <div class="col-xs-3" >
+            <div class="generic_pb" data-bind="click: anadir">Añadir</div>
+        </div>
+        <div class="col-xs-3" >
+            <div id="savePB" class="generic_pb" data-bind="click: guardar">Guardar</div>
+        </div>
+
+        <div class="col-xs-12" >
+            <div data-bind="foreach : tabs ">
+                <div class="row menu_level_2_item" data-bind="attr: {'id':'div_'+date}">
+                    <div class='col-xs-1'>
+                        <ul><li>
+                                <span data-bind="text:$index" ></span>
+                            </li>
+                            
+                        </ul>
+                    </div> 
+                    <div class='col-xs-5'>
+                        <ul>
+                            <li>
+                                <div class="menu_level_2_item_inner">
+                                    <div class="inline" ><div><input data-bind="value:rot" /><span class="rots">Rot   </span><span class="rots">Ref: </span><span data-bind="text:date" ></span></div></div>
+                                <div class="menu_level_2_item_inner">
+                                    <div class="inline" ><div><input type="checkbox" name="" value="" data-bind="checked: $data.active"  /><span class="rots">Active</span></div></div>
+                                    <div class="inline" ><div><input type="checkbox" name="" value="" data-bind="checked: $data.privated"  /><span class="rots">Private</span></div></div>
+                                     <div class="inline" ><input type="checkbox" name="" value="" data-bind="checked: $data.tabCounter"  /><span class="rots">Counter</span></div>
+                                </div>
+                            </li>
+                            <li>
+                                <select data-bind="attr: {'id':$index},options: $parent.tabs,value: $data,optionsText:'rot',event:{ change: $parent.positionChanged}" ></select>&nbsp;Labels List
+                            </li>
+                            <li>
+                                <div class="menu_level_2_item_inner"><div><input data-bind="value: $data.desc" /></div><span class="rots">Description</span></div>
+                            </li>
+                            <li>
+                                <div class="menu_level_2_item_inner">
+                                    <div class="inline" ><input data-bind="attr: {'id':'input_asoc_'+date},value:submenu,event:{ change: $parent.setReset }" ></div>
+                                    <div class="inline generic_pb" data-bind="click: function(){ $parent.resetSub('input_asoc_'+date) }"><div>Reset Menu Asoc</div></div>
+                                    <div class="inline" data-bind="attr: {'id':'go_asoc_'+date},visible: submenu != '' ? 1 : 0"><div class="generic_pb" data-bind="click:function(){ $parent.SelGoSub(submenu) }">Go</div></div>
+                                    <span class="rots">Association</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu_level_2_item_inner">
+                                    <div class="inline" ><div><input type="checkbox" name="" value="" data-bind="checked: $data.import"  /><span class="rots">Import Code</span></div></div>
+                                    <div class="inline" ><div><input data-bind="value: $data.importCode" /></div></div>
+                                </div>
+                                <div class="menu_level_2_item_inner">
+                                    <div class="inline" ><div><input type="checkbox" name="" value="" data-bind="checked: $data.bridge"  /><span class="rots">Bridge Code</span></div></div>
+                                    <div class="inline" ><div><input data-bind="value: $data.bridgeCode" /></div></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu_level_2_item_inner">
+                                    <div class="inline" ><div><input type="checkbox" name="" value="" data-bind="checked: $data.tabFb"  /><span class="rots">Active Sharing in Facebook</span></div></div>
+                                    <div class="inline" ><div><input type="checkbox" name="" value="" data-bind="checked: $data.ad"  /><span class="rots">Active Advertsiment</span></div></div>
+                                  
+                                </div>
+                            </li>
+                            <li>
+                                <input data-bind="attr: {'id':'add_'+date},value:$data.adCode">
+                                <span class="rots">Ad ref</span>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div> 
+                    <div class='col-xs-5'>
+                        <ul>
+                            <li>
+                                <div class="menu_level_2_item_inner generic_pb" data-bind="click: $root.createHTML"><div>{ HTML }</div></div>
+                            </li>
+                            <li>
+                                <div class="menu_level_2_item_inner generic_pb" data-bind="click: $root.eliminar"><div>Eliminar</div></div>
+                            </li>
+                            <li style="height:50px">
+                            </li>
+                            <li>
+                                <span class="rots">Facebook Entry Image</span>
+                            </li>
+                            <li>
+                                <div><img height='75px' data-bind="attr: {'src':'../pages/'+date+'/fbImg.jpg', 'id':'fbImg_'+date}" ></img></div>
+                            </li>
+                            <li>
+                                <input type="file" onchange="saveImgFb(this);" data-bind="attr: {'id':'img_'+date}" />
+                            </li>
+                            <li style="height:50px">
+                            </li>
+                            <li>
+                                <div><img height='75px' data-bind="attr: {'src':'../editor/rmt/'+$data.clipbloc+'/img.png','id':'clipImg_'+date}" ></img></div>
+                            </li>
+                            <li>
+                                <input data-bind="click: $root.listUsers,attr: {'id':'clipbloc_'+date},textInput:$data.clipbloc" />Clipbloc Association
+                            </li>
+                            <li>
+                                <div class="menu_level_2_item_inner generic_pb" data-bind="click: $root.reset"><div>Reset clipbloc Asoc</div></div>
+                            </li>
+                            <li>
+                                <div class="savePB generic_pb right" data-bind="click: $root.guardar">Guardar</div>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class='col-xs-1' data-bind="click: $root.extend">
+                        <div class='extend'>
+                        extend
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

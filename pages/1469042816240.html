@@ -1,0 +1,411 @@
+<style>
+.genericPB {
+    display: inline-block;
+    color: #fff;
+    background: #333;
+    opacity:.7;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+    border-radius:8px;
+}
+.genericPB:hover {
+    opacity:1;
+}
+
+.group{
+-webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+.group:hover{
+opacity:.7;
+color:#fff;
+font-size:60px;
+}
+
+
+.group-1{
+font-family: 'Work Sans', sans-serif;
+cursor:pointer;display: inline-block; width: 100%; height: 300px; font-size: 40px;color:#fff;
+background: rgba(73,155,234,1);
+background: -moz-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+background: -webkit-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: linear-gradient(135deg, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+}
+
+
+.group-2{
+font-family: 'Work Sans', sans-serif;
+cursor:pointer;display: inline-block; width: 100%; height: 300px; font-size: 40px;color:#fff;
+background: rgba(241,231,103,1);
+background: -moz-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(254,182,69,1)));
+background: -webkit-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -o-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -ms-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: linear-gradient(to bottom, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=0 );
+}
+
+.group-3{
+font-family: 'Work Sans', sans-serif;
+cursor:pointer;display: inline-block; width: 100%; height: 300px; font-size: 40px;color:#fff;
+background: rgba(164,179,87,1);
+background: -moz-linear-gradient(-45deg, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(164,179,87,1)), color-stop(100%, rgba(117,137,12,1)));
+background: -webkit-linear-gradient(-45deg, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+background: linear-gradient(135deg, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=1 );
+}
+
+.group-4{
+font-family: 'Work Sans', sans-serif;
+cursor:pointer;display: inline-block; width: 100%; height: 300px; font-size: 40px;color:#fff;
+background: rgba(255,93,177,1);
+background: -moz-linear-gradient(-45deg, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,93,177,1)), color-stop(100%, rgba(239,1,124,1)));
+background: -webkit-linear-gradient(-45deg, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+background: linear-gradient(135deg, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ef017c', GradientType=1 );
+}
+
+
+#showHideSubMenu{
+    line-height: 13px;
+    word-break: break-all;
+    z-index: 200;
+    position: relative;
+    top: -20px;
+    margin-left: 29px;
+    width: 90px;
+    left: 100%;
+    padding: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-size: 26px;
+    background: rgba(0,0,0,.4);
+    border-radius: 10px;
+    cursor: pointer;
+    /* height: 10px; */
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#lateralMenuContainer{
+background:rgba(0,0,0,.5);
+padding:10px;
+}
+.newInnerMenu:hover{
+background:rgba(0,0,0,.5);
+}
+.newInnerMenuSelected{
+background:rgba(0,0,0,.5);
+}
+#languageDiv{
+background:transparent;
+padding:10px;
+padding-top:300px;
+padding-bottom:300px;
+}
+#languageDivInner{
+border-radius:10px;
+background:rgba(0,0,0,.6);
+}
+#newMenuPB{
+background: rgba(0,0,0,.4);
+color:#fff;
+margin:10px;
+border-radius:10px;
+top:20px;
+right:20px;
+}
+#newLanPB{
+background: rgba(0,0,0,.4);
+color:#fff;
+margin:10px;
+border-radius:10px;
+}
+.interfacePB{
+cursor:pointer;
+margin:20px;
+height:100%;
+background:#fff;
+color:#444;
+-webkit-transition: all .5s ease;
+-moz-transition: all .5s ease;
+transition: all .5s ease;
+}
+.interfacePB:hover{
+opacity:.5;
+}
+.genericPB
+</style>
+
+ <div style="position:fixed;width:100vw;height:100vh;background: url(http://data.whicdn.com/images/7307207/large.jpg);background-size:cover;background-repeat:no-repeat;background-position:center"></div>
+
+
+<div id="htmlContent" style="position:relative;padding-top: 160px; height: auto;color:#fff;">
+<div style="border-radius: 10px; padding: 10px; bottom: 10px; right: 26px; display: inline-block;">
+<img src="http://clipbloc.com/images/clipWhite.png" style="opacity: 0.8; position: relative; left: 98px; top: 38px; width: 22px;">
+
+    <p onclick="transformNav()" style="cursor: pointer; font-size: 30px; letter-spacing: 5px;">CLIPBLOC
+</p>
+<p style="letter-spacing: 2px; font-size: 12px; display: none;" class="es">Ecosistemas de Información</p>
+<p style="letter-spacing: 2px; font-size: 12px;" class="en">Information Ecosystem</p>
+<div class="genericPB" onclick="transformNav()" style="font-size: 12px;">transform·The·Navigation</div>
+
+<div class="en" style="padding-top: 50px; font-size: 40px; font-family: 'Work Sans', sans-serif;"><span style="font-size:16px">A · NEW · VISION · ON</span><br>SHOWING · SHARING · CONTENTS<br>&<br>WEBAPPS · CREATING</div>
+<div class="es" style="padding-top: 50px; font-size: 40px; font-family: 'Work Sans', sans-serif; display: none;"><span style="font-size:16px">UNA · NUEVA · VISION </span><br>MOSTRANDO · COMPARTIENDO · CONTENIDOS<br>Y<br>CREANDO · APLICACIONES WEB</div>
+
+</div>
+
+<div class="row" style="margin-top:100px;margin-bottom: 100px; ">
+
+<!-- videotutoriales -->
+<div class="col-xs-12 col-md-3">
+<div topage="1465846967644" onclick="internalNavMenu('1465846967644')" class="genericPB">
+<span class="es" style="display: none;">Video Tutoriales</span>
+<span class="en">Video Tutorials</span>
+<img src="http://clipbloc.com/images/camera.png" style="float: left;height:22px;margin-right: 20px;"></div>
+</div>
+
+<!-- videotutoriales -->
+<!-- download -->
+<div class="col-xs-12 col-md-3">
+<div topage="1465843572664" onclick="internalNavMenu('1465843572664')" class="genericPB">
+<span class="es" style="display: none;">Descargar</span>
+<span class="en">Download</span>
+<img src="http://clipbloc.com/images/cloud-download.png" style="float: left;height:22px;margin-right: 20px;">
+</div>
+</div>
+<!-- download -->
+
+
+
+<!-- Maidpress -->
+<div class="col-xs-12 col-md-3">
+<a href="http://maidpress.com" target="_blank">
+<div class="genericPB">
+Maidpress
+</div>
+</a>
+</div>
+<!-- Maidpress -->
+
+<!-- Neuronal Site -->
+<div class="col-xs-12 col-md-3">
+<a href="http://neuronalsite.com" target="_blank">
+<div class="genericPB">
+Neuronal · Sites
+</div>
+</a>
+</div>
+<!-- Neuronal Site -->
+
+</div>
+
+
+
+
+<!------  group-1 -------------->
+<div class="group group-1" topage="1469042816240" onclick="internalNavMenu('1469042816240')" style="">
+<div class="basicOuter2">
+<div class="basicInner2">
+Interfaces
+</div>
+</div>
+</div>
+<!------  group-1 -------------->
+<!------  group-2 -------------->
+<div class="group group-2" topage="1428267343637" onclick="internalNavMenu('1428267343637')">
+<div class="basicOuter2">
+<div class="basicInner2"><span class="es" style="display: none;">Potencia</span> <span class="en">Power</span>
+</div>
+</div>
+</div>
+<!------  group-2 -------------->
+<!------  group-3 -------------->
+<div class="group group-3" topage="1465123941329" onclick="internalNavMenu('1465123941329')">
+<div class="basicOuter2">
+<div class="basicInner2" style="">Scripting</div>
+</div>
+</div>
+<!------  group-3 -------------->
+<!------  group-4 -------------->
+<div class="group group-4" topage="1428267338062" onclick="internalNavMenu('1428267338062')">
+<div class="basicOuter2">
+<div class="basicInner2"><span class="es" style="display: none;">Ejemplo Multiusuario</span> <span class="en">Multiuser Example</span>
+</div>
+</div>
+</div>
+<!------  group-4 -------------->
+
+
+</div>
+
+
+
+
+
+<script cbtype="submenuhide">
+/*------------------------
+------------------------
+------------------------
+auto hide sumbenu if clip contains it
+------------------------
+------------------------
+--------------------------*/
+resizeDoc2 = function() {
+    if (typeof resizeFunc!=="undefined") {
+        resizeFunc();
+    }
+    menuResize();
+    var mainContent = document.getElementById("date");
+    if (!fixed) {
+        topPos = document.getElementById("headerContainer").offsetHeight;
+        if (lastPage) {
+            if (window.innerWidth >= 900) {
+                lastPage.className = "page";
+                lastPage.style.top = topPos + "px";
+
+            } else {
+                lastPage.style.top = topPos + "px";
+            }
+            document.getElementById("imgHeader").style.height = topPos + "px";
+            lastPage.className = "page generic_trans";
+        }
+    }
+    if (typeof resizeSubmenuFunc !== "undefined" && resizeSubmenuFunc !== null) {
+        resizeSubmenuFunc();
+    } else {
+        if (subMenuPB && !submenuAppHide) {
+            mainContent.style.width = "100%";
+        }
+    }
+};
+window.addEventListener("resize", resizeDoc2, false);
+beforeTransitionFunc=function(_end){
+if(typeof changeLanguage!=="undefined"){
+changeLanguage();
+}
+if(typeof fromSubPageInterface==="undefined" || !fromSubPageInterface){
+newTransitionFunc=function(){
+        newTransitionFunc=null;
+        page=document.getElementById("page_"+tabHome);
+        lastPage.style.overflow = "hidden";
+        lastPage.style.opacity = "0";
+        page.style.opacity = "1";
+}
+
+var page=document.getElementById("page_"+tabHome);
+       page.className = "page";
+          page.style.left = "0";
+          page.style.opacity = "0";
+       setTimeout(function() {
+             page.className = "page generic_trans";
+          }, 10);
+}else{
+fromSubPageInterface=false;
+}
+
+beforeTransitionFunc=null;
+
+hideSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.left = -submenuContainer.offsetWidth + "px";
+        var mainContent = document.getElementById("date");
+        mainContent.style.left = "0";
+        mainContent.style.width = "100%";
+};
+showSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.opacity = 1;
+        submenuContainer.style.left = "0";
+};
+if (typeof CONFIG !== "undefined" && typeof CONFIG["closeSubMenuOnSelect"] !== "undefined" && CONFIG["closeSubMenuOnSelect"] === "true" && !document.getElementById("submenuContainer").getAttribute("solid")) {
+                           hideSubmenuApp();
+                            var submenuPBTemp=subMenuPB.cloneNode(true);
+                            submenuPBTemp.onclick = function() {
+                                   submenuApphideShow();
+                            };
+                            document.getElementById("submenuContainer").appendChild(submenuPBTemp);
+                            //document.getElementById("submenuContainer").appendChild(subMenuPB);
+                            //document.body.appendChild(document.getElementById("submenuContainer"));
+                            submenuAppHide = true;
+                            document.getElementById("submenuContainer").setAttribute("solid","1");
+                        }
+
+scrollToTop(300, _end);
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

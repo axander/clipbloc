@@ -1,0 +1,1379 @@
+<style>
+#extraPanelPB{
+    display:none;
+}
+#showHideSubMenu{
+    color:#fff;
+    text-shadow: 0px 0px 10px #444;
+}
+.clipbloc{
+    display: inline-block;
+    font-size: 60px;
+    letter-spacing: 3px;
+    opacity: initial;
+    color: #fff;
+    background: #333;
+    /* text-shadow: 7px 2px 6px rgba(0, 0, 0, 0.48); */
+    padding-left: 20px;
+    padding-right: 20px;
+    /*text-shadow: 14px 1px 6px #000000;*/
+    box-shadow: rgba(3, 3, 3, 0.48) 0px 0px 85px;
+}
+.bg1{
+  background-image: url('https://www.noupe.com/wp-content/uploads/2017/06/background-2114367_1280-1030x550.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bg2{
+  background-position: center center;
+  background-size: cover;
+  background-image: url('http://coolwallpaper.website/wp-content/uploads/2016/11/Perfect-Minimalist-Desktop-Background-Wallpaper-Free-Wallpaper-For-Desktop-and-Mobile-in-All-Resolutions-Free-Download-chez-lounge-furniture.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bg3{
+  background-image: url('http://cdn.wallpapersafari.com/9/77/YuI8av.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.rot1{
+text-shadow:2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.rot2{
+      color:#444;
+}
+#newMenuPB{
+    color:#fff;
+}
+#newFooterPB{
+   color:#fff;
+}
+#lateralMenuContainer{
+  
+}
+.frame {
+width:100%;
+height:600px;
+         }
+.doIt{
+    color: white;
+    font-size: 200px;
+    text-transform: uppercase;
+    padding-top: 100px;
+    text-shadow: rgb(3, 3, 3) 0px 0px 15px;
+}
+.arrow{
+   z-index:4000;
+    bottom: 150px;
+    right: 20px;
+    
+   position:fixed;
+  animation-duration: 2s;
+  animation-name: changeColor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    line-height:80px;
+    width: auto;
+    height: auto;
+   cursor:pointer;
+   font-size: 80px;
+   -webkit-transition: all 2s ease;
+   -moz-transition: all 2s ease;
+    transition: all 2s ease;
+/* Safari */
+-webkit-transform: rotate(90deg);
+/* Firefox */
+-moz-transform: rotate(90deg);
+/* IE */
+-ms-transform: rotate(90deg);
+/* Opera */
+-o-transform: rotate(90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.arrow:hover{
+   opacity:.5;
+}
+.arrow2{
+  display: none;
+  z-index:4000;
+    top: 150px;
+    right: 20px;
+    
+   position:fixed;
+  animation-duration: 2s;
+  animation-name: changeColor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    width: auto;
+    height: auto;
+   cursor:pointer;
+   font-size: 80px;
+   -webkit-transition: all 2s ease;
+   -moz-transition: all 2s ease;
+    transition: all 2s ease;
+/* Safari */
+-webkit-transform: rotate(90deg);
+/* Firefox */
+-moz-transform: rotate(90deg);
+/* IE */
+-ms-transform: rotate(90deg);
+/* Opera */
+-o-transform: rotate(90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-3);
+}
+.arrow2:hover{
+   opacity:.5;
+}
+@keyframes changeColor {
+  from {
+    color: white;
+  }
+  to {
+    color: orangered;
+  }
+}
+@keyframes changeShadow {
+  from {
+        box-shadow: rgba(3, 3, 3, 0.48) 0px 0px 0px;
+  }
+  to {
+        box-shadow: rgba(3, 3, 3, 0.48) 0px 0px 25px;
+  }
+}
+.structure{
+    cursor:pointer;
+    display: inline-block;
+    font-size: 60px;
+    letter-spacing: 3px;
+    opacity: initial;
+    color: #fff;
+    background: #333;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+   animation-duration: .5s;
+  animation-name: changeShadow;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.structure:hover{
+   opacity:.5;
+}
+.pink{
+   background:#ff03c3;
+}
+.blue{
+   background:#337ab7;
+}
+.red{
+   background:orangered;
+}
+</style>
+<div id="htmlContent" class="js_smoothScroll bg1" style="padding-top: 100px;height: 100%;position: relative;">
+    <ul>
+      <li>
+          <div class="clipbloc">CLIPBLOC</div>
+                 <ul style="position:absolute; bottom:20px; letter-spacing: 6px; color: rgb(255, 255, 255);width:100%">
+                           <!--<li class="es rot1" style="display: none;">Ecosistema de Información</li>
+                           <li class="en rot1" style="">Information Ecosystem</li>-->
+               </ul>
+      </li>
+      <li class="en" style=""><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px; font-size: 16px; background: orangered;">Transform·The·Navigation</div></li>
+       <li class="es" style="display: none;"><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px;font-size:13px;background:orangered">Transformando·La·Navegación</div></li>
+        <li style=""><div style="display: inline-block; padding: 20px; width: 75%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; margin-top: 100px;">
+              <div style="font-size: 20px; color: rgb(68, 68, 68); padding-top: 20px; padding-bottom: 20px;"><strong style="">CLIPBLOC es un software experimental que permite crear contenidos y aplicaciones web sin depender de bases de datos.</strong>
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-top: 20px; padding-bottom: 20px;">El software es el bloc, y el bloc es el software. 
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;">Permite compartir contenidos entre blocs.
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;">Además podrás importar e incluir <strong>clips-tools</strong> que otros hayan diseñado para hacer tus blocs más dinámicos; o crear las tuyos propios y propagarlos para que otros los utilicen.
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;">También te permite duplicar páginas para posteriormente modificarlas individualmente; crea tus plantillas o scripts y genera contenido rápidamente.
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;">Imagina un bloc al que vas añadiendo, con clips, contenidos a los que cualquiera podrá acceder intuitivamente, completamente customizable, a tiempo real...
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;">y de instalación inicial tan sencilla como copiar y pegar una carpeta en tu alojamiento.
+              </div>
+</div>
+        </li>
+    </ul>
+
+
+     
+
+<!--<div style="padding-bottom:100px">
+<div onclick=" checkLogged(savePage,notLogged,null,writeMessage)" class="genericPB">Guardar contenido</div>
+<div id="statusSaved" style="color:green"></div>
+</div>-->
+
+</div>
+
+
+<div id="htmlContent" class="js_smoothScroll bg3" style="padding-top: 100px; height: 100%; position: relative;">
+    <ul>
+      <li>
+          <div class="clipbloc">CLIPBLOC</div>
+                 <ul style="position:absolute; bottom:20px; letter-spacing: 6px; color: rgb(255, 255, 255);width:100%">
+                           <!--<li class="es rot1" style="display: none;">Ecosistema de Información</li>
+                           <li class="en rot1" style="">Information Ecosystem</li>-->
+               </ul>
+      </li>
+      <li class="en" style=""><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px; font-size: 16px; background: orangered;">Transform·The·Navigation</div></li>
+       <li class="es" style="display: none;"><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px;font-size:13px;background:orangered">Transformando·La·Navegación</div></li>
+        <li style=""><div style="display: inline-block; padding: 20px; width: 100%; margin-top: 100px; font-size: 40px; color: rgb(255, 255, 255); text-shadow: rgb(68, 68, 68) 0px 0px 10px;">
+NAVEGACIÓN
+</div>
+<div style="display: inline-block; padding: 20px; width: 75%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; margin-top: 10px;">
+              <div style="font-size: 20px; color: rgb(68, 68, 68); padding-top: 20px; padding-bottom: 20px;"><strong style="">La navegación inicial planteada para cada bloc es muy sencilla.</strong>
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-top: 20px; padding-bottom: 20px;">Menú principal<span style="font-size:12px"> ( 
+ clips principales )</span>
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;"><div style="font-size:40px;color:#444">☰</div>
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;">Menú secundario<span style="font-size:12px"> ( 
+ clips principales secundarios )</span>
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;"><div style="font-size:40px;color:#444">+</div>
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;">Submenú<span style="font-size:12px"> ( 
+ clips secundarios dentro de clips principales )</span>
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;"><div style="line-height: 18px; width: 30px; font-size: 50px; display: inline-block; color: rgb(68, 68, 68);"> •  •  • </div>
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;">Un clip principal o secundario podrá tener un contenido único, o a su vez podrá contener otros clip de contenido en cuyo caso mostrará el listado a través del símbolo anterior.
+              </div>
+</div>
+        </li>
+    </ul>
+</div>
+
+
+<div id="htmlContent" class="js_smoothScroll bg1" style="padding-top: 100px; height: 100%; position: relative;">
+    <ul>
+      <li>
+          <div class="clipbloc">CLIPBLOC</div>
+                 <ul style="position:absolute; bottom:20px; letter-spacing: 6px; color: rgb(255, 255, 255);width:100%">
+                           <!--<li class="es rot1" style="display: none;">Ecosistema de Información</li>
+                           <li class="en rot1" style="">Information Ecosystem</li>-->
+               </ul>
+      </li>
+      <li class="en" style=""><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px; font-size: 16px; background: orangered;">Transform·The·Navigation</div></li>
+       <li class="es" style="display: none;"><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px;font-size:13px;background:orangered">Transformando·La·Navegación</div></li>
+        <li style=""><div style="display: inline-block; padding: 20px; width: 100%; margin-top: 100px; font-size: 40px; color: rgb(255, 255, 255); text-shadow: rgb(68, 68, 68) 0px 0px 10px;">
+SCRIPTING
+</div>
+<div style="display: inline-block; padding: 20px; width: 75%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; margin-top: 10px;">
+              <div style="font-size: 20px; color: rgb(68, 68, 68); padding-top: 20px; padding-bottom: 20px;"><strong style="">Retroalimentación a través de la programación</strong>
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-top: 20px; padding-bottom: 20px;">Clipbloc se basa en un core de estilos que se pueden modificar desde el administrador y de un core básico de la estructura.
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;"><div style="">Pero cada clip puede contener su propia definición de estilos y scripts.</div>
+              </div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;">Estos scripts pueden aplicar al propio clip, o combinarse junto con los de otros clip, incluso provenientes de otros bloc para que nuestros blocs además de mostrar contenidos nos sirvan como auténticas herramientas de trabajo o aplicaciones web.</div>
+<div style="font-size: 20px; color: rgb(68, 68, 68); padding-bottom: 20px;"><div style="">Pulsa el siguiente botón para observar como la navegación a través de los clips del submenu de este clip principal que estas leyendo nos permite realizar una operación.<span style="font-size:12px"> ( 
+un ejemplo muy sencillo de introducción de datos con un resultado )</span></div>
+              </div>
+<div topage="1469873571543" onclick="internalNavMenu('1469873571543','1533170560704')" tosubpage="1533170560704" class="genericPB">Iniciar operación
+              </div>
+
+
+</div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+<div id="htmlContent" class="bg2" style="padding-top: 50px; height: 100%; position: relative;">
+    <ul>
+      <li>
+            <div class="clipbloc">CLIPBLOC</div>
+            <ul style="position:absolute; bottom:20px; letter-spacing: 6px; color: rgb(255, 255, 255);width:100%">
+                           <!--<li class="arrow" onclick="nextBlock(600,2)">❯</li>-->
+                           <li class="es rot2" style="display: none;">Ecosistema de Información</li>
+                           <li class="en rot2" style="">Information Ecosystem</li>
+               </ul>
+      </li>
+      <li class="en" style=""><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px;font-size:16px;background:orangered">transform·The·Navigation</div></li>
+      <li class="es" style="display: none;"><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px;font-size:13px;background:orangered">Transformando·La·Navegación</div></li>
+      <li>
+            <!--section 1 -->
+
+      
+
+    <section>
+       <ul>
+        
+             <div class="structure pink" onclick="internalNavMenu('1479420219496','1479420392044')" topage="1479420219496" tosubpage="1479420392044" style="margin-top: 20px;">STYLE</div>
+          
+          <li>
+             <div class="structure blue" topage="1479420219496" onclick="internalNavMenu('1479420219496','1479424163964')" tosubpage="1479424163964">HTML</div>
+          </li>
+          <li style="padding-bottom: 50px;">
+             <div class="structure red" topage="1479420219496" onclick="internalNavMenu('1479420219496','1479424164429')" tosubpage="1479424164429">SCRIPTS</div>
+          </li>
+         <li class="es standard" style="display: none;">Cada <strong>CLIP</strong> contiene código sobre estilo, contenido y funcionalidades</li>
+         <li class="en standard" style="">Every <strong>CLIP</strong> contains code about styling, html and funcionallity</li>
+         <li>
+       </li></ul>
+    </section>
+<!-----------------------------------section 1 ------------------------------------>
+
+      </li>
+    </ul>
+
+     
+
+<!--<div style="padding-bottom:100px">
+<div onclick=" checkLogged(savePage,notLogged,null,writeMessage)" class="genericPB">Guardar contenido</div>
+<div id="statusSaved" style="color:green"></div>
+</div>-->
+
+</div>
+
+<div id="htmlContent" class="bg3" style="padding-top:100px;padding-bottom: 200px;height: 100%;position: relative;">
+    <ul>
+      <li>
+            <div class="clipbloc">CLIPBLOC</div>
+            <ul style="position:absolute; bottom:20px; letter-spacing: 6px; color: rgb(255, 255, 255);width:100%">
+                           <li class="es rot2" style="display: none;">Ecosistema de Información</li>
+                           <li class="en rot2" style="">Information Ecosystem</li>
+               </ul>
+      </li>
+      <li class="en" style=""><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px;font-size:16px;background:orangered">transform·The·Navigation</div></li>
+      <li class="es" style="display: none;"><div class="genericPB" onclick="transformNav()" style="letter-spacing: 4px;font-size:13px;background:orangered">Transformando·La·Navegación</div></li>
+    </ul>
+
+
+
+
+
+
+<!--<div style="padding-bottom:100px">
+<div onclick=" checkLogged(savePage,notLogged,null,writeMessage)" class="genericPB">Guardar contenido</div>
+<div id="statusSaved" style="color:green"></div>
+</div>-->
+
+</div>
+<div id="downArrow" class="arrow" onclick="nextBlock(600,1)" style="display: block;">❯</div>
+<div id="upArrow" class="arrow2" onclick="prevBlock(600,1)" style="display: none;">❮</div>
+ 
+<script>
+/*------------------------
+------------------------
+------------------------
+control soft scrolling
+------------------------
+------------------------
+--------------------------*/
+Math.easeOutQuad = function (t, b, c, d) { t /= d; return -c * t*(t-2) + b; };
+(function() { // do not mess global space
+  var
+    interval, // scroll is being eased
+    mult = 200, // how fast do we scroll
+    dir = 0, // 1 = scroll down, -1 = scroll up
+    steps = 150, // how many steps in animation
+    length = 100; // how long to animate
+  function MouseWheelHandler(e) {
+    e.preventDefault(); // prevent default browser scroll
+    clearInterval(interval); // cancel previous animation
+    ++mult; // we are going to scroll faster
+    var delta = -Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))); // cross-browser
+    if(dir!=delta) { // scroll direction changed
+      mult = 1; // start slowly
+      dir = delta;
+    }
+    // in this cycle, we determine which element to scroll
+    for(var tgt=e.target; tgt!=document.documentElement; tgt=tgt.parentNode) {
+      var oldScroll = tgt.scrollTop;
+      tgt.scrollTop+= delta;
+      if(oldScroll!=tgt.scrollTop) break;
+      // else the element can't be scrolled, try its parent in next iteration
+    }
+    var start = tgt.scrollTop;
+    var end = start + length*mult*delta; // where to end the scroll
+    var change = end - start; // base change in one step
+    var step = 0; // current step
+    interval = setInterval(function() {
+      var pos = Math.easeOutQuad(step++,start,change,steps); // calculate next step
+      tgt.scrollTop = pos; // scroll the target to next step
+      if(step>=steps) { // scroll finished without speed up - stop animation
+        mult = 0; // next scroll will start slowly
+        clearInterval(interval);
+      }
+    },0);
+  }
+  // nonstandard: Chrome, IE, Opera, Safari
+  window.addEventListener("mousewheel", MouseWheelHandler, false); 
+  // nonstandard: Firefox
+  window.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+})();
+</script>
+<script>
+/*------------------------
+------------------------
+------------------------
+control saving contents page
+------------------------
+------------------------
+--------------------------*/
+var savePage=function(){
+ 
+}
+var notLogged=function(){
+document.getElementById("statusSaved").innerHTML="Pensabas hacerlo sin logarte primero ?";
+document.getElementById("statusSaved").style.color="#c33";
+}
+
+var writeMessage=function(){
+      document.getElementById("statusSaved").innerHTML="Contenidos guardados";
+      document.getElementById("statusSaved").style.color="green";
+}
+//------------access to login-----------
+if (typeof accessLogin==="undefined"){
+    var accessLogin=function(){
+        internalNavMenu('1452284554772'); 1463877653024
+    }
+    if(document.getElementById("userLogged")){
+        var loginPB=document.getElementById("userLogged");
+        loginPB.onclick=function(){
+            accessLogin();
+        }
+}
+};
+privatOk=function(){
+     coverDiv.style.opacity=0;
+     auxTrans=function(){
+         auxTrans=null;
+         document.body.removeChild(coverDiv);
+     }
+
+}
+var messagePrivateContent="<span class='es'>Contenido Privado. Deberás logarte para poder acceder.</span><span class='en'>Private Content. You must login before accessing</span>";
+var pcm=false;
+loginPrivate=function(){
+   pcm=true;
+   accessLogin();
+}
+//----------------------------------------
+
+            resizeFunc = function(_end) {
+
+              /* if (navTransformed) {
+                    scrollToTop(300, _end);
+                } else {
+                    scrollToTop(300, _end);
+                }*/
+
+            }
+            afterTransitionFunc = function() {
+                //resizeDoc();
+            }
+
+</script>
+<script cbtype="navTransform">
+/*------------------------
+------------------------
+------------------------
+transform the navigation to bloc style
+------------------------
+------------------------
+--------------------------*/
+          if (typeof transformNav === "undefined" ) {
+
+                var newFooterPB = null;
+                var lateralMenuContainer = null;
+                var navTransformed = false;
+                var transformNavFooter = function() {
+                    
+                    if (document.getElementById("menuHorizontal")) {
+                        if (navTransformed) {
+                          document.body.removeChild(lateralFooterContainer);
+                          document.body.removeChild(newFooterPB);
+                          newFooterPB = null;
+                          lateralFooterContainer = null;
+                        } else {
+                            if (!newFooterPB) {
+                                newFooterPB = document.createElement('div');
+                                newFooterPB.innerHTML = "+";
+                                newFooterPB.id = "newFooterPB";
+                                lateralFooterHide = true;
+                                newFooterPB.onclick = function(event) {
+                                    event.cancelBubble=true;
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                    showHideLateralFooter(event);
+                                }
+                                var showHideLateralFooter = function(event){
+                                  event.cancelBubble=true;
+                                  event.preventDefault();
+                                  event.stopPropagation();
+                                  lateralFooterHide = !lateralFooterHide;
+                                  if(lateralFooterHide){
+                                    lateralFooterContainer.style.right =  "-100%";
+                                    lateralMenuContainer.style.right =  "-100%";
+                                    newFooterPB.style.right = "0";
+                                    newMenuPB.style.right = "0";
+                                    document.getElementById("mainContainer")
+                                    ? ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch
+                                      ? document.getElementById("mainContainer").removeEventListener('touchstart', showHideLateralFooter, true )
+                                      : document.getElementById("mainContainer").removeEventListener('click', showHideLateralFooter, true ) 
+                                    : null;
+                                  }else{
+                                    lateralFooterContainer.style.right = "-15px";
+                                    lateralFooterContainer.style.marginLeft = "-15px";
+                                    newFooterPB.style.right = -window.innerWidth + "px";
+                                    newMenuPB.style.right = -window.innerWidth + "px";
+                                    document.getElementById("mainContainer")
+                                    ? ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch
+                                      ? document.getElementById("mainContainer").addEventListener('touchstart', showHideLateralFooter, true )
+                                      : document.getElementById("mainContainer").addEventListener('click', showHideLateralFooter, true)
+                                    :null;
+                                  }
+                                }
+                                var tabsList = document.getElementsByClassName('innerFoot');
+                                lateralFooterContainer = document.createElement('div');
+                                lateralFooterContainer.id = "lateralFooterContainer";
+                                lateralFooterContainer.onclick = function(event) {
+                                  event.cancelBubble=true;
+                                  event.preventDefault();
+                                  event.stopPropagation();
+                                  showHideLateralFooter(event);
+                                }
+                                document.body.appendChild(lateralFooterContainer);
+                                var lateralMenu = document.createElement('div');
+                                var lateralLength = tabsList.length;
+                                if (lateralLength <= 0) {
+                                    tabsList = document.getElementsByClassName('innerMenuCollapsed');
+                                    lateralLength = tabsList.length;
+                                }
+                                lateralMenu.id = 'lateralFooter';
+                                lateralFooterContainer.appendChild(lateralMenu);
+                                lateralFooterContainer.style.right = -window.innerWidth + "px";
+                                for (var k = 0; k <= lateralLength - 1; k++) {
+                                    if(tabsList[k].style.display != "none"){
+                                        var newTab = document.createElement("div");
+                                    newTab.id = "new_" + tabsList[k].id.replace("foot_", "footer_");
+                                    if(transformLast==tabsList[k].id.split("_")[1]){
+                                            newTab.className="newInnerFooterSelected";
+                                        }else{
+                                            newTab.className = "newInnerFooter";
+                                        }
+                                    newTab.innerHTML = tabsList[k].innerHTML;
+                                    newTab.onclick = function(event) {
+                                        document.body.onclick=function(event){
+                                             lateralFooterContainer.style.right =  "-100%";
+                                             lateralMenuContainer.style.right =  "-100%";
+                                             document.body.onclick="";
+                                            newFooterPB.style.right = "0";
+                                            newMenuPB.style.right = "0";
+                                     }
+                                        var code = this.id.replace("new_footer_", "");
+                                        if(document.getElementById("new_footer_"+transformLast)){
+                                            document.getElementById("new_footer_"+transformLast).className = "newInnerFooter";
+                                        }else{
+                                            document.getElementById("new_menu_"+transformLast).className = "newInnerMenu";
+                                        }
+                                        this.className="newInnerFooterSelected";
+                                        transformLast=code;
+                                        internalNavFoot(code);
+                                        lateralFooterContainer.style.right = -window.innerWidth + "px";
+                                        newFooterPB.style.right = "0";
+                                        newMenuPB.style.right = "0";
+                                    }
+                                    
+                                    };
+                                    lateralMenu.appendChild(newTab);
+                                }
+                                ;
+                                document.body.appendChild(newFooterPB);
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            if (typeof transformNav === "undefined") {
+               
+                var newMenuPB = null;
+                var lateralMenuContainer = null;
+                var navTransformed = false;
+                var transformLast=null;
+                var showHideSubMenu=null;
+                var new_userLogged=null;
+                
+                var new_privatePB=null;
+                var new_lanPB
+                var transformNav = function() {
+                    transformLast=antSection.split("_")[1];
+                    transformNavFooter();
+                    if (document.getElementById("menuHorizontal")) {
+                        if (navTransformed) {
+                            navTransformed = false;
+                            document.body.removeChild(lateralMenuContainer);
+                            document.body.removeChild(newMenuPB);
+                            newMenuPB = null;
+                            lateralMenuContainer = null;
+                             document.getElementById("innerUser").appendChild(new_userLogged);
+                             new_userLogged.className="";
+                             document.getElementById("innerLan").appendChild(new_lanPB);
+                             new_lanPB.className="";
+                             document.getElementById("innerPrivate").appendChild(new_privatePB);
+                             new_privatePB.className="";
+                            document.getElementById("footerContainer").style.display="block";
+                            document.getElementById("header").style.display="initial";
+                            document.getElementById("menuHorizontal").style.display = "initial";
+                            document.getElementById("fixPB").style.display = "initial";
+                            resizeDoc();
+                        } else {
+                            navTransformed = true;
+                            document.getElementById("footerContainer").style.display="none";
+                            document.getElementById("header").style.display="none";
+                            document.getElementById("menuHorizontal").style.display = "none";
+                            document.getElementById("fixPB").style.display = "none";
+                            resizeDoc();
+
+                            if (!newMenuPB) {
+                                newMenuPB = document.createElement('div');
+                                newMenuPB.innerHTML = "&#9776;";
+                                newMenuPB.id = "newMenuPB";
+                                lateralMenuHide = true;
+                                newMenuPB.onclick = function(event) {
+                                    event.cancelBubble=true;
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                    showHideLateralMenu(event);
+                                }
+                                var showHideLateralMenu = function(event){
+                                  event.cancelBubble=true;
+                                  event.preventDefault();
+                                  event.stopPropagation();
+                                  lateralMenuHide = !lateralMenuHide;
+                                  if(lateralMenuHide){
+                                      document.getElementById("mainContainer")
+                                      ?('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch
+                                        ?document.getElementById("mainContainer").removeEventListener('touchstart', showHideLateralMenu, true )
+                                        :document.getElementById("mainContainer").removeEventListener('click', showHideLateralMenu, true )
+                                      :null;
+                                      lateralFooterContainer.style.right =  "-100%";
+                                      lateralMenuContainer.style.right =  "-100%";
+                                      newFooterPB.style.right = "0";
+                                      newMenuPB.style.right = "0";
+                                    }else{
+                                      document.getElementById("mainContainer")
+                                      ?('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch
+                                        ?document.getElementById("mainContainer").addEventListener('touchstart', showHideLateralMenu, true )
+                                        :document.getElementById("mainContainer").addEventListener('click', showHideLateralMenu, true)
+                                      :null;
+                                      lateralMenuContainer.style.right = "-15px";
+                                      lateralMenuContainer.style.marginLeft = "-15px";
+                                      newFooterPB.style.right = -window.innerWidth + "px";
+                                      newMenuPB.style.right = -window.innerWidth + "px";
+                                    }
+                                }
+
+                                var tabsList = document.getElementsByClassName('innerMenu');
+                                lateralMenuContainer = document.createElement('div');
+                                lateralMenuContainer.id = "lateralMenuContainer";
+                                lateralMenuContainer.onclick = function(event) {
+                                  event.cancelBubble=true;
+                                  event.preventDefault();
+                                  event.stopPropagation();
+                                  showHideLateralMenu(event);
+                                }
+                                document.body.appendChild(lateralMenuContainer);
+                                var lateralMenu = document.createElement('div');
+                                var lateralLength = tabsList.length;
+                                if (lateralLength <= 0) {
+                                    tabsList = document.getElementsByClassName('innerMenuCollapsed');
+                                    lateralLength = tabsList.length;
+                                }
+                                lateralMenu.id = 'lateralMenu';
+                                lateralMenuContainer.appendChild(lateralMenu);
+                                lateralMenuContainer.style.right = -window.innerWidth + "px";
+                                for (var k = 0; k <= lateralLength - 1; k++) {
+                                    if(tabsList[k].style.display != "none"){
+                                        var newTab = document.createElement("div");
+                                        newTab.id = "new_" + tabsList[k].id;
+                                        if(transformLast==tabsList[k].id.split("_")[1]){
+                                            newTab.className="newInnerMenuSelected";
+                                        }else{
+                                            newTab.className = "newInnerMenu";
+                                        }
+                                        newTab.innerHTML = tabsList[k].innerHTML;
+                                        
+                                        newTab.onclick = function(event) {
+                                            var code = this.id.replace("new_menu_", "");
+                                            if(document.getElementById("new_menu_"+transformLast)){
+                                                if("new_menu_"+transformLast!== "new_menu_1461270094281" ){
+                                                    document.getElementById("new_menu_"+transformLast).className = "newInnerMenu";
+                                                }else{
+                                                    document.getElementById("new_menu_"+transformLast).className = "specialMenu";
+                                                }
+                                                
+                                            }else{
+                                                document.getElementById("new_footer_"+transformLast).className = "newInnerFooter";
+                                            }
+                                            if(this.id !== "new_menu_1461270094281" ){
+                                                this.className="newInnerMenuSelected";
+                                            }else{
+                                              this.className="specialMenuSelected";  
+                                            }
+                                            transformLast=code;
+                                            transformLast=code;
+                                            internalNavMenu(code);
+                                            lateralMenuContainer.style.right = -window.innerWidth + "px";
+                                             newFooterPB.style.right = "0";
+                                            newMenuPB.style.right = "0";
+                                        };
+                                       
+                                    }
+                                    
+                                    lateralMenu.appendChild(newTab);
+                                    
+                                }
+                                 
+                                 new_userLogged=document.getElementById("userLogged");
+                                 new_userLogged.className="new_userLogged";
+                                 lateralMenu.appendChild(new_userLogged);
+                                 new_lanPB=document.getElementById("lanPB");
+                                 new_lanPB.className="new_lanPB";
+                                 lateralMenu.appendChild(new_lanPB);
+                                 new_privatePB=document.getElementById("privatePB");
+                                 new_privatePB.className="new_privatePB";
+                                 lateralMenu.appendChild(new_privatePB);
+                                ;
+                                document.body.appendChild(newMenuPB);
+                            }
+
+                        }
+                    }
+                }
+                transformNav();
+            }
+
+</script>
+<script cbtype="scrollToTop">
+/*------------------------
+------------------------
+------------------------
+before transition to other clip return the focus clip scroll to 0
+------------------------
+------------------------
+--------------------------*/
+ if (typeof scrollToTop === "undefined") {
+                function scrollToTop(scrollDuration, _end) {
+                        var scrollHeight = window.scrollY  || window.pageYOffset || document.documentElement.scrollTop,
+                                scrollStep = Math.PI / (scrollDuration / 15),
+                                cosParameter = scrollHeight / 2;
+                        var scrollCount = 0,
+                                scrollMargin,
+                                scrollInterval = setInterval(function() {
+                                   var scrollHeightInterval = window.scrollY  || window.pageYOffset || document.documentElement.scrollTop
+                            if (typeof scrollHeightInterval !== "undefined" && scrollHeightInterval != 0) {
+                                scrollCount = scrollCount + 1;
+                                scrollMargin = cosParameter - cosParameter * Math.cos(scrollCount * scrollStep);
+                                window.scrollTo(0, (scrollHeight - scrollMargin));
+                            } else {
+                                clearInterval(scrollInterval);
+                                if (_end) {
+                                    _end();
+                                }
+                            }
+                        }, 15);
+                    }
+
+}
+</script>
+<script cbtype="lanSelection">
+/*------------------------
+------------------------
+------------------------
+language change control
+------------------------
+------------------------
+--------------------------*/
+if(typeof language==="undefined"){
+    var language="en";
+   //var language=lan;
+}
+if(typeof languageDiv==="undefined"){
+    var languages = ["es","en"];
+    var languagesRots = {"es":{"es":"Castellano","en":"Inglés"},"en":{"es":"Spanish","en":"English"}};
+    var showLanDiv=false;
+    var languageDiv=document.createElement("div");
+    var lastLanSelected = null;
+    var lastLanSelectedClass = null;
+    languageDiv.id="languageDiv";
+    var languageDivInner=document.createElement("div");
+    languageDivInner.id="languageDivInner";
+    languageDiv.onclick=function(){
+        languageDiv.style.left="-350px";
+        showLanDiv=false;
+    }
+    var oriDispLan=null;
+    for( var j in languagesRots){
+        for( var k in languagesRots[j]){
+            var newLanPB=document.createElement("div");
+            newLanPB.className="newLanPB "+j;
+            newLanPB.setAttribute("selLan",k);
+            newLanPB.innerHTML=languagesRots[j][k];
+            newLanPB.onclick=function(event){
+                if(lastLanSelected){
+                    lastLanSelected.className=lastLanSelectedClass;
+                    lastLanSelectedClass=event.target.className;
+                    lastLanSelected=event.target;
+                }
+                language=event.target.getAttribute("selLan");
+                var allLanSel=document.getElementsByClassName(language);
+                for(var j in allLanSel){
+                    if(typeof allLanSel[j] === "object" && allLanSel[j].getAttribute("selLan")===language){
+                        if(lastLanSelected){
+                            allLanSel[j].className=lastLanSelectedClass + " newLanPBSelected";
+                        }else{
+                            allLanSel[j].className+=" newLanPBSelected";
+                        }
+                    }
+                }
+                changeLanguage();
+            }
+            oriDispLan=newLanPB.style.display;
+            languageDivInner.appendChild(newLanPB);
+        }
+    }
+    languageDiv.appendChild(languageDivInner);
+    document.body.appendChild(languageDiv);
+                var allLanSel=document.getElementsByClassName(language);
+                for(var j in allLanSel){
+                    if(typeof allLanSel[j] === "object" && allLanSel[j].getAttribute("selLan")===language){
+                        if(lastLanSelected){
+                            allLanSel[j].className=lastLanSelectedClass + " newLanPBSelected";
+                        }else{
+                            allLanSel[j].className+=" newLanPBSelected";
+                        }
+                    }
+                }
+    var showLanguageDiv=function(event){
+        if(showLanDiv){
+            languageDiv.style.left="-350px";
+        }else{
+            languageDiv.style.left="0"
+        }
+        showLanDiv=!showLanDiv;
+    }
+    var lastFlag=null;
+    var changeLanguage=function(_language,_flag){
+        if(_flag){
+            if(lastFlag){
+                lastFlag.style.opacity="1";
+            }
+            lastFlag=_flag;
+            lastFlag.style.opacity=".5";
+        }
+        if(_language){
+            language=_language;
+        }
+        for( var j in languages){
+            if(languages[j]!==language){
+                var rotsLan=document.getElementsByClassName(languages[j]);
+                for( k=0;k<=rotsLan.length-1;k++){
+                    rotsLan[k].style.display="none";
+                }
+            }else{
+                rotsLan=document.getElementsByClassName(languages[j]);
+                for( k=0;k<=rotsLan.length-1;k++){
+                    rotsLan[k].style.display=oriDispLan;
+                }
+            }
+        }
+        resizeFunc();
+    }
+if(typeof lanPB!=="undefined"){
+lanPB.innerHTML="<span class='es'>Idioma</span><span class='en'>Language</span>";
+}
+if(typeof privatePB!=="undefined"){
+privatePB.innerHTML="<span class='es'>Admin</span><span class='en'>Admin</span>";
+}
+selLan=function(){
+showLanguageDiv();
+}
+}
+</script>
+<script cbtype="allways">
+/*------------------------
+------------------------
+------------------------
+always collection to execute
+------------------------
+------------------------
+--------------------------*/
+if(typeof allwaysFunc==="undefined"){
+allwaysFunc=function(){
+     changeLanguage();
+}
+}
+
+if(typeof allwaysFunc!=="undefined"){
+allwaysFunc();
+}
+</script>
+<script cbtype="edit div show">
+/*------------------------
+------------------------
+------------------------
+change edit div show
+------------------------
+------------------------
+--------------------------*/
+goEdit=function(){
+      internalNavMenu('1463877653024');
+}
+var errorEditorLogin=function(){
+     message="<span class='es'>Datos de acceso incorrectos</span><span class='en'>Access Data Not Ok</span>";
+    document.getElementById("message").innerHTML=message;
+    changeLanguage();
+}
+var editorLoginOk=function(){
+message="<span class='es'>Acceso correcto</span><span class='en'>Access Data Ok</span>";
+    document.getElementById("message").innerHTML=message;
+    changeLanguage();
+}
+editorLogin=function(){
+    var obj={};
+        obj.user=document.getElementById("userEditor").value;
+        obj.pwd=document.getElementById("passwordEditor").value;
+        obj.from=true;
+        $.ajax({
+            url: CONFIG["adminFolder"]+'/controller/enter.php',
+            type: 'POST',
+            data: obj,
+            //mientras enviamos el archivo
+            beforeSend: function () {
+            },
+            //una vez finalizado correctamente
+            success: function (data) {
+                    if(data=="OK"){
+                        editorLogged={};
+                        editorLogged.user=obj.user;
+                        editorLogged.pwd=obj.pwd;
+                         window.open("admin/indexAdmin.php","_blank");
+                         if(editorLoginOk){
+                            editorLoginOk();
+                        }
+                    }else{
+                        if(errorEditorLogin){
+                            errorEditorLogin();
+                        }
+                        editorLogged=null;
+                        
+                    }
+                    
+            },
+            //si ha ocurrido un error
+            error: function () {
+            }
+        });
+}
+</script>
+<script cbtype="importingDiv">
+/*------------------------
+------------------------
+------------------------
+create div while importing
+------------------------
+------------------------
+--------------------------*/
+var messageBridge=null;
+var importFunc=function(){
+        messageBridge=document.createElement("div");
+        messageBridge.id="messageBridge";
+        messageBridge.innerHTML="<div style='display:table;width:100vw;height:100vh'><div style='display:table-cell;width:100%;height:100%;text-align:center;vertical-align:middle;'><span class='es'>El siguiente contenido se importa de otro BLOC que se encuentra en clipbloc.com</span><span class='en'>Next content owns to a CLIP from a BLOC hosted in neuronalsite.com</span></div></div>";
+        document.body.appendChild(messageBridge);
+        if(typeof allwaysFunc!=="undefined"){
+             allwaysFunc();
+        }
+        setTimeout(function() {
+            messageBridge.style.left="0";
+        }, 10);
+}
+var importEndFunc=function(){
+        setTimeout(function() {
+            messageBridge.style.left="-100%";
+            endTrans=function(){
+                endTrans=null;
+                document.body.removeChild(messageBridge);
+                
+            }
+        }, 1000);
+}
+
+</script>
+<script cbtype="edition panel">
+/*------------------------
+------------------------
+------------------------
+create extra edition panel
+------------------------
+------------------------
+--------------------------*/
+if(typeof extraPanelDiv==="undefined"){
+    var extraPanelTitle=document.createElement("div");
+    extraPanelTitle.innerHTML="<span class='es'>Este panel es un script que crea un panel donde pueden ir apareciendo botones extra que se generan a lo largo de la navegación por este <strong>BLOC</strong> como muestra de la retroalimentación de código a través de los<strong>CLIPS</strong></span><span class='en'>This panel is an script that create a panel where it will appear extra buttons generated along the <strong>BLOC</strong> navigation as an example of the feedback of the <strong>CLIPS</strong></span>"
+    var extraPanelDiv=document.createElement("div");
+    extraPanelStatus=false;
+    extraPanelDiv.id="extraPanelDiv";
+    extraPanelDiv.appendChild(extraPanelTitle);
+    document.body.appendChild(extraPanelDiv);
+    //showhidebutton
+    var extraPanelPB=document.createElement("div");
+    extraPanelPB.id="extraPanelPB";
+    extraPanelPB.innerHTML="<span class='es'>Mostrar/Ocultar Panel Extra</span><span class='en'>Show/Hide Extra Panel</span>";
+    extraPanelPB.style.zIndex="30000";
+    extraPanelPB.style.position="fixed";
+    extraPanelPB.style.padding="10px";
+    extraPanelPB.style.background="orangered";
+    extraPanelPB.style.color="#fff";
+    extraPanelPB.style.cursor="pointer";
+    extraPanelPB.style.bottom="10px";
+    extraPanelPB.style.left="165px";
+    extraPanelPB.onclick=function(){showHideExtraPanel();};
+    extraPanelDiv.onclick=function(){showHideExtraPanel();};
+    document.body.appendChild(extraPanelPB);
+    if(typeof allwaysFunc!=="undefined"){
+      allwaysFunc();
+    }
+    
+    showHideExtraPanel=function(){
+          if(extraPanelStatus){
+             extraPanelDiv.style.left="100%";
+          }else{
+             extraPanelDiv.style.left="0";
+          }
+          extraPanelStatus=!extraPanelStatus;
+    }
+}
+</script>
+
+<script cbtype="submenuhide">
+/*------------------------
+------------------------
+------------------------
+auto hide sumbenu if clip contains it
+------------------------
+------------------------
+--------------------------*/
+resizeDoc2 = function() {
+    if (typeof resizeFunc!=="undefined") {
+        resizeFunc();
+    }
+    menuResize();
+    var mainContent = document.getElementById("date");
+    if (!fixed) {
+        topPos = document.getElementById("headerContainer").offsetHeight;
+        if (lastPage) {
+            if (window.innerWidth >= 900) {
+                lastPage.className = "page";
+                lastPage.style.top = topPos + "px";
+
+            } else {
+                lastPage.style.top = topPos + "px";
+            }
+            document.getElementById("imgHeader").style.height = topPos + "px";
+            lastPage.className = "page generic_trans";
+        }
+    }
+    if (typeof resizeSubmenuFunc !== "undefined" && resizeSubmenuFunc !== null) {
+        resizeSubmenuFunc();
+    } else {
+        if (subMenuPB && !submenuAppHide) {
+            mainContent.style.width = "100%";
+        }
+    }
+};
+window.addEventListener("resize", resizeDoc2, false);
+
+beforeTransitionFunc = function(_end) {
+
+
+
+
+/*if(typeof fromSubPageInterface==="undefined" || !fromSubPageInterface){
+newTransitionFunc=function(){
+        newTransitionFunc=null;
+        page=document.getElementById("page_"+tabHome);
+        lastPage.style.overflow = "hidden";
+        lastPage.style.opacity = "0";
+        page.style.opacity = "1";
+   }
+       page=document.getElementById("page_"+tabHome);
+       page.className = "page";
+          page.style.left = "0";
+          page.style.opacity = "0";
+       setTimeout(function() {
+             page.className = "page generic_trans";
+             page.style.opacity = "1";
+          }, 10);
+ 
+}else{
+   fromSubPageInterface=false;
+}*/
+
+
+
+
+
+    beforeTransitionFunc=null;
+    resizeFunc(_end);
+    if (typeof CONFIG !== "undefined" && typeof CONFIG["closeSubMenuOnSelect"] !== "undefined" && CONFIG["closeSubMenuOnSelect"] === "true" && !document.getElementById("submenuContainer").getAttribute("solid") && subMenuPB) {
+        hideSubmenuApp();
+        var submenuPBTemp=subMenuPB.cloneNode(true);
+        submenuPBTemp.onclick = function() {
+               submenuApphideShow();
+        };
+        document.getElementById("submenuContainer").appendChild(submenuPBTemp);
+        //document.getElementById("submenuContainer").appendChild(subMenuPB);
+        //document.body.appendChild(document.getElementById("submenuContainer"));
+        submenuAppHide = true;
+        document.getElementById("submenuContainer").setAttribute("solid","1");
+    }
+    hideSubmenuApp = function() {
+            submenuContainer = document.getElementById("submenuContainer");
+            submenuContainer.style.left = -submenuContainer.offsetWidth + "px";
+            var mainContent = document.getElementById("date");
+            mainContent.style.left = "0";
+            mainContent.style.width = "100%";            
+    };
+    showSubmenuApp = function() {
+            submenuContainer = document.getElementById("submenuContainer");
+            submenuContainer.style.opacity = 1;
+            submenuContainer.style.left = "0";
+    };
+    scrollToTop(300, _end);
+}
+</script>
+<script cbtype="Extra msg">
+/*------------------------
+------------------------
+------------------------
+create an extra div for a message
+------------------------
+------------------------
+--------------------------*/
+if(typeof closeExtraMsg==="undefined"){
+var extraMsg=document.createElement("div");
+extraMsg.id="extraMsg";
+document.body.appendChild(extraMsg);
+showExtraMsg=function(_message){
+    extraMsg.innerHTML=_message;
+    setTimeout(function() {
+            changeLanguage();
+        extraMsg.style.left="0";
+        endTrans = function() {
+                endTrans = null;
+        };
+    }, 1000);
+}
+closeExtraMsg=function(){
+    if(extraMsg){
+        extraMsg.style.left="100%";
+        endTrans = function() {
+                endTrans = null;
+        };
+    }
+}
+extraMsg.onclick=function(event){
+   closeExtraMsg();
+}
+}
+</script>
+<script cbtype="next block">
+//+++++++++++++++++++++++++++
+//+++++++++scroll blocks
+//+++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++
+if ( typeof nextBlock === "undefined"){
+  var blockCount = 0;
+  var position, time, start, finish, duration, increment, distance, handler, fps;
+  var dir = 1;
+  var easeInOutQuad = function(x, t, b, c, d) {
+    ((t /= d / 2) < 1) ? calc = c / 2 * t * t + b : calc = -c / 2 * ((--t) * (t - 2) - 1) + b;
+    return calc
+  };
+  var setScrollArrow = function(_arrow, _showArrow){
+    var arrow = document.getElementById(_arrow);
+    if(arrow){
+      _showArrow ? arrow.style.display = 'block' : arrow.style.display = 'none' ;
+      (_arrow === 'downArrow' && !_showArrow) ? blockCount = getLimitScrollY()/window.innerHeight : null;
+    }
+  };
+  var endScroll = function(handler){
+    clearInterval(handler);
+    window.scrollTo(0, position);
+  };
+  var getLimitScrollY = function(){
+    return window.scrollY //Modern Way (Chrome, Firefox)
+    || window.pageYOffset //(Modern IE, including IE11
+    || document.documentElement.scrollTop ;//(Old IE, 6,7,8), // pixel
+  };
+  var getLimit = function(){
+    return Math.max( 
+      document.body.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.clientHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.offsetHeight 
+    )
+  };
+  var lastScrollY;
+  var runOnScroll = function(){
+    getLimitScrollY()>lastScrollY ? dir = 1 : dir = -1 ;
+    lastScrollY = getLimitScrollY();
+    dir === 1 ? blockCount = Math.floor(getLimitScrollY()/window.innerHeight) : blockCount = Math.ceil(getLimitScrollY()/window.innerHeight);
+    getLimit() <= ( getLimitScrollY() + document.body.offsetHeight ) ? (setScrollArrow('downArrow', false), dir = -1) : setScrollArrow('downArrow', true) ;
+    getLimitScrollY() === 0 ? (setScrollArrow('upArrow', false), dir = 1 ): setScrollArrow('upArrow', true) ;
+  };
+  var nextBlock = function(event,_duration){
+    dir === 1 ? blockCount+=1 : dir = 1;
+    clearInterval(handler);    
+    start = getLimitScrollY();
+    finish = blockCount*window.innerHeight,
+    distance = finish - start,
+    position = start;
+    fps = 60,
+    duration = .5, // seconds
+    time = 0;
+    increment = distance / (duration * fps),
+    handler = setInterval(moveDown, 1000 / fps);
+  };
+  var prevBlock = function(event,_duration){
+    dir === -1 ? blockCount-=1 : dir = -1;
+    clearInterval(handler);
+    start = getLimitScrollY();
+    finish = blockCount*window.innerHeight,
+    distance = start -finish ,
+    position = start;
+    fps = 60,
+    duration = .5, // seconds
+    time = 0;
+    increment = -distance / (duration * fps),
+    handler = setInterval(moveUp, 1000 / fps);
+  };
+  var moveDown = function() {
+    position += increment;
+    time += 1 / fps;
+    position += 1/easeInOutQuad(time * 100 / duration, time, start, finish, duration);
+    position >=  finish ? endScroll(handler) : null;
+    window.scrollTo(0, position);
+  };
+  var moveUp = function() {
+    position += increment;
+    time += 1 / fps;
+    position -= 1/easeInOutQuad(time * 100 / duration, time, finish, start, duration);
+    position <=  finish ? endScroll(handler) : null;
+    window.scrollTo(0, position);
+  };
+  window.addEventListener( 'scroll', function() { runOnScroll(); }) ;
+}
+</script>
+<script>
+var initAnalytics = false;
+function scriptLoader(scripts, callback) {
+    var count = scripts.length;
+    function urlCallback(url) {
+        return function () {
+            console.log(url + ' was loaded (' + --count + ' more scripts remaining).');
+            if (count < 1) {
+                callback();
+            }
+        };
+    }
+    function loadScript(url) {
+        var s = document.createElement('script');
+        s.setAttribute('src', url);
+        s.onload = urlCallback(url);
+        document.head.appendChild(s);
+    }
+    for (var script of scripts) {
+        loadScript(script);
+    }
+};
+if(!initAnalytics){
+   scriptLoader(['https://www.googletagmanager.com/gtag/js?id=UA-44758074-1'], function() {
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-44758074-1');
+       initAnalytics=true; 
+       internalNavMenu = (function() {
+             var cached_function = internalNavMenu;
+             return function() {
+                 // your code
+                typeof gtag !== 'undefined'
+                 ? gtag ('config', 'UA-44758074-1', {
+                 'page_title' : lastPage.id,
+                  'page_path': lastPage.id
+                })
+                : null;
+                 var result = cached_function.apply(this, arguments); // use .apply() to call it
+                // more of your code
+                return result;
+            };
+         })();
+      });
+}
+
+
+           
+        
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

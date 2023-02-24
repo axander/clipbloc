@@ -1,0 +1,119 @@
+<style>
+.contenido{
+width:90%;
+display:inline-block;
+}
+.contenido ul li{
+padding:10px;
+width:95%;
+}
+</style>
+<div id="htmlContent2" style="padding-top: 100px; height: 100%; position: relative;">
+<div class="contenido">
+<ul>
+<li style="font-size: 20px;">BOTON REFRESCAR</li>
+<li>--------------------------------------------------</li>
+<li>Este pequeño script genera un botón en la parte inferior izquierda.</li>
+<li>Al ser pulsado carga de nuevo el CLIP en el que te encuentres.</li>
+<li>--------------------------------------------------</li>
+<li>Además se oscurecerá mientras recarga.</li>
+<li>Y volverá a ponerse en rojo una vez se haya terminado de refrescar el CLIP para poder volver a ser pulsado.</li>
+<li>Lo empleamos para refrescar el CLIP mientras estamos editándolo desde el administrador</li>
+<li>Un ejemplo de como puedes ir añadiendo funcionalidades a tus CLIP de forma independiente, incluso aplicándolo a todo el BLOC si lo necesitas</li>
+</ul>
+<div class="row">
+<div class="col-xs-offset-2 col-xs-8">
+<div style="text-align:left">
+<pre>if(typeof refreshClip==="undefined"){
+    var refreshPB=document.createElement("div");
+    refreshPB.id="refreshPB";
+    refreshPB.innerHTML="<span class="es" style="display: none;">Actualizar CLIP</span><span class="en">Refresh CLIP</span>";
+    refreshPB.onclick=function(){refreshClip();};
+    extraPanelDiv.appendChild(refreshPB);
+    //document.body.appendChild(refreshPB);
+    var refreshClip=function(){
+         subMenuScroll = false;
+         if(!endTrans){
+             var saveLast=lastPage.id.split("_")[2];
+             lastPage.id="??";
+             if(lastSubPage){
+               internalNavMenu(saveLast,lastSubPage.id.split("_")[1]);
+              }else{
+               internalNavMenu(saveLast);
+             }
+        }
+  }
+  auxEndTrans=function(){
+    refreshPB.style.background="#c33";
+  }
+}
+
+</pre>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+<style>
+#refreshPB{
+   padding:10px;
+   background:#444;
+   color:#fff;
+   cursor:pointer;
+   display:inline-block;
+   margin:10px;
+}
+#refreshPB:hover{
+  opacity:.5;
+}
+</style>
+<script>
+if(typeof refreshClip==="undefined"){
+    var refreshPB=document.createElement("div");
+    refreshPB.id="refreshPB";
+    refreshPB.innerHTML="<span class='es'>Actualizar CLIP</span><span class='en'>Refresh CLIP</span>";
+    refreshPB.onclick=function(){refreshClip();};
+    extraPanelDiv.appendChild(refreshPB);
+    if(typeof allwaysFunc!=="undefined"){
+       allwaysFunc();
+    }
+    //document.body.appendChild(refreshPB);
+    showHideExtraPanel();
+    var refreshClip=function(){
+         subMenuScroll = false;
+         refreshPB.style.background="#444";
+         if(!endTrans){
+             var saveLast=lastPage.id.split("_")[2];
+             lastPage.id="??";
+             if(lastSubPage){
+               internalNavMenu(saveLast,lastSubPage.id.split("_")[1]);
+              }else{
+               internalNavMenu(saveLast);
+             }
+        }
+  }
+ auxEndTrans=function(){
+    refreshPB.style.background="#c33";
+ }
+        
+}else{
+showHideExtraPanel();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

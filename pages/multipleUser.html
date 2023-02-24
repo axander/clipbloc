@@ -1,0 +1,21 @@
+<div class="row" id="usersRegList" >
+</div>
+<div class="row" id="usersList_content" >
+    <div class="col-xs-12" >
+        <div class="col-xs-12" >
+            <div data-bind="foreach : tabs ">
+                <div class="row menu_level_2_item_group">
+                    <ul>
+                        <li>
+                            <div class="userListItemIndex" data-bind="text:$index"></div>
+                        </li>
+                        <li>
+                            <div class="userListItem" data-bind="text:user,click: $root.selUser"  />
+                            <div class="userListItemName" data-bind="text:name+' '+surname"  />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

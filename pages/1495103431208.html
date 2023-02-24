@@ -1,0 +1,66 @@
+<style>
+app-root{
+   display:inline-block;
+    border: 1px solid #444;
+    padding: 10px;
+    background: #eee;
+}
+app-root input{
+    margin: 10px;
+    border: 3px solid #ddd;
+    color: #aaa;
+    text-align: left;
+    padding-left: 10px;
+}
+</style>
+<div id="htmlContent" style="height:100%;position:relative">
+<div class="basicOuter"><div class="basicInner">
+<app-root>Loading...</app-root>
+</div></div>
+<script type="text/javascript" src="./dist/inline.bundle.js"></script>
+<script type="text/javascript" src="./dist/polyfills.bundle.js"></script>
+<script type="text/javascript" src="./dist/styles.bundle.js"></script>
+<script type="text/javascript" src="./dist/vendor.bundle.js"></script>
+<script type="text/javascript" src="./dist/main.bundle.js"></script>
+</div>
+
+<script>
+
+beforeTransitionFunc=function(_end){
+if(typeof changeLanguage!=="undefined"){
+changeLanguage();
+}
+beforeTransitionFunc=null;
+
+hideSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.left = -submenuContainer.offsetWidth + "px";
+        var mainContent = document.getElementById("date");
+        mainContent.style.left = "0";
+        mainContent.style.width = "100%";
+};
+showSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.opacity = 1;
+        submenuContainer.style.left = "0";
+};
+if (typeof CONFIG !== "undefined" && typeof CONFIG["closeSubMenuOnSelect"] !== "undefined" && CONFIG["closeSubMenuOnSelect"] === "true" && !document.getElementById("submenuContainer").getAttribute("solid")) {
+                           hideSubmenuApp();
+                            var submenuPBTemp=subMenuPB.cloneNode(true);
+                            submenuPBTemp.onclick = function() {
+                                   submenuApphideShow();
+                            };
+                            document.getElementById("submenuContainer").appendChild(submenuPBTemp);
+                            //document.getElementById("submenuContainer").appendChild(subMenuPB);
+                            //document.body.appendChild(document.getElementById("submenuContainer"));
+                            submenuAppHide = true;
+                            document.getElementById("submenuContainer").setAttribute("solid","1");
+                        }
+     setSubMenuScroll();
+     scrollToTop(300, _end);
+}
+
+</script>
+
+
+

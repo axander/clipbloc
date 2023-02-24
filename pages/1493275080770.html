@@ -1,0 +1,123 @@
+<style>
+label{
+   margin:5px;
+}
+input:focus {
+    color: #fff;
+    background: orangered;
+    border: 0px outset #fff;
+}
+</style>
+<div id="htmlContent" style="height:100%;position:relative;background:#000">
+<div class="basicOuter"><div class="basicInner">
+
+<div style="width:200px;display: inline-block;">
+      <div class="otroNumeroContainer">
+        <label for="inputNumero" class="NUMERO" id="inputtlfLoc" style="color:#fff">telefono</label>
+        <input name="numero" id="inputtlf">
+      </div>
+      <div class="otroNumeroContainer">
+        <label for="inputNumero" class="NUMERO" id="inputemailLoc" style="color:#fff">email</label>
+        <input name="numero" id="inputemail">
+      </div>
+      <div class="otroNumeroContainer">
+        <label for="inputNumero" class="NUMERO" id="inputLocaLoc" style="color:#fff">localidad</label>
+        <input name="numero" id="inputLoca">
+      </div>
+      <div class="otroNumeroContainer">
+        <label for="inputNumero" class="NUMERO" id="inputDirExtraLoc" style="color:#fff">direccion extra</label>
+        <input name="numero" id="inputDirExtra">
+      </div>
+      <div class="otroNumeroContainer">
+        <label for="inputNumero" class="NUMERO" id="inputDirLoc" style="color:#fff">direccion</label>
+        <input name="numero" id="inputDir">
+      </div>
+      <div class="otroNumeroContainer">
+        <label for="inputNumero" class="NUMERO" id="inputPostLoc" style="color:#fff">codigo postal</label>
+        <input name="numero" id="inputPost">
+      </div>
+      <div class="otroNumeroContainer">
+        <label for="inputNumero" class="NUMERO" id="inputNumeroLoc" style="color:#fff">Numero</label>
+        <input name="numero" id="inputNumero">
+      </div>
+
+</div>
+
+
+</div></div>
+</div>
+  <script>
+    //limit to number and length
+    var limitToNumber = function(_elem, _maxNum, _num){ //_num filter only numbers
+      var string=$('#'+_elem).val();
+      if(_num || ( _elem === 'inputNumero' && string !== 'S/N')){
+        var arrCadena=string.split('');
+        var endCadena ='';
+        for( var j in arrCadena){
+          var isNumber =  /^\d+$/.test(arrCadena[j]);
+          isNumber ? endCadena+=arrCadena[j] : null;
+        }
+      }else{
+        endCadena = string;
+      }
+      _maxNum ? endCadena = endCadena.substring(0,_maxNum) : null;
+      $('#'+_elem).val(endCadena);
+      //$('#'+_elem+'Loc').html(endCadena.length);
+      return(endCadena);
+    }
+    //Teléfono
+    $(document).on('keyup', '#inputtlf', function(evt){ 
+      evt.preventDefault();
+      var cadena=limitToNumber('inputtlf',9,true);
+    });  
+    //Email
+    $(document).on('keyup', '#inputemail', function(evt){ 
+      evt.preventDefault();
+      var cadena=limitToNumber('inputemail',50, false);
+      $("#inputemailLoc").html(cadena.length);
+    });  
+    //Localidad
+    $(document).on('keyup', '#inputLoca', function(evt){ 
+      evt.preventDefault();
+      var cadena=limitToNumber('inputLoca',40, false);
+    });  
+    //Dirección extra
+    $(document).on('keyup', '#inputDirExtra', function(evt){ 
+      evt.preventDefault();
+      var cadena=limitToNumber('inputDirExtra',34, false);
+    });  
+    //Dirección
+    $(document).on('keyup', '#inputDir', function(evt){ 
+      evt.preventDefault();
+      var cadena=limitToNumber('inputDir',31, false);
+    });
+    //código Postal
+    $(document).on('keyup', '#inputPost', function(evt){ 
+      evt.preventDefault();
+      var cadena=limitToNumber('inputPost',5, true);
+    });  
+    //Número
+    $(document).on('keyup', '#inputNumero', function(evt){ 
+      evt.preventDefault();
+      var cadena=$('#inputNumero').val();
+      keyCode =cadena.charCodeAt(cadena.length-1);
+      var cadena = limitToNumber('inputNumero',3, true);
+      (evt.keyCode === 8 && cadena.indexOf('S/')>=0) ? cadena='': null;
+      ( cadena.indexOf('S/N')>=0) ? $('#inputNumero').val(''):null;
+      if(cadena.indexOf('S/N')>=0){
+        if(keyCode >= 48 && keyCode <= 57 ){
+          cadena = cadena.slice(cadena.length-1);
+        }else{
+          cadena='S/N';
+        }
+      }else if(keyCode === 83 || keyCode === 115){
+        cadena = 'S/N';
+      }else if(cadena.length > 3){
+          cadena = cadena.substring(0,cadena.length-1);
+      }
+      $("#inputNumero").val(cadena) ;
+    });
+ </script>
+
+
+

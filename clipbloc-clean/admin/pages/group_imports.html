@@ -1,0 +1,18 @@
+<div class="row" id="import_sections" >
+        <div class="col-xs-12" >
+            <div id="rotImport1">
+               Copiar o Importar Código clips principales 
+            </div>
+        </div>
+        <div class="col-xs-12" >
+            <div data-bind="foreach : tabs ">
+                <div class="row menu_level_2_item_group" data-bind="visible: $index() > 5 ? 1 : 0">
+                    <div class="col-xs-2 menu_level_2_item_inner"><div data-bind="text:rot" ></div></div>
+                    <div class="col-xs-2 menu_level_2_item_inner"><div data-bind="text:date"></div></div>
+                    <div data-bind="visible: $index() != 1 ? 1 : 0"><div class="col-xs-1 menu_level_2_item_inner generic_pb" data-bind="click:$parent.SelSectionSub">Go</div></div>
+                    <!--<div data-bind="visible: $index() > 7 ? 1 : 0" ><div class="col-xs-2 menu_level_2_item_inner generic_pb" data-bind="click: $root.importHTML">Importar</div></div>
+                    <div data-bind="visible: $index() > 7 ? 1 : 0" ><div class="col-xs-2 menu_level_2_item_inner generic_pb" data-bind="click: $root.loadHTML">Cargar HTML</div></div>-->
+                </div>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,113 @@
+<div class="row" id="menu_level_2" >
+    <div class="col-xs-12">
+        <div class="col-xs-12 basicContainer">
+            <div class="col-xs-6 basicPB" id="message" >
+                Waiting...
+            </div>
+            <div class="col-xs-3 basicPB" id="basicAddPB" data-bind="click: anadir">
+                Add ( + )
+            </div>
+            <div class="col-xs-3 basicPB" id="basicSavePB" data-bind="click: guardar">
+                Save
+            </div>
+        </div>
+        <div class="col-xs-12" >
+            <div data-bind="foreach : tabs ">
+                <div class="row  basic" >
+                     <div class="col-xs-1 menu_level_2_PB_DELETE" data-bind="click: $root.eliminar">
+                        x
+                    </div>
+                    <div class="col-xs-9 menu_level_2_PB" data-bind="click: $root.extend" >
+                        <div class="rotPB" data-bind="html:rot,attr: {'id':'rot_'+date }" ></div>
+                        <div class="codePB" data-bind="text:date" ></div>
+                    </div>
+                   
+                    <div class="col-xs-2 menu_level_2_PB_HTML " data-bind="click: $root.createHTML">
+                        HTML
+                    </div>
+                </div>
+                <div class="row menu_level_2_item" data-bind="attr: {'id':'div_'+date}">
+                    
+                    <div class='col-xs-6'>
+                        <ul>
+                            <li>
+                                  <input data-bind="value:rot,attr: {'id':'rotInput_'+date }" onfocus="focusText()" onclick="changeRot(this);" />Name
+                            </li>
+                            <li>
+                                <div class="menu_level_2_item_inner">
+                                    <div class="inline" ><div><input type="checkbox" name="" value="" onfocus="focusText()" data-bind="checked: $data.active"  /><span class="rots">Active</span></div></div>
+                                    <div class="inline" ><div><input type="checkbox" name="" value="" onfocus="focusText()" data-bind="checked: $data.privated"  /><span class="rots">Private</span></div></div>
+                                     <div class="inline" ><input type="checkbox" name="" value="" onfocus="focusText()" data-bind="checked: $data.tabCounter"  /><span class="rots">Counter</span></div>
+                                </div>
+                            </li>
+                            <li>
+                                <select data-bind="attr: {'id':$index},options: $parent.tabs,value: $data,optionsText:'rot',event:{ change: $parent.positionChanged}" ></select>&nbsp;Labels List
+                            </li>
+                            <li>
+                                <div class="menu_level_2_item_inner"><div>Description<input data-bind="value: $data.desc" onfocus="focusText()" /></div></div>
+                            </li>
+                            <li>
+                                Ad ref<input data-bind="attr: {'id':'add_'+date},value:$data.adCode" onfocus="focusText()">
+                            </li>
+                        </ul>
+                    </div> 
+                   <div class='col-xs-3'>
+                        <ul>
+                            <li>
+                                <input data-bind="attr: {'id':'input_asoc_'+date},value:submenu,event:{ change: $parent.setReset }" onfocus="focusText()" >Submenu
+                            </li>
+                             <li>
+                                <div class="menu_level_2_item_inner">
+                                    <div><input type="checkbox" name="" value="" data-bind="checked: $data.bridge"  onfocus="focusText()" />
+                                    <div>Bridge Code<input data-bind="value: $data.bridgeCode" onfocus="focusText()" /></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="menu_level_2_item_inner">
+                                    <div class="inline" ><div><input type="checkbox" name="" value="" onfocus="focusText()" data-bind="checked: $data.ad"  /><span class="rots">Active Advertsiment</span></div></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img height='75px' data-bind="attr: {'src':'../pages/'+date+'/fbImg.jpg', 'id':'fbImg_'+date}" ></img></div>
+                            </li>
+                            <li>
+                                Facebook Entry Image<input type="file" onchange="saveImgFb(this);" data-bind="attr: {'id':'img_'+date}" onfocus="focusText()" />
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class='col-xs-3'>
+                        <ul>
+                            <li>
+                                <div class="menu_level_2_item_inner">
+                                    <div class="inline generic_pb" data-bind="click: function(){ $parent.resetSub('input_asoc_'+date) }"><div>X</div></div>
+                                    <div class="inline" data-bind="attr: {'id':'go_asoc_'+date},visible: submenu != '' ? 1 : 0"><div class="generic_pb" data-bind="click:function(){ $parent.SelGoSub(submenu) }">></div></div>
+                                    
+                                </div>
+                            </li>
+                             <li>
+                                <div class="menu_level_2_item_inner">
+                                    <div><input type="checkbox" name="" value="" data-bind="checked: $data.import"  onfocus="focusText()" /></div>
+                                    <div>Import Code<input data-bind="value: $data.importCode" onfocus="focusText()" /></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="menu_level_2_item_inner">
+                                    <div class="inline" ><div><input type="checkbox" name="" value="" onfocus="focusText()" data-bind="checked: $data.tabFb"  /><span class="rots">Active Sharing in Facebook</span></div></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img height='75px' data-bind="attr: {'src':'../editor/rmt/'+$data.clipbloc+'/img.png','id':'clipImg_'+date}" ></img></div>
+                            </li>
+                            <li>
+                                Clipbloc Association<input data-bind="click: $root.listUsers,attr: {'id':'clipbloc_'+date},textInput:$data.clipbloc" onfocus="focusText()" />
+                            </li>
+                            <li>
+                                <div class="menu_level_2_item_inner generic_pb" data-bind="click: $root.reset"><div>Reset</div></div>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

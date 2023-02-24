@@ -1,0 +1,498 @@
+[14-Mar-2015 02:48:26] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 02:48:26] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 02:50:02] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 02:50:02] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 12:16:43] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 12:16:43] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 14:48:07] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 14:48:07] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 14:50:13] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 14:50:13] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 14:52:52] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 14:52:52] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 15:03:43] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 15:03:43] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 15:08:18] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 15:08:18] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 15:18:31] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 15:18:31] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 16:58:24] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 16:58:24] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 17:58:28] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 17:58:28] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 21:12:14] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 21:12:14] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 22:06:57] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 22:06:57] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[14-Mar-2015 23:33:52] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[14-Mar-2015 23:33:52] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[15-Mar-2015 12:54:40] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[15-Mar-2015 12:54:40] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[15-Mar-2015 23:49:55] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[15-Mar-2015 23:49:55] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[16-Mar-2015 20:44:41] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[16-Mar-2015 20:44:41] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[16-Mar-2015 20:54:44] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[16-Mar-2015 20:54:44] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[16-Mar-2015 22:19:03] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 57
+[16-Mar-2015 22:19:03] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/tupsiquesi/admin/controller/enter.php on line 58
+[16-Mar-2015 22:44:42] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[16-Mar-2015 22:44:42] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 00:07:56] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 00:07:56] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 00:09:53] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 00:09:53] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 00:11:28] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 00:11:28] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 00:11:58] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 00:11:58] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 00:54:32] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 00:54:32] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 00:54:45] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 00:54:45] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 01:25:46] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 01:25:46] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 01:41:43] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 01:41:43] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 14:26:27] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 14:26:27] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 17:02:18] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 17:02:18] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 17:20:56] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 17:20:56] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 18:14:23] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 18:14:23] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[17-Mar-2015 19:04:45] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[17-Mar-2015 19:04:45] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 02:03:49] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 02:03:49] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 02:04:22] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 02:04:22] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 02:04:46] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 02:04:46] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 02:08:24] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 02:08:24] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 02:27:23] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 02:27:23] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 02:34:31] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 02:34:31] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 02:35:14] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 02:35:14] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 02:37:31] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 02:37:31] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 03:13:13] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 03:13:13] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 03:14:01] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 03:14:01] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 03:19:18] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 03:19:18] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 03:36:48] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 03:36:48] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 03:49:43] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 03:49:43] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 03:56:38] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 03:56:38] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 13:30:24] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 13:30:24] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 13:31:33] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 13:31:33] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 14:22:56] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 14:22:56] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 21:58:26] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 21:58:26] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[18-Mar-2015 23:28:38] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[18-Mar-2015 23:28:38] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 00:12:02] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 00:12:02] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 00:50:46] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 00:50:46] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 00:57:03] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 00:57:03] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 00:57:14] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 00:57:14] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 00:59:23] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 00:59:23] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 01:04:37] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 01:04:37] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 01:04:49] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 01:04:49] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 01:04:57] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 01:04:57] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 01:23:27] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 01:23:28] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 01:33:34] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 01:33:34] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 02:20:33] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 02:20:33] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 03:31:59] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 03:31:59] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 03:32:06] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 03:32:06] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 04:22:25] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 04:22:25] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 04:30:39] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 04:30:39] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 04:34:16] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 04:34:16] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 04:34:52] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 04:34:52] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[19-Mar-2015 04:55:33] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[19-Mar-2015 04:55:33] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 00:42:10] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 00:42:10] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 02:32:14] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 02:32:14] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 02:48:14] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 02:48:14] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 03:11:24] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 03:11:24] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 03:15:33] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 03:15:33] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 03:33:59] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 03:33:59] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 03:42:54] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 03:42:54] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 03:58:43] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 03:58:43] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 04:00:07] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 04:00:07] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 13:27:05] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 13:27:05] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 13:30:40] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 13:30:40] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 13:44:04] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 13:44:04] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 13:47:58] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 13:47:58] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 19:34:22] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 19:34:22] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 19:37:07] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 19:37:07] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 19:59:02] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 19:59:02] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 20:51:59] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 20:51:59] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 22:31:45] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 22:31:45] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[20-Mar-2015 23:59:09] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[20-Mar-2015 23:59:09] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[21-Mar-2015 00:01:01] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[21-Mar-2015 00:01:01] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[21-Mar-2015 00:12:46] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[21-Mar-2015 00:12:46] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[21-Mar-2015 00:20:54] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[21-Mar-2015 00:20:54] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[21-Mar-2015 02:08:42] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[21-Mar-2015 02:08:42] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[21-Mar-2015 14:51:14] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[21-Mar-2015 14:51:14] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[21-Mar-2015 15:49:14] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[21-Mar-2015 15:49:14] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[21-Mar-2015 17:40:42] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[21-Mar-2015 17:40:42] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[21-Mar-2015 23:54:32] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[21-Mar-2015 23:54:32] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 00:53:26] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 00:53:26] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 02:02:36] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 02:02:36] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 02:27:46] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 02:27:47] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 04:45:56] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 04:45:57] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 13:00:57] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 13:00:57] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 14:03:14] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 14:03:14] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 14:42:24] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 14:42:24] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 14:51:06] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 14:51:06] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 15:15:33] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 15:15:33] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 15:31:13] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 15:31:13] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 15:39:48] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 15:39:48] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 16:11:20] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 16:11:20] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 16:44:32] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 16:44:32] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[22-Mar-2015 23:14:34] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[22-Mar-2015 23:14:34] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 00:55:39] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 00:55:39] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 01:00:44] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 01:00:44] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 02:00:47] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 02:00:47] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 02:09:38] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 02:09:38] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 02:13:16] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 02:13:16] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 07:37:44] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 07:37:44] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 07:37:53] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 07:37:53] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 07:50:34] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 07:50:34] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 11:41:27] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 11:41:27] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 11:54:31] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 11:54:31] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 11:55:55] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 11:55:55] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 11:56:57] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 11:56:57] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 17:43:20] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 17:43:20] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 18:40:14] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 18:40:14] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 19:31:01] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 19:31:01] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[23-Mar-2015 19:45:53] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[23-Mar-2015 19:45:53] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[24-Mar-2015 00:45:09] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[24-Mar-2015 00:45:09] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[24-Mar-2015 01:03:25] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[24-Mar-2015 01:03:25] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[24-Mar-2015 01:06:32] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[24-Mar-2015 01:06:32] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[24-Mar-2015 01:28:54] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[24-Mar-2015 01:28:54] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[24-Mar-2015 16:34:02] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[24-Mar-2015 16:34:02] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[25-Mar-2015 07:05:32] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[25-Mar-2015 07:05:32] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[25-Mar-2015 15:23:04] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[25-Mar-2015 15:23:04] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[26-Mar-2015 16:14:23] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[26-Mar-2015 16:14:23] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[26-Mar-2015 16:14:41] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[26-Mar-2015 16:14:41] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[27-Mar-2015 13:26:27] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[27-Mar-2015 13:26:27] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 00:26:58] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 00:26:58] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 01:46:13] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 01:46:13] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 12:21:48] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 12:21:48] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 13:44:50] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 13:44:50] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 13:47:43] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 13:47:43] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 16:15:57] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 16:15:57] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 23:05:33] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 23:05:33] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 23:15:58] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 23:15:58] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 23:16:33] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 23:16:33] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 23:44:35] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 23:44:35] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[28-Mar-2015 23:56:53] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[28-Mar-2015 23:56:53] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 00:12:10] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 00:12:10] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 00:47:26] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 00:47:26] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 01:15:06] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 01:15:06] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 01:47:46] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 01:47:46] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 03:13:00] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 03:13:00] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 03:44:50] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 03:44:50] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 04:37:22] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 04:37:22] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 04:51:55] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 04:51:56] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 16:21:16] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 16:21:16] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 16:26:09] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 16:26:09] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 16:27:34] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 16:27:34] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 16:28:24] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 16:28:24] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 16:29:00] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 16:29:00] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 16:29:52] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 57
+[29-Mar-2015 16:29:52] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 58
+[29-Mar-2015 16:56:35] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 16:56:35] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 16:58:10] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 16:58:10] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 16:58:54] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 16:58:54] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 16:59:38] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 16:59:38] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:00:49] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:00:49] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:01:32] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:01:32] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:12:38] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:12:38] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:21:06] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:21:06] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:25:15] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:25:15] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:25:57] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:25:57] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:42:39] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:42:39] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:45:10] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:45:10] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:47:15] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:47:15] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:47:30] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:47:30] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:48:23] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:48:23] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:49:05] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:49:05] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 17:56:41] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 17:56:41] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 18:27:20] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 18:27:20] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[29-Mar-2015 23:57:25] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[29-Mar-2015 23:57:25] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 00:45:45] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 00:45:45] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 13:32:16] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 13:32:16] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 13:35:16] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 13:35:16] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 13:41:25] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 13:41:25] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 13:41:36] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 13:41:36] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 13:49:57] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 13:49:57] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 13:50:07] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 13:50:07] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 13:50:21] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 13:50:21] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 13:50:27] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 13:50:27] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 13:50:36] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 13:50:36] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 16:34:16] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 16:34:16] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 18:25:38] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 18:25:38] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 18:51:28] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 18:51:28] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[30-Mar-2015 23:12:35] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[30-Mar-2015 23:12:35] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[31-Mar-2015 14:14:26] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[31-Mar-2015 14:14:26] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[31-Mar-2015 15:46:32] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[31-Mar-2015 15:46:32] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[01-Apr-2015 00:50:29] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[01-Apr-2015 00:50:29] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[01-Apr-2015 01:49:56] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[01-Apr-2015 01:49:56] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[01-Apr-2015 01:51:59] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[01-Apr-2015 01:51:59] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[01-Apr-2015 02:33:04] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[01-Apr-2015 02:33:04] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[01-Apr-2015 17:11:18] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[01-Apr-2015 17:11:18] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[01-Apr-2015 17:11:48] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[01-Apr-2015 17:11:48] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[01-Apr-2015 22:36:51] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[01-Apr-2015 22:36:51] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[02-Apr-2015 01:41:47] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[02-Apr-2015 01:41:47] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[02-Apr-2015 01:43:23] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[02-Apr-2015 01:43:23] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[02-Apr-2015 02:02:24] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[02-Apr-2015 02:02:24] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[02-Apr-2015 02:05:09] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[02-Apr-2015 02:05:09] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[02-Apr-2015 14:15:47] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[02-Apr-2015 14:15:47] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[02-Apr-2015 14:58:30] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[02-Apr-2015 14:58:30] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[03-Apr-2015 01:28:24] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[03-Apr-2015 01:28:24] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[03-Apr-2015 13:47:40] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[03-Apr-2015 13:47:40] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[03-Apr-2015 17:41:13] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[03-Apr-2015 17:41:13] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[03-Apr-2015 23:39:43] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[03-Apr-2015 23:39:43] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[03-Apr-2015 23:40:00] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[03-Apr-2015 23:40:00] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 00:23:40] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 00:23:40] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 00:45:22] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 00:45:22] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 14:38:43] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 14:38:43] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 14:38:53] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 14:38:53] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 15:54:12] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 15:54:12] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 16:31:03] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 16:31:03] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 16:41:12] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 16:41:12] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 20:31:08] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 20:31:08] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 21:02:24] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 21:02:24] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 22:24:58] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 22:24:58] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[04-Apr-2015 22:38:08] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[04-Apr-2015 22:38:08] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[05-Apr-2015 00:09:08] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[05-Apr-2015 00:09:08] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[05-Apr-2015 00:11:26] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[05-Apr-2015 00:11:26] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[05-Apr-2015 01:09:16] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[05-Apr-2015 01:09:17] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[05-Apr-2015 15:25:13] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[05-Apr-2015 15:25:13] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[05-Apr-2015 18:04:13] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[05-Apr-2015 18:04:13] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[05-Apr-2015 18:06:18] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[05-Apr-2015 18:06:18] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[05-Apr-2015 19:58:25] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[05-Apr-2015 19:58:25] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[05-Apr-2015 20:04:03] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/admin/controller/enter.php on line 63
+[05-Apr-2015 20:04:03] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/admin/controller/enter.php on line 64
+[05-Apr-2015 22:34:37] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/paulina/admin/controller/enter.php on line 63
+[05-Apr-2015 22:34:37] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/paulina/admin/controller/enter.php on line 64
+[05-Apr-2015 22:34:46] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/paulina/admin/controller/enter.php on line 63
+[05-Apr-2015 22:34:46] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/paulina/admin/controller/enter.php on line 64
+[05-Apr-2015 23:32:13] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/d682948/public_html/paulina/admin/controller/enter.php on line 63
+[05-Apr-2015 23:32:13] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d682948/public_html/paulina/admin/controller/enter.php on line 64
+[17-Apr-2015 18:13:07 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/clean/admin/controller/enter.php on line 63
+[17-Apr-2015 18:13:07 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/clean/admin/controller/enter.php on line 64
+[17-Apr-2015 18:13:16 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/clean/admin/controller/enter.php on line 63
+[17-Apr-2015 18:13:16 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/clean/admin/controller/enter.php on line 64
+[17-Apr-2015 18:13:23 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/clean/admin/controller/enter.php on line 63
+[17-Apr-2015 18:13:23 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/clean/admin/controller/enter.php on line 64
+[17-Apr-2015 18:13:33 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/clean/admin/controller/enter.php on line 63
+[17-Apr-2015 18:13:33 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/clean/admin/controller/enter.php on line 64
+[17-Apr-2015 18:13:42 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/clean/admin/controller/enter.php on line 63
+[17-Apr-2015 18:13:42 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/clean/admin/controller/enter.php on line 64
+[17-Apr-2015 18:57:44 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 63
+[17-Apr-2015 18:57:44 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 64
+[17-Apr-2015 18:57:50 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 63
+[17-Apr-2015 18:57:50 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 64
+[17-Apr-2015 18:57:57 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 63
+[17-Apr-2015 18:57:57 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 64
+[17-Apr-2015 18:58:18 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 63
+[17-Apr-2015 18:58:18 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 64
+[17-Apr-2015 18:59:58 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 63
+[17-Apr-2015 18:59:58 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 64
+[17-Apr-2015 19:13:03 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 63
+[17-Apr-2015 19:13:03 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 64
+[17-Apr-2015 19:33:25 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, null given in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 63
+[17-Apr-2015 19:33:25 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/d760156/public_html/bloc1/admin/controller/enter.php on line 64

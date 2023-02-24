@@ -1,0 +1,65 @@
+
+<style>
+    .loginInput{
+        margin: 20px;
+        width: 200px;
+        font-size: 16px !important;
+        border: 2px solid rgb(204, 204, 204) !important;
+        padding: 17px !important;
+        opacity: initial;
+        display: inline-block;
+        color: #333;
+        border-radius:0;
+    }
+    #loginOutPB{
+        display:none;
+
+    }
+</style>
+<ul>
+
+    <li id="logoEditorDiv"></li>
+    <li id="rotEditorDiv"></li>
+    <li><input id="userEditor" type="text" placeholder="usuario" class="loginInput"></li>
+    <li><input id="passwordEditor" type="password" placeholder="password" class="loginInput"></li>
+    <li><div onclick="editorLogin(saludo, error)" class="genericPB" style="width:200px;margin: 20px">LOGIN</div></li>
+    <li><div id="messageEditor"></div></li>
+</ul>
+
+
+<script>
+        if (editorLogged) {
+            document.getElementById("userEditor").value = userLogged["user"];
+            document.getElementById("passwordEditor").value = userLogged["pwd"];
+        } else {
+            if (typeof userLogged !== "undefined" && userLogged && userLogged["user"]) {
+                document.getElementById("userEditor").value = userLogged["user"];
+                document.getElementById("passwordEditor").value = userLogged["pwd"];
+            }
+        }
+        var saludo = function() {
+            document.getElementById("messageEditor").innerHTML = rots["LOGINOK"][lanTemp];
+            document.getElementById("messageEditor").style.color = "green";
+            closeDiv(document.getElementById("editDiv"));
+        };
+        var error = function() {
+            if (typeof userLogged !== "undefined" && userLogged && userLogged["user"]) {
+
+            } else {
+                loginPB.innerHTML = "Login";
+            }
+            document.getElementById("messageEditor").innerHTML = rots["LOGINNOK"][lanTemp];
+            document.getElementById("messageEditor").style.color = "red";
+
+        }
+        var loginOut = function() {
+            document.getElementById("messageEditor").innerHTML = rots["LOGINOUT"][lanTemp];
+            document.getElementById("messageEditor").style.color = "green";
+            document.getElementById("userEditor").value = "";
+            document.getElementById("passwordEditor").value = "";
+            userLogged["user"] = "";
+            loginPB.innerHTML = "Login";
+            logged = false;
+
+        }
+</script>

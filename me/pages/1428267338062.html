@@ -1,0 +1,462 @@
+<style>
+.optionPB{
+display:inline-block;
+padding:20px;
+cursor:pointer;
+}
+.optionPB:hover{
+background:#444;
+color:#fff;
+}
+.optionSelected{
+background:#444;
+color:#fff;
+}
+.answer{
+color:red;
+}
+.loginInput{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 200px;
+    font-size: 16px !important;
+    border: 2px solid rgb(204, 204, 204) !important;
+    padding: 17px !important;
+    opacity: initial;
+    display: inline-block;
+    color: #333;
+    border-radius:0;
+}
+</style>
+<div id="htmlContent" style="padding-top:100px;padding-bottom:100px;height:100%;position:relative">
+ <div class="row" style="padding-bottom: 50px; opacity: initial;">
+        <div class="col-xs-12 col-md-12" style="opacity: initial;">
+            <div class="bta_container_imports" style="opacity: initial;">
+                <div class="bta_txt_top_imports bta_txt_left_imports "><span class="es" style="display: none;">Usuario</span>
+<span class="en">User</span>
+                    <h4 style="text-align: center" id="userTemp">Not User Selected</h4>
+                    <div style="width: 50%;display: inline-block;"><span class="es" style="display: none;">La información que introduzcas no es necesario que sea verdadera pues este <strong>Bloc</strong> es simplemente un ejemplo de como funciona clipbloc en competencia de recopilación de datos con multiusuario de cualquier clip</span><span class="en">There is no need valid data, this <strong>Bloc</strong> is just an example about <strong>clipbloc</strong> and recovering multiuser data from a <strong>clip</strong>.</span></div>
+<!---------------------------------------------------------temp content----------------------------------------------------->
+                    <div id="tempContent">
+                    <!-----1 -->
+                        <div class="row" style="padding-top: 100px;">
+                            <div class="col-xs-12 col-md-12">
+                                <div><span class="es" style="display: none;">Nombre</span><span class="en">Name</span></div>
+                                <div><input id="name" type="text" class="loginInput"></div>
+                                <div><span class="es" style="display: none;">Primer Apellido</span><span class="en">Surname</span></div>
+                                <div><input id="surname" type="text" class="loginInput"></div>
+                                <div><span class="es" style="display: none;">Teléfono</span><span class="en">Phone Number</span>       </div>
+                                <div><input id="phoneNumber" type="text" class="loginInput"></div>
+                               <div><span class="es" style="display: none;">Profesión</span><span class="en">Ocupation</span></div>
+                                <div><input id="ocupation" type="text" class="loginInput"></div>
+                            </div>
+                            
+                        </div>
+                    <!-----------1------------->
+                    
+                    </div>
+
+                    <!---------------------------------->
+              </div>
+          </div>
+        </div>
+    </div>
+
+</div>
+<!----------buttons-->
+                    <div style="position:fixed;bottom:0;width:100%;background:#333;">
+                            <div class="genericPB" onclick="checkLoggedAdmin(reloadEvents, errorNotLoggedAdmin)"><span class="es" style="display: none;">Ver Todos</span><span class="en">See All</span></div>
+                            <div class="genericPB" onclick="checkLoggedUserContent(contentCreated, errorNotLogged, whileF(1), noContentYet)" style="display: inline-block;"><span class="es" style="display: none;">Ver Mis Respuestas</span><span class="en">Mine</span></div>
+                            <div class="genericPB" onclick="saveLoggedUserContent(contentSaved, errorNotLogged, whileF(0))" style="display: inline-block;"><span class="es" style="display: none;">Guardar</span><span class="en">Save</span></div>
+                    </div>
+                    <!---------------------------------->
+<!---------------recover div------------------------------------------->
+<div id="recoverContainer"><div class="basicouter"><div class="basicInner"><div id="recoverMessage">...</div></div></div></div>
+<!---------------------------------------------------------->
+
+<!---------------messages div------------------------------------------->
+<div id="statusContainer" onclick="closeStatus()"><div class="basicouter"><div class="basicInner"><div id="statusMessage">...</div><div id="volverStatus"><span class="es" style="display: none;">Continuar</span>
+<span class="en">Continue</span></div></div></div></div>
+<!---------------------------------------------------------->
+<script cbtype="submenuhide">
+/*------------------------
+------------------------
+------------------------
+auto hide sumbenu if clip contains it
+------------------------
+------------------------
+--------------------------*/
+resizeDoc2 = function() {
+    if (resizeFunc) {
+        resizeFunc();
+    }
+    if(typeof menuResize!=="undefined"){
+          menuResize();
+    }
+    var mainContent = document.getElementById("date");
+    if (!fixed) {
+        topPos = document.getElementById("headerContainer").offsetHeight;
+        if (lastPage) {
+            if (window.innerWidth >= 900) {
+                lastPage.className = "page";
+                lastPage.style.top = topPos + "px";
+
+            } else {
+                lastPage.style.top = topPos + "px";
+            }
+            document.getElementById("imgHeader").style.height = topPos + "px";
+            lastPage.className = "page generic_trans";
+        }
+    }
+    if (typeof resizeSubmenuFunc !== "undefined" && resizeSubmenuFunc !== null) {
+        resizeSubmenuFunc();
+    } else {
+        if (subMenuPB && !submenuAppHide) {
+            mainContent.style.width = "100%";
+        }
+    }
+};
+window.addEventListener("resize", resizeDoc2, false);
+
+beforeTransitionFunc=function(_end){
+controlRecovering();
+beforeTransitionFunc=null;
+hideSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.left = -submenuContainer.offsetWidth + "px";
+        var mainContent = document.getElementById("date");
+        mainContent.style.left = "0";
+        mainContent.style.width = "100%";
+};
+showSubmenuApp = function() {
+        submenuContainer = document.getElementById("submenuContainer");
+        submenuContainer.style.opacity = 1;
+        submenuContainer.style.left = "0";
+};
+if (typeof CONFIG !== "undefined" && typeof CONFIG["closeSubMenuOnSelect"] !== "undefined" && CONFIG["closeSubMenuOnSelect"] === "true" && !document.getElementById("submenuContainer").getAttribute("solid")) {
+                           hideSubmenuApp();
+                            var submenuPBTemp=subMenuPB.cloneNode(true);
+                            submenuPBTemp.onclick = function() {
+                                   submenuApphideShow();
+                            };
+                            document.getElementById("submenuContainer").appendChild(submenuPBTemp);
+                            //document.getElementById("submenuContainer").appendChild(subMenuPB);
+                            //document.body.appendChild(document.getElementById("submenuContainer"));
+                            submenuAppHide = true;
+                            document.getElementById("submenuContainer").setAttribute("solid","1");
+ }
+
+scrollToTop(300, _end);
+}
+
+</script>
+
+<script cbtype="showMessage">
+/*------------------------
+------------------------
+------------------------
+show message div
+------------------------
+------------------------
+--------------------------*/
+var divStatus=null;
+var statusMessage=null;
+var afterLogin=null;
+var beforeStatus=null;
+var useStatusDiv = function(_msg){
+             divStatus=document.getElementById("statusContainer");
+             statusMessage=document.getElementById("statusMessage");
+             statusMessage.innerHTML=_msg;
+             if(typeof allwaysLocalFunc!=="undefined"){
+              allwaysLocalFunc();
+             }
+             divStatus.style.left="0";
+      }
+     closeStatus=function(){
+         if( userLogged["user"] === undefined || userLogged["user"] ===""){
+            var pageBefore=lastPage.id.split("_")[2]; 
+         }
+         if(beforeStatus){
+             beforeStatus();
+         }
+         divStatus.style.left="100%"; 
+      }  
+var recoverContainer;
+var recoverMessage;
+var controlRecovering=function(){
+//hide contents if not logged
+
+if( userLogged["user"] === undefined || userLogged["user"] ===""){
+    var tempContent = document.getElementById("tempContent");
+    tempContent.parentNode.removeChild(tempContent);
+    recoverContainer = document.getElementById("recoverContainer");
+    recoverMessage=document.getElementById("recoverMessage");
+    recoverMessage.innerHTML=messages["WAITFORLOGIN"];
+    if(typeof allwaysLocalFunc!=="undefined"){
+              allwaysLocalFunc();
+             }
+}else{
+    recoverContainer = document.getElementById("recoverContainer");
+    recoverContainer.style.left="0";
+    recoverMessage=document.getElementById("recoverMessage");
+    recoverMessage.innerHTML=messages["RECOVERING"];
+    if(typeof allwaysLocalFunc!=="undefined"){
+              allwaysLocalFunc();
+             }
+     }
+}
+</script>
+<script cbtype="saveUserContent">
+/*------------------------
+------------------------
+------------------------
+auto hide sumbenu if clip contains it
+------------------------
+------------------------
+--------------------------*/
+var messages={
+'NOTLOGGED':'<span class="es">Deberás logarte primero...</span><span class="en">You need to be logged...</span>',
+'RECOVERING':'<span class="es">Recuperando Datos...</span><span class="en">Recovering Data...</span>',
+'SAVING':'<span class="es">Guardando Datos...</span><span class="en">Saving Data...</span>',
+'WAITFORLOGIN':'<span class="es">Esperando Login...</span><span class="en">Waiting for Login...</span>',
+'NOCONTENTYET':'<span class="es"> todavía no ha guardado datos</span><span class="en"> has not introduce data yet</span>',
+'ADMINLOGIN':'<span class="es">Debieras logarte antes como administrador...</span><span class="en">You need to login as administrator...</span>',
+'NOOWNER':'<span class="es">¡¡¡ Estos contenidos corresponden a otro usuario !!!</br><span style="font-size:12px">Si guardas se guardarán como tus propios contenidos.</span></span><span class="en">It is showing other user contents !!!</br><span style="font-size:12px">If you save, it will record on your own contents.</span></span>'
+};
+                        var lastChecked = {};
+                        var lastCheckedName = null;
+                        reloadEvents = function() {
+                            
+                            $("input:text").change(function() {
+                                $(this).attr("value", $(this).val());
+                            });
+        
+                            $("input:checkbox").change(function() {
+                    
+                                if(document.getElementById("userTemp").innerHTML!==userLogged["name"]){
+                                    useStatusDiv(messages["NOOWNER"]);
+                                }
+                                   lastCheckedName = $(this).attr('name');
+                                    $(lastChecked[lastCheckedName]).attr("value", false);
+                                    $(lastChecked[lastCheckedName]).attr("checked", false);
+                                    lastChecked[$(this).attr('name')] = $(this);
+                                    lastCheckedName = $(this).attr('name');
+                                    if ($(this).val() == "true") {
+                                        $(this).attr("value", false);
+                                        $(this).attr("checked", false);
+                                    } else {
+                                        $(this).attr("value", true);
+                                        $(this).attr("checked", true);
+                                    }
+                           });
+                           
+                        }
+
+                        underConstruct = function() {
+
+                        }
+
+                        saludo = function() {
+                            var tempContent = document.getElementById("tempContent");
+                            tempContent.style.visibility = "visible";
+                            document.getElementById("userTemp").innerHTML = userLogged["name"];
+                            checkLoggedUserContent(contentCreated, null, null, noContentYet);
+                            lastCheckedName = null;
+ 
+                        }
+                        error = function() {
+                            alert("Algo estas haciendo mal");
+                        }
+                        errorNotLogged = function() {
+                           useStatusDiv(messages["NOTLOGGED"]);
+                           //alert("Debieras logarte antes");
+                           // internalNavMenu('1452284554772');
+                           beforeStatus=function(){
+                                  internalNavMenu('1452284554772');
+                            }
+                        }
+                        errorNotLoggedAdmin = function() {
+                            //alert("Debieras logarte antes como administrador");
+                            pageBefore=lastPage.id.split("_")[2]; 
+                            useStatusDiv(messages["ADMINLOGIN"]);
+                            beforeStatus=function(){
+                                  internalNavMenu('1452284554772');
+                            }
+                        }
+                        noContentYet = function() {
+                            useStatusDiv(userLogged["name"]+messages["NOCONTENTYET"]);
+                            //alert("Todavía no has introducido tus respuestas");
+                            //document.getElementById("userTemp").innerHTML = userLogged["name"];
+                            if(typeof allwaysLocalFunc!=="undefined"){
+                                  allwaysLocalFunc();
+                             }
+                            recoverContainer.style.left="0";
+                            setTimeout(function() {
+                                recoverContainer.style.left="100%";
+                            }, 1000);
+                        }
+                        contentCreated = function() {
+                            var tempContent = document.getElementById("tempContent");
+                            tempContent.style.visibility = "visible";
+                            document.getElementById("userTemp").innerHTML = userLogged["name"];
+                            lastCheckedName = null;
+                            lastChecked = {};
+                            $('input:checked').each(function() {
+                                lastChecked[$(this).attr('name')] = $(this);
+                                $(this).attr("value", true);
+                            });
+                            reini = true;
+                            reloadEvents();
+                            setTimeout(function() {
+                                recoverContainer.style.left="100%";
+                            }, 500);
+                        }
+                        contentSaved = function() {
+                            
+                            setTimeout(function() {
+                                recoverContainer.style.left="100%";
+                            }, 500);
+                        }
+                        _func = function() {
+                             document.getElementById("userTemp").innerHTML = tempName;
+                             lastCheckedName = null;
+                            lastChecked = {};
+                            $('input:checked').each(function() {
+                                lastChecked[$(this).attr('name')] = $(this);
+                                $(this).attr("value", true);
+                            });
+                            reini = true;
+                            reloadEvents();
+                            setTimeout(function() {
+                                recoverContainer.style.left="100%";
+                            }, 1000);
+                        }
+                        _noContent = function() {
+                            document.getElementById("userTemp").innerHTML = tempName;
+                            useStatusDiv(tempName+messages["NOCONTENTYET"]);
+                            if(typeof allwaysLocalFunc!=="undefined"){
+                                  allwaysLocalFunc();
+                             }
+                            recoverContainer.style.left="0";
+                            setTimeout(function() {
+                                recoverContainer.style.left="100%";
+                            }, 1000);
+                        }
+                        afterTransitionFunc=function(){
+                            afterTransitionFunc=null;
+                                if (userLogged["user"] === undefined || userLogged["user"] ==="") {
+                                    useStatusDiv(messages["NOTLOGGED"]);
+                                    beforeStatus=function(){
+                                        internalNavMenu('1452284554772');
+                                    }
+                               } else {
+                                    checkLoggedUserContent(contentCreated, errorNotLogged, null, noContentYet);
+                                }
+                        }
+                       whileF = function(_type) {
+                            switch(_type){
+                                case 0:
+                                    recoverMessage.innerHTML=messages["SAVING"];
+                                break;
+                                case 1:
+                                    recoverMessage.innerHTML=messages["RECOVERING"];
+                                break;
+                            }
+                             if(typeof allwaysLocalFunc!==undefined){
+                                  allwaysLocalFunc();
+                             }
+                            recoverContainer.style.left="0";
+                        }
+                        _whileFunc = function() {
+                             whileF(1);
+                        }
+                        var optionSelected;
+                        select=function(_this,event){
+                            if(document.getElementById("userTemp").innerHTML!==userLogged["name"]){
+                              useStatusDiv(messages["NOOWNER"]);
+                            }
+                            optionSelected=document.getElementsByClassName(_this.className+" optionSelected");
+                            if(optionSelected.length>=1){
+                               optionSelected[0].className=_this.className;
+                            }
+                            document.getElementById(_this.getAttribute("ref")+"Answer").innerHTML=" "+_this.innerHTML+" ";
+                            _this.className=_this.className+" optionSelected";
+                            
+                        }
+                       
+</script>
+
+<script cbtype="allways">
+/*------------------------
+------------------------
+------------------------
+always collection to execute
+------------------------
+------------------------
+--------------------------*/
+if(typeof allwaysFunc!=="undefined"){
+allwaysFunc();
+}
+</script>
+<script cbtype="allwaysLocal">
+/*------------------------
+------------------------
+------------------------
+always collection to execute just in this clip
+------------------------
+------------------------
+--------------------------*/
+if(typeof allwaysLocalFunc==="undefined"){
+  allwaysLocalFunc=function(){
+      if(typeof changeLanguage!=="undefined"){
+              changeLanguage();
+             }
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

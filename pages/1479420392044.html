@@ -1,0 +1,274 @@
+<style>
+#extraPanelPB{
+    display:none;
+}
+.es .transformNavPB {
+   font-size:13px;
+}
+.basicOuter1{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.basicInner1{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.structure{
+    cursor:pointer;
+    display: inline-block;
+    font-size: 60px;
+    letter-spacing: 3px;
+    opacity: initial;
+    color: #fff;
+    background: #333;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+}
+.structure:hover{
+   opacity:.5;
+}
+.pink{
+   background:#ff03c3;
+}
+.blue{
+   background:#337ab7;
+  font-size:20px;
+}
+.red{
+   background:orangered;
+     font-size:20px;
+}
+
+.scheme_deco1_col{
+   padding:100px;
+}
+.scheme_deco1_div{
+   font-size:100px;
+   border:1px dotted #444;
+   padding:100px;
+}
+#showHideSubMenu {
+    margin-left: 20px;
+    border-radius: 30px;
+    line-height: 13px;
+    word-break: break-all;
+    z-index: 200;
+    position: relative;
+    top: 30px;
+    width: 30px;
+    left: 100%;
+    padding: 20px;
+    padding-right: 30px;
+    color: #fff;
+    font-size: 26px;
+    background: #ff03c3;
+    cursor: pointer;
+    /* height: 10px; */
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#newMenuPB {
+    font-size: 25px;
+    cursor: pointer;
+    display: block;
+    z-index: 2000;
+    color: #fff;
+    background: #ff03c3;
+    padding: 10px;
+    right: 0;
+    top: 15px;
+    position: fixed;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+#lateralMenuContainer {
+    background: #ff03c3;
+}
+#newFooterPB {
+    background: #ff03c3;
+        margin-right: 30px;
+    border-radius: 10px;
+}
+#lateralFooterContainer {
+    background: #ff03c3;
+}
+.innerSubmenuSelected{
+   background: #ff03c3 !important;
+}
+.innerSubmenuSelected span{
+   color:#fff !important;
+}
+.innerSubmenu:hover{
+    background:#ffa3ea;
+}
+.innerSubmenu span{
+   color:#ff03c3 !important;
+}
+#homeSection {
+    color: #ff03c3;
+}
+.newInnerMenu:hover{
+    background:#ffa3ea;
+}
+.newInnerMenuSelected {
+    background: #880067;
+}
+.ulStyle{
+   display:inline-block;
+   text-align:left;
+}
+.ulStyle li{
+   padding-top:20px;
+}
+.spanStyle{
+   font-size:20px;
+   font-weight:bold;
+   color:#ff03c3
+}
+@media (max-width:900px) {
+   .ulStyle{
+      padding-left:40px;
+      padding-right:40px;
+      font-size:30px;
+   }
+}
+</style>
+<div id="htmlContent" style="padding-top:100px;padding-bottom:200px;height:100%;position:relative">
+   <ul>
+           <li>
+             <div class="structure pink" onclick="submenuApphideShow()">STYLE</div>
+          </li>
+           <li>
+             <div class="structure blue" onclick="internalNavMenu('1479420219496','1479424163964')" topage="1479420219496" tosubpage="1479424163964">HTML</div>
+          </li>
+          <li>
+             <div class="structure red" topage="1479420219496" tosubpage="1479424164429" onclick="internalNavMenu('1479420219496','1479424164429')" style="margin-bottom: 100px;">SCRIPTS</div>
+          </li>
+   </ul>
+<!-----------------------------------section 1 ------------------------------------>
+    <section>
+       <ul class="ulStyle en">
+          <li>
+             <div>Inside of a clip you can write the css rules you want</div>
+          </li>
+          <li>
+             <div><span class="spanStyle">1 · </span>To change the style of your <span class="spanStyle">BLOC</span> on the fly while you are watching this <span class="spanStyle">CLIP</span></div>
+          </li>
+          <li>
+             <div>Overwriting the rules you define in the admin, on the "Interfaz Css" label</div>
+          </li>
+          <li>
+             <div>Creating new rules to style the <span class="spanStyle">BLOC</span></div>
+          </li>
+          <li>
+             <div>or</div>
+          </li>
+          <li>
+             <div><span class="spanStyle">2 · </span>To define the css rules for the elements, and contents on this specific <span class="spanStyle">CLIP</span></div>
+          </li>
+          <li>
+             <div><span class="spanStyle">3 · </span>When you get to other <span class="spanStyle">CLIP</span> the <span class="spanStyle">BLOC</span> will return to the new overwrited css rules on the new <span class="spanStyle">CLIP</span> or will come back to the original style.</div>
+          </li>
+       </ul>
+       <ul class="ulStyle es" style="display: none;">
+          <li>
+             <div style="">Dentro de un <span class="spanStyle">CLIP</span> puedes añadir las reglas css que quieras</div>
+          </li>
+          <li>
+             <div style=""><span class="spanStyle">1 · </span>Para cambiar la apariencia de tu <span class="spanStyle">BLOC</span> al vuelo mientras te encuentras en este <span class="spanStyle">CLIP</span></div>
+          </li>
+          <li>
+             <div style="">Reescribiendo las reglas que definiste en el admin, en la pestaña " Interfaz Css"</div>
+          </li>
+          <li>
+             <div style="">Creando nuevos estilos para tu <span class="spanStyle">BLOC</span> que sólo afectarán mientras te encuentras en este <span class="spanStyle">CLIP</span></div>
+          </li>
+          <li>
+             <div style="">y</div>
+          </li>
+          <li>
+             <div style=""><span class="spanStyle">2 · </span>Definir las reglas css de los elementos y contenidos específicos de este <span class="spanStyle">CLIP</span></div>
+          </li>
+          <li>
+             <div><span class="spanStyle">3 · </span>Cuando accedas a otro <span class="spanStyle">CLIP</span>, el <span class="spanStyle">BLOC</span> retornara a su estilo original o bien tomará los nuevos estilos reescritos dentro del nuevo <span class="spanStyle">CLIP</span> al que hayas accedido.</div>
+          </li>
+       </ul>
+       
+    </section>
+<!-----------------------------------section 1 ------------------------------------>
+</div>
+<script cbtype="view" cbname="submenuhide">
+/*------------------------
+------------------------
+------------------------
+auto hide sumbenu if clip contains it
+------------------------
+------------------------
+--------------------------*/
+beforeTransitionFunc=function(_end){
+
+if(typeof changeLanguage!=="undefined"){
+changeLanguage();
+}
+beforeTransitionFunc=null;
+
+scrollToTop(300, _end);
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

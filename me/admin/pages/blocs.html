@@ -1,0 +1,60 @@
+<div class="row" id="rotBlocs">
+    <div class="col-xs-12" >Blocs List</div>
+    <div class="col-xs-12" id="userBlocs"></div>
+</div>
+    <div class="row" id="blocs_list_home" >
+        <div class="col-xs-12" >
+            <div class="col-xs-12" >
+                <div data-bind="foreach : tabs ">
+                    <div class="row menu_level_2_pages" >
+                        <div class='col-xs-1'>
+                            <ul><li>
+                                    <span data-bind="text:$index" ></span>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class='col-xs-6'>
+                            <ul>
+                                <li>
+                                    <div class="menu_level_2_item_inner mainRot"><div><span data-bind="text:'Home Clip: '+rot" /></span></div>
+                                </li>
+                                <li>
+                                    <div class="menu_level_2_item_inner generic_pb" data-bind="click: $root.selectClip"><div>Select</div></div>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class='col-xs-5'>
+                            <div><img width='200px' data-bind="attr: {'src':'../editor/rmt/'+img+'/img.png'}" ></img></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="blocs_list" >
+        <div class="col-xs-12" >
+            <div class="col-xs-12" >
+                <div data-bind="foreach : tabs ">
+                    <div class="row menu_level_2_item" data-bind="visible: $data.rot.length>0 ">
+                        <div class='col-xs-1'>
+                            <ul><li>
+                                    <span data-bind="text:$index" ></span>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class='col-xs-6'>
+                            <ul>
+                                <li>
+                                    <div class="menu_level_2_item_inner mainRot"><div><span data-bind="text:'Bloc: '+rot" /></span></div>
+                                </li>
+                                <li>
+                                    <div class="menu_level_2_item_inner generic_pb" data-bind="click: $root.showClips"><div>See Bloc Clips</div></div>
+                                </li>
+                            </ul>
+
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

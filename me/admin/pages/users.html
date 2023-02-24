@@ -1,0 +1,30 @@
+<div class="row" id="rotBlocs">
+    <div class="col-xs-12" >Users List</div>
+</div>
+    <div class="row" id="users_list" >
+        <div class="col-xs-12" >
+            <div class="col-xs-12" >
+                <div data-bind="foreach : tabs ">
+                    <div class="row menu_level_2_item" >
+                        <div class='col-xs-1'>
+                            <ul><li>
+                                    <span data-bind="text:$index" ></span>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class='col-xs-6'>
+                            <ul>
+                                <li>
+                                    <div class="menu_level_2_item_inner mainRot"><div><span data-bind="text:rot" /></span></div>
+                                </li>
+                                <li>
+                                    <div class="menu_level_2_item_inner generic_pb" data-bind="click: $root.showBlocs"><div>See blocs</div></div>
+                                </li>
+                            </ul>
+
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

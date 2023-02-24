@@ -1,0 +1,80 @@
+<style>
+.body,html{
+overflow:hidden !important;
+}
+</style>
+<div id="htmlContent" style="height:100%;position:relative">
+<div style="width:100vw;height:100vh;background: url(http://wallpoper.com/images/00/44/36/05/clouds-aerial-view_00443605.jpg) 50% 50% / cover no-repeat rgb(0, 0, 0)">
+</div>
+</div>
+<script cbtype="allways">
+/*------------------------
+------------------------
+------------------------
+always collection to execute
+------------------------
+------------------------
+--------------------------*/
+if(typeof allwaysFunc!=="undefined"){
+allwaysFunc();
+}
+</script>
+<script>
+var fromSubPageInterface=true;
+var messageBridge=null;
+bridgeWhileFunc=function(){
+        messageBridge=document.createElement("div");
+        messageBridge.id="messageBridge";
+        messageBridge.innerHTML="<div style='display:table;width:100vw;height:100vh'><div style='display:table-cell;width:100%;height:100%;text-align:center;vertical-align:middle;'><span class='es'>El siguiente contenido se importa de otro BLOC que se encuentra en clipbloc.com</span><span class='en'>Next content owns to a CLIP from a BLOC hosted in neuronalsite.com</span></div></div>";
+        
+        document.body.appendChild(messageBridge);
+        if(typeof allwaysFunc!=="undefined"){
+                allwaysFunc();
+            }
+        setTimeout(function() {
+            messageBridge.style.left="0";
+       }, 10);
+}
+bridgeOkEndFunc=function(){
+bridgeOkEndFunc=null;
+
+        setTimeout(function() {
+            messageBridge.style.left="-100%";
+            endTrans=function(){
+                endTrans=null;
+                document.body.removeChild(messageBridge);
+                
+            }
+        }, 10);
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

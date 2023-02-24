@@ -1,0 +1,42 @@
+<div id="htmlContent" style="padding-top:100px;height:100%;position:relative">
+Aquí aparece tu código html
+</div>
+<script cbtype="text languages div">
+/*------------------------
+------------------------
+------------------------
+show hide text in different language
+------------------------
+------------------------
+--------------------------*/
+if(typeof lanTextClip==="undefined"){
+    var lanTextClipPB=document.createElement("div");
+    lanTextClipPB.id="lanTextClipPB";
+    lanTextClipPB.innerHTML="<span class='es'>Mostrar Textos</span><span class='en'>Show Texts</span>";
+    lanTextClipPB.style.zIndex="30000";
+    lanTextClipPB.style.position="fixed";
+    lanTextClipPB.style.padding="10px";
+    lanTextClipPB.style.background="#444";
+    lanTextClipPB.style.color="#fff";
+    lanTextClipPB.style.cursor="pointer";
+    lanTextClipPB.style.bottom="10px";
+    lanTextClipPB.style.left="10px";
+    lanTextClipPB.onclick=function(){lanTextClip();};
+    document.body.appendChild(lanTextClipPB);
+    if(typeof allwaysFunc!=="undefined"){
+      allwaysFunc();
+    }
+    var lanTextClip=function(){
+         alert("Mostrar div de textos");
+  }
+ /*auxEndTrans=function(){
+    refreshPB.style.background="#c33";
+ }*/
+        
+}
+</script>
+
+
+
+
+

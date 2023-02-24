@@ -1,0 +1,47 @@
+<style>
+.PBCalculate{
+     cursor:pointer;
+     font-size: 20px;
+ color: rgb(255, 255, 255); 
+background: rgb(68, 68, 68); 
+display: inline-block; 
+padding: 10px;
+}
+.PBCalculate:hover{
+     background:orangered
+}
+</style>
+<div id="htmlContent" style="height:100%;position:relative">
+   <div class="basicOuter">
+      <div class="basicInner" style="">
+             <div style="padding: 20px; font-size: 20px;">El primer valor introducido fué: </div>
+             <div id="numAnterior1" style="padding: 20px; font-size: 20px;">undefined</div>
+             <div style="padding: 20px; font-size: 20px;">El segundo valor introducido fué: </div>
+             <div id="numAnterior2" style="padding: 20px; font-size: 20px;">undefined</div>
+             <div style="padding: 20px; font-size: 20px;">El resultado de sumar los dos valores es: </div>
+             <div id="result" style="padding: 20px; font-size: 20px; color: orangered;">No has seguido el proceso correctamente</div>
+            <div onclick="internalNavMenu('1469873571543')" topage="1469873571543" class="PBCalculate">
+                    VOLVER A HOME
+            </div>
+      </div>
+   </div>
+</div>
+<script>
+    typeof num1 !== 'undefined' && typeof num2 !== 'undefined'
+    ? (
+      document.querySelector('#numAnterior1').innerHTML = num1,
+      document.querySelector('#numAnterior2').innerHTML = num2,
+      document.querySelector('#result').innerHTML = Number(num1) + Number(num2)
+    ) 
+    : document.querySelector('#result').innerHTML = 'No has seguido el proceso correctamente'
+</script>
+
+
+
+
+
+
+
+
+
+

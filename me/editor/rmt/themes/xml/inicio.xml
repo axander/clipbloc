@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<configuration>
+<interface>
+<item>
+<id type="genericBG/generic" x="0" y="0">clip1</id>
+<w>100</w>
+<h>100</h>
+<asoc>0</asoc>
+<vis>true</vis>
+<lock>undefined</lock>
+<data>
+  <text>No define</text>
+  <color>0x00CBFF</color>
+  <relX>0</relX>
+  <contClick>3</contClick>
+  <relY>0</relY>
+  <full>true</full>
+  <adLeft>false</adLeft>
+  <adW>false</adW>
+  <adH>false</adH>
+  <img>null</img>
+  <width>100</width>
+  <height>100</height>
+  <contShow>1</contShow>
+  <adTop>false</adTop>
+  <relRot>0</relRot>
+  <xSkew>0</xSkew>
+  <ySkew>0</ySkew>
+  <relTx>0</relTx>
+  <relTy>0</relTy>
+  <link/>
+  <alpha>1</alpha>
+  <adRight>false</adRight>
+  <face>Verdana</face>
+  <size>12</size>
+  <adBottom>false</adBottom>
+  <relScaleX>1</relScaleX>
+    <relScaleY>1</relScaleY>
+  <bold>1</bold>
+</data>
+</item>
+<item>
+<id type="genericText/generic" x="85" y="96">INICIO</id>
+<w>110</w>
+<h>60</h>
+<asoc>NaN</asoc>
+<vis>true</vis>
+<lock>undefined</lock>
+<data>
+  <text>
+    <font size="8">MAIDPRESS:ORIGEN</font>
+  </text>
+  <alpha>1</alpha>
+  <relX>0</relX>
+ <xSkew>0</xSkew>
+  <ySkew>0</ySkew>
+  <relTx>0</relTx>
+  <relTy>0</relTy>
+  <contClick>20</contClick>
+  <relY>0</relY>
+  <size>12</size>
+  <adRight>false</adRight>
+  <adW>false</adW>
+  <adH>false</adH>
+  <img>null</img>
+  <adLeft>false</adLeft>
+  <bold>1</bold>
+  <height>60</height>
+  <contShow>7</contShow>
+  <adTop>false</adTop>
+  <relRot>0</relRot>
+  <link/>
+  <color>0xffffff</color>
+  <face>Verdana</face>
+  <full>true</full>
+  <adBottom>false</adBottom>
+  <relScaleX>1</relScaleX>
+    <relScaleY>1</relScaleY>
+
+  <width>110</width>
+</data>
+</item>
+<item>
+<id type="genericLoaderImg/generic" x="65" y="27">clip2</id>
+<w>147</w>
+<h>100</h>
+<asoc>0</asoc>
+<vis>true</vis>
+<lock>undefined</lock>
+<data>
+  <text>No define</text>
+  <color>0x000000</color>
+  <relX>0</relX>
+  <contClick>8</contClick>
+  <relY>0</relY>
+  <full>true</full>
+  <adLeft>false</adLeft>
+  <adW>false</adW>
+  <adH>false</adH>
+  <img>img/logoMaidPress.png</img>
+  <width>147</width>
+  <height>100</height>
+  <contShow>2</contShow>
+  <adTop>false</adTop>
+  <relRot>0</relRot>
+  <link/>
+  <alpha>1</alpha>
+  <adRight>false</adRight>
+  <face>Verdana</face>
+  <size>12</size>
+  <adBottom>false</adBottom>
+  <relScaleX>1</relScaleX>
+    <relScaleY>1</relScaleY>
+ <xSkew>0</xSkew>
+  <ySkew>0</ySkew>
+  <relTx>0</relTx>
+  <relTy>0</relTy>
+
+  <bold>1</bold>
+</data>
+</item>
+</interface>
+
+
+
+</configuration>

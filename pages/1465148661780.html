@@ -1,0 +1,229 @@
+<style>
+#blackBoardCanvas {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 400;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    border: 1px dotted #444;
+}
+#showBlackBoardPB {
+    cursor: pointer;
+    z-index: 30000;
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    display:inline-block;
+    margin:10px;
+}
+#resetBlackBoardPB {
+    cursor: pointer;
+    z-index: 30000;
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    display:inline-block;
+    margin:10px;
+}
+#saveBlackBoardPB {
+    cursor: pointer;
+    z-index: 30000;
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    display:inline-block;
+    margin:10px;
+}
+</style>
+
+<div id="htmlContent" style="padding-top:100px;height:100%;position:relative">
+
+</div>
+<script>
+if(typeof controlSecurity==="undefined"){
+var blackBoardCanvas=null;
+var showBlackBoard=null;
+var temp_cnvs = null;
+var temp_cntx = null;
+var estoyDibujando=false;
+var lienzo=null;
+var ctx=null;	
+if(typeof createBlackBoard==="undefined"){
+ var createBlackBoard=function(){
+  if(blackBoardCanvas==null){
+    var showBlackBoard=function(){
+        if(blackBoardCanvas.style.left==="100%"){
+            blackBoardCanvas.style.left="0";
+        }else{
+            blackBoardCanvas.style.left="100%";
+        }
+        
+    }
+            var showBlackBoardPB=document.createElement("div");
+            showBlackBoardPB.id="showBlackBoardPB";
+            showBlackBoardPB.innerHTML="show/hide BlackBoard";
+            showBlackBoardPB.onclick=function(){showBlackBoard();};
+            extraPanelDiv.appendChild(showBlackBoardPB);
+
+            var saveBlackBoardPB=document.createElement("div");
+            saveBlackBoardPB.id="saveBlackBoardPB";
+            saveBlackBoardPB.innerHTML="save BlackBoard";
+            saveBlackBoardPB.onclick=function(){saveImg();};
+            extraPanelDiv.appendChild(saveBlackBoardPB);
+
+            var resetBlackBoardPB=document.createElement("div");
+            resetBlackBoardPB.id="resetBlackBoardPB";
+            resetBlackBoardPB.innerHTML="reset BlackBoard";
+            resetBlackBoardPB.onclick=function(){ctx.clearRect(0, 0, blackBoardCanvas.width, blackBoardCanvas.height);};
+            extraPanelDiv.appendChild(resetBlackBoardPB);
+   
+            var blackBoardContainer=document.createElement("div");
+            blackBoardContainer.id="blackBoardContainer";
+            blackBoardCanvas=document.createElement("canvas");
+            blackBoardCanvas.id="blackBoardCanvas";
+            //blackBoardContainer.appendChild(blackBoardCanvas);
+            blackBoardCanvas.setAttribute("width",document.body.offsetWidth);
+            blackBoardCanvas.setAttribute("height",document.body.offsetHeight);
+            document.body.appendChild(blackBoardCanvas);
+            showHideExtraPanel();
+}
+            comenzar();
+}
+opResize=function(){
+     if(document.getElementById('blackBoardCanvas')){
+         
+
+     // create a temporary canvas obj to cache the pixel data //
+     var temp_cnvs = document.createElement('canvas');
+     var temp_cntx = temp_cnvs.getContext('2d');
+     // set it to the new width & height and draw the current canvas data into it // 
+     temp_cnvs.setAttribute("width",document.body.offsetWidth);
+     temp_cnvs.setAttribute("height",document.body.offsetHeight);
+     temp_cntx.drawImage(blackBoardCanvas, 0, 0);
+     // resize & clear the original canvas and copy back in the cached pixel data //
+     blackBoardCanvas.setAttribute("width",document.body.offsetWidth);
+     blackBoardCanvas.setAttribute("height",document.body.offsetHeight);
+     ctx.drawImage(temp_cnvs, 0, 0);
+}
+
+
+
+}
+
+}
+	
+		
+
+var comenzar=function(){
+					
+	lienzo = document.getElementById('blackBoardCanvas');
+ 	ctx = lienzo.getContext('2d');
+	//Dejamos todo preparado para escuchar los eventos
+	blackBoardCanvas.addEventListener('mousedown',pulsaRaton,false);
+	blackBoardCanvas.addEventListener('mousemove',mueveRaton,false);
+	blackBoardCanvas.addEventListener('mouseup',levantaRaton,false);
+
+     blackBoardCanvas.addEventListener("touchstart", touchStartHandler, false);
+     blackBoardCanvas.addEventListener("touchend", touchEndHandler, false);
+     blackBoardCanvas.addEventListener("touchmove", touchMoveHandler, false);
+}
+
+                function touchStartHandler(event) {
+                    event.preventDefault();
+                    var touchobj = event.changedTouches[0];
+                    event.stopPropagation();
+                    event.cancelBubble=true;
+	              estoyDibujando = true;
+	              //Indico que vamos a dibujar
+	              ctx.beginPath();
+	             //Averiguo las coordenadas X e Y por dónde va pasando el ratón
+	              ctx.moveTo(touchobj.pageX,touchobj.pageY);
+                }
+                function touchEndHandler(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    event.cancelBubble=true;
+	              //Indico que termino el dibujo
+	              ctx.closePath();
+	              estoyDibujando = false;
+                }
+                function touchMoveHandler(event) {
+                    event.preventDefault();
+                    var touchobj = event.changedTouches[0];
+                    if(estoyDibujando){
+		                //indicamos el color de la línea
+		                ctx.strokeStyle='#000';
+		                //Por dónde vamos dibujando
+		                ctx.lineTo(touchobj.pageX,touchobj.pageY);
+		                ctx.stroke();
+	             }
+                }
+
+
+
+
+var pulsaRaton=function(capturo){
+      event.stopPropagation();
+      event.cancelBubble=true;
+	estoyDibujando = true;
+	//Indico que vamos a dibujar
+	ctx.beginPath();
+
+	//Averiguo las coordenadas X e Y por dónde va pasando el ratón
+	ctx.moveTo(capturo.clientX,capturo.clientY);
+}
+
+
+
+var mueveRaton=function(capturo){
+      event.stopPropagation();
+      event.cancelBubble=true;
+	if(estoyDibujando){
+		//indicamos el color de la línea
+		ctx.strokeStyle='#000';
+		//Por dónde vamos dibujando
+		ctx.lineTo(capturo.clientX,capturo.clientY);
+		ctx.stroke();
+	}
+}
+
+var levantaRaton=function(capturo){
+      event.stopPropagation();
+      event.cancelBubble=true;
+	//Indico que termino el dibujo
+	ctx.closePath();
+	estoyDibujando = false;
+}
+
+var saveImg=function(){
+var dataURL = blackBoardCanvas.toDataURL("image/png", 1.0);
+console.log(dataURL);
+var img = new Image();
+img.className="newImage";
+img.src=dataURL;
+document.getElementById("htmlContent").appendChild(img);
+
+}
+
+
+
+createBlackBoard();	
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
